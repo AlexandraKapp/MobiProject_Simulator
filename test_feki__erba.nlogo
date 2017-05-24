@@ -7,6 +7,9 @@ globals [
   feki-ycor
   erba-xcor
   erba-ycor
+
+  cyclist
+  walker
 ]
 
 breed [buildings campus]
@@ -24,7 +27,11 @@ students-own [
 ]
 
 to setup
-  clear-all
+   clear-all
+
+  set walker "walker"
+  set cyclist "cyclist"
+
   set-coordinates
   setup-buildings
 
@@ -45,10 +52,8 @@ to define-timetables
   while [ not file-at-end? ] [
     set ai-timetable list (file-read) (file-read)
     repeat 8 [ set ai-timetable lput file-read ai-timetable]
-    show ai-timetable
     set  wi-timetable list (file-read) (file-read)
     repeat 8 [ set  wi-timetable lput file-read  wi-timetable]
-    show  wi-timetable
   ]
   file-close
 end
@@ -83,18 +88,20 @@ to setup-buildings
 end
 
 to setup-students
+    set-default-shape students "person"
   create-students 20
   ask students [
     if who < 10[
    set timetable ai-timetable
+   set vehicle walker
     ]
     if who >= 10[
    set timetable wi-timetable
+   set vehicle cyclist
    ]
   ]
    set-target
-  ask students [
-  ]
+
 end
 
 to go
@@ -117,6 +124,7 @@ ask students [
 end
 
 to move-to-target
+  set-vehicle
   set counter 0
   while [counter < 15] [
    ask students [
@@ -128,6 +136,25 @@ to move-to-target
     set counter counter + 1
    tick
   ]
+  change-to-person
+end
+
+to set-vehicle
+  ask students [
+    show vehicle
+    if(vehicle = cyclist) [
+      set shape "wheel"
+    ]
+    if (vehicle = walker) [
+      set shape "person"
+    ]
+  ]
+end
+
+to change-to-person
+   ask students [
+      set shape "person"
+    ]
 end
 @#$#@#$#@
 GRAPHICS-WINDOW

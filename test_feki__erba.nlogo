@@ -1,5 +1,10 @@
 globals [
   counter
+
+  total-amount-students
+  amount-ai-students
+  amount-wi-students
+
   ai-timetable
   wi-timetable
 
@@ -27,19 +32,19 @@ students-own [
 ]
 
 to setup
-   clear-all
 
-  set walker "walker"
-  set cyclist "cyclist"
+  clear-all
+  set-variables
+  define-timetables
 
-  set-coordinates
+  create-students total-amount-students
+
   setup-buildings
 
   ask patches [
     set pcolor grey + 2
   ]
 
-  define-timetables
   setup-students
   ask students [
     move-to target
@@ -58,12 +63,18 @@ to define-timetables
   file-close
 end
 
-to set-coordinates
+to set-variables
+  set amount-ai-students 20
+  set amount-wi-students 20
+  set total-amount-students (amount-ai-students + amount-wi-students)
 
-  set feki-xcor 6
-  set feki-ycor 4
-  set erba-xcor -4
-  set erba-ycor -6
+  set feki-xcor 10
+  set feki-ycor 10
+  set erba-xcor -10
+  set erba-ycor -10
+
+  set walker "walker"
+  set cyclist "cyclist"
 end
 
 to setup-buildings
@@ -75,7 +86,7 @@ to setup-buildings
      set xcor feki-xcor
      set ycor feki-ycor
      set size 4
-     set color black
+     set color blue + 2
   ]
 
    create-buildings 1 [
@@ -85,20 +96,35 @@ to setup-buildings
     set size 4
     set color blue
   ]
+
+   ask buildings [
+    create-links-with other buildings
+  ]
+
+  ask links [
+    set shape "road"
+  ]
+
 end
 
 to setup-students
-    set-default-shape students "person"
-  create-students 20
-  ask students [
-    if who < 10[
+
+  ask students[
    set timetable ai-timetable
-   set vehicle walker
     ]
-    if who >= 10[
+
+ ask n-of amount-wi-students students[
    set timetable wi-timetable
-   set vehicle cyclist
-   ]
+ ]
+
+
+  ask students[
+    set vehicle walker
+    set color black
+  ]
+
+  ask n-of (percentage-cyclist / 100 * total-amount-students) students [
+    set vehicle cyclist
   ]
    set-target
 
@@ -126,13 +152,18 @@ end
 to move-to-target
   set-vehicle
   set counter 0
-  while [counter < 15] [
+  while [counter < 30] [
    ask students [
       face target
         ifelse distance target < 1
       [ move-to target ]
-      [ fd 1 ]
+      [ if (vehicle = cyclist) [
+         fd 2 ]
+         if (vehicle = walker) [
+         fd 1
+         ]
         ]
+    ]
     set counter counter + 1
    tick
   ]
@@ -141,12 +172,13 @@ end
 
 to set-vehicle
   ask students [
-    show vehicle
     if(vehicle = cyclist) [
-      set shape "wheel"
+      set shape "bike"
+      set size 2
     ]
     if (vehicle = walker) [
       set shape "person"
+      set size 1
     ]
   ]
 end
@@ -154,25 +186,26 @@ end
 to change-to-person
    ask students [
       set shape "person"
+      set size 1
     ]
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
 210
 10
-647
-448
+713
+514
 -1
 -1
-13.0
+15.0
 1
 10
 1
 1
 1
 0
-1
-1
+0
+0
 1
 -16
 16
@@ -217,6 +250,21 @@ NIL
 NIL
 NIL
 1
+
+SLIDER
+943
+78
+1115
+111
+percentage-cyclist
+percentage-cyclist
+0
+100
+60.0
+1
+1
+NIL
+HORIZONTAL
 
 @#$#@#$#@
 ## WHAT IS IT?
@@ -269,6 +317,29 @@ arrow
 true
 0
 Polygon -7500403 true true 150 0 0 150 105 150 105 293 195 293 195 150 300 150
+
+bike
+false
+1
+Line -7500403 false 163 183 228 184
+Circle -7500403 false false 213 184 22
+Circle -7500403 false false 156 187 16
+Circle -16777216 false false 28 148 95
+Circle -16777216 false false 24 144 102
+Circle -16777216 false false 174 144 102
+Circle -16777216 false false 177 148 95
+Polygon -2674135 true true 75 195 90 90 98 92 97 107 192 122 207 83 215 85 202 123 211 133 225 195 165 195 164 188 214 188 202 133 94 116 82 195
+Polygon -2674135 true true 208 83 164 193 171 196 217 85
+Polygon -2674135 true true 165 188 91 120 90 131 164 196
+Line -7500403 false 159 173 170 219
+Line -7500403 false 155 172 166 172
+Line -7500403 false 166 219 177 219
+Polygon -16777216 true false 187 92 198 92 208 97 217 100 231 93 231 84 216 82 201 83 184 85
+Polygon -7500403 true true 71 86 98 93 101 85 74 81
+Rectangle -16777216 true false 75 75 75 90
+Polygon -16777216 true false 70 87 70 72 78 71 78 89
+Circle -7500403 false false 153 184 22
+Line -7500403 false 159 206 228 205
 
 box
 false
@@ -571,6 +642,17 @@ default
 -0.2 0 0.0 1.0
 0.0 1 1.0 0.0
 0.2 0 0.0 1.0
+link direction
+true
+0
+Line -7500403 true 150 150 90 180
+Line -7500403 true 150 150 210 180
+
+road
+0.0
+-0.2 1 1.0 0.0
+0.0 1 4.0 4.0
+0.2 1 1.0 0.0
 link direction
 true
 0

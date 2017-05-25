@@ -39,7 +39,6 @@ buses-own [
 ]
 
 to setup
-
   clear-all
   set-variables
   define-timetables
@@ -47,12 +46,12 @@ to setup
   create-students total-amount-students
 
   setup-buildings
+  setup-students
+  setup-bus
 
   ask patches [
     set pcolor grey + 2
   ]
-
-  setup-students
   reset-ticks
 end
 
@@ -68,6 +67,7 @@ to define-timetables
 end
 
 to set-variables
+  set counter 0
   set amount-ai-students 20
   set amount-wi-students 20
   set total-amount-students (amount-ai-students + amount-wi-students)
@@ -135,14 +135,27 @@ to setup-students
 end
 
 to go
-  repeat 10 [
-     set-target
-      move-to-target
+
+    if ticks = 300 [stop]
+
+  ask buses  [
+      move-bus
+    ]
+
+  if (ticks = counter) [
+    set-target
+    ask students [
+      set-vehicle
+    ]
+    set counter counter + 30
   ]
+
+   move-to-target
+  tick
 end
 
 to set-target
-ask students [
+  ask students [
     if (item 0 timetable = "erba") [
       set target one-of buildings with [name = "erba"]
     ]
@@ -154,31 +167,46 @@ ask students [
 end
 
 to move-to-target
-  set-vehicle
-  set counter 0
-  while [counter < 30] [
-   ask students [
+
+
+    ask students [
       face target
-        ifelse distance target < 1
-      [ move-to target ]
+        ifelse distance target < 1 [
+         move-to target
+         change-to-person
+      ]
       [ if (vehicle = cyclist) [
          fd 2 ]
          if (vehicle = walker) [
          fd 1
          ]
         ]
-    ]
-
-    set counter counter + 1
-   tick
   ]
-  change-to-person
+
 end
 
+to move-bus ;bus procedure
+      face target
+        ifelse distance target < 1
+      [ change-direction]
+      [fd 4]
+end
 
+to setup-bus
+  set-default-shape buses "bus"
+  create-buses 1 [
+    setxy feki-xcor feki-ycor
+    set target one-of buildings with [name = "erba"]
+  ]
+end
 
-to set-vehicle
-  ask students [
+to change-direction ;bus procedure
+    ifelse target = one-of buildings with [name = "erba"]
+        [set target one-of buildings with [name = "feki"]]
+       [set target one-of buildings with [name = "erba"]]
+end
+
+to set-vehicle; student procedure
     if(vehicle = cyclist) [
       set shape "bike"
       set size 2
@@ -187,14 +215,11 @@ to set-vehicle
       set shape "person"
       set size 1
     ]
-  ]
 end
 
-to change-to-person
-   ask students [
+to change-to-person; student procedure
       set shape "person"
       set size 1
-    ]
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
@@ -248,7 +273,7 @@ BUTTON
 183
 NIL
 go
-NIL
+T
 1
 T
 OBSERVER
@@ -366,6 +391,25 @@ Circle -7500403 true true 110 127 80
 Circle -7500403 true true 110 75 80
 Line -7500403 true 150 100 80 30
 Line -7500403 true 150 100 220 30
+
+bus
+false
+0
+Polygon -7500403 true true 15 206 15 150 15 120 30 105 270 105 285 120 285 135 285 206 270 210 30 210
+Rectangle -16777216 true false 36 126 231 159
+Line -7500403 false 60 135 60 165
+Line -7500403 false 60 120 60 165
+Line -7500403 false 90 120 90 165
+Line -7500403 false 120 120 120 165
+Line -7500403 false 150 120 150 165
+Line -7500403 false 180 120 180 165
+Line -7500403 false 210 120 210 165
+Line -7500403 false 240 135 240 165
+Rectangle -16777216 true false 15 174 285 182
+Circle -16777216 true false 48 187 42
+Rectangle -16777216 true false 240 127 276 205
+Circle -16777216 true false 195 187 42
+Line -7500403 false 257 120 257 207
 
 butterfly
 true

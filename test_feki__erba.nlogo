@@ -19,6 +19,7 @@ globals [
 
 breed [buildings campus]
 breed [students student]
+breed [buses bus]
 
 buildings-own [
   name]
@@ -29,6 +30,12 @@ students-own [
   speed
   class-probability
   timetable
+]
+
+buses-own [
+  target
+  total-capacity
+  current-passenger-amount
 ]
 
 to setup
@@ -46,9 +53,6 @@ to setup
   ]
 
   setup-students
-  ask students [
-    move-to target
-  ]
   reset-ticks
 end
 
@@ -121,19 +125,19 @@ to setup-students
   ask students[
     set vehicle walker
     set color black
+    setxy random-xcor random-ycor
   ]
 
   ask n-of (percentage-cyclist / 100 * total-amount-students) students [
     set vehicle cyclist
   ]
-   set-target
 
 end
 
 to go
-  repeat 9 [
+  repeat 10 [
      set-target
-     move-to-target
+      move-to-target
   ]
 end
 
@@ -164,11 +168,14 @@ to move-to-target
          ]
         ]
     ]
+
     set counter counter + 1
    tick
   ]
   change-to-person
 end
+
+
 
 to set-vehicle
   ask students [

@@ -15,6 +15,9 @@ globals [
 
   cyclist
   walker
+  bus-rider
+
+  pause
 ]
 
 breed [buildings campus]
@@ -79,6 +82,8 @@ to set-variables
 
   set walker "walker"
   set cyclist "cyclist"
+  set bus-rider "bus-rider"
+  set pause "pause"
 end
 
 to setup-buildings
@@ -86,14 +91,14 @@ to setup-buildings
   set-default-shape buildings "house"
 
   create-buildings 1 [
-     set name "feki"
-     set xcor feki-xcor
-     set ycor feki-ycor
-     set size 4
-     set color blue + 2
+    set name "feki"
+    set xcor feki-xcor
+    set ycor feki-ycor
+    set size 4
+    set color blue + 2
   ]
 
-   create-buildings 1 [
+  create-buildings 1 [
     set name "erba"
     set xcor erba-xcor
     set ycor erba-ycor
@@ -101,7 +106,7 @@ to setup-buildings
     set color blue
   ]
 
-   ask buildings [
+  ask buildings [
     create-links-with other buildings
   ]
 
@@ -112,14 +117,14 @@ to setup-buildings
 end
 
 to setup-students
-
+  set-default-shape students "person"
   ask students[
-   set timetable ai-timetable
-    ]
+    set timetable ai-timetable
+  ]
 
- ask n-of amount-wi-students students[
-   set timetable wi-timetable
- ]
+  ask n-of amount-wi-students students[
+    set timetable wi-timetable
+  ]
 
 
   ask students[
@@ -132,15 +137,21 @@ to setup-students
     set vehicle cyclist
   ]
 
+  ask n-of (percentage-bus-rider / 100 * total-amount-students) students [
+    if (vehicle != cyclist) [
+      set vehicle bus-rider
+    ]
+  ]
+
 end
 
 to go
 
-    if ticks = 300 [stop]
+  if ticks = 300 [stop]
 
   ask buses  [
-      move-bus
-    ]
+    move-bus
+  ]
 
   if (ticks = counter) [
     set-target
@@ -150,7 +161,7 @@ to go
     set counter counter + 30
   ]
 
-   move-to-target
+  move-to-target
   tick
 end
 
@@ -160,36 +171,75 @@ to set-target
       set target one-of buildings with [name = "erba"]
     ]
     if (item 0 timetable = "feki") [
-       set target one-of buildings with [name = "feki"]
-      ]
-      set timetable but-first timetable
+      set target one-of buildings with [name = "feki"]
+    ]
+    set timetable but-first timetable
   ]
 end
 
 to move-to-target
-
-
-    ask students [
+  ask students [
+    if (target != pause) [
       face target
-        ifelse distance target < 1 [
-         move-to target
-         change-to-person
+      ifelse distance target < 1 [
+        move-to target
+        change-to-person
       ]
-      [ if (vehicle = cyclist) [
-         fd 2 ]
-         if (vehicle = walker) [
-         fd 1
-         ]
-        ]
+      [ if (vehicle = cyclist) [fd 2]
+        if (vehicle = walker) [fd 1]
+        if (vehicle = bus-rider) [walk-if-no-bus-stop]
+      ]
+    ]
   ]
+end
 
+to walk-if-no-bus-stop ;student procedure
+  if (not ((xcor = feki-xcor and ycor = feki-ycor) or (xcor = erba-xcor and ycor = erba-ycor))) [fd 1]
 end
 
 to move-bus ;bus procedure
+  face target
+  ifelse distance target < 1 [
+    change-direction
+    drop-students
+    pick-up-students
+  ]
+  [
+    fd 4
+    ask out-link-neighbors [
       face target
-        ifelse distance target < 1
-      [ change-direction]
-      [fd 4]
+      fd 4]
+  ]
+end
+
+to drop-students ;bus-procedure
+  let passengers count link-neighbors
+  set current-passenger-amount current-passenger-amount - passengers
+  ask out-link-neighbors [
+    set target pause
+    set color black
+  ]
+  ask my-links with [ other-end = students ] [ die ]
+  ;show "dropped students: current passenger amount"
+  ;show current-passenger-amount
+end
+
+to pick-up-students ;bus-procedure
+  let bus-target target
+  create-links-with students-here with [vehicle = bus-rider]
+  ask out-link-neighbors [
+    if (target != bus-target)[
+      ask my-links [
+        die]
+    ]
+  ]
+
+  ask out-link-neighbors [set color yellow]
+
+  let passengers count out-link-neighbors
+  set current-passenger-amount current-passenger-amount + passengers
+  show "current passenger amount:"
+  show current-passenger-amount
 end
 
 to setup-bus
@@ -197,29 +247,29 @@ to setup-bus
   create-buses 1 [
     setxy feki-xcor feki-ycor
     set target one-of buildings with [name = "erba"]
+    set size 2
+    set color yellow
   ]
 end
 
 to change-direction ;bus procedure
-    ifelse target = one-of buildings with [name = "erba"]
-        [set target one-of buildings with [name = "feki"]]
-       [set target one-of buildings with [name = "erba"]]
+  ifelse target = one-of buildings with [name = "erba"]
+      [set target one-of buildings with [name = "feki"]]
+  [set target one-of buildings with [name = "erba"]]
 end
 
 to set-vehicle; student procedure
-    if(vehicle = cyclist) [
-      set shape "bike"
-      set size 2
-    ]
-    if (vehicle = walker) [
-      set shape "person"
-      set size 1
-    ]
+  if(vehicle = cyclist) [
+    set shape "bike"
+    set color green
+    set size 2
+  ]
 end
 
 to change-to-person; student procedure
-      set shape "person"
-      set size 1
+  set shape "person"
+  set color black
+  set size 1
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
@@ -284,15 +334,30 @@ NIL
 1
 
 SLIDER
-943
-78
-1115
-111
+750
+103
+922
+136
 percentage-cyclist
 percentage-cyclist
 0
 100
-60.0
+21.0
+1
+1
+NIL
+HORIZONTAL
+
+SLIDER
+750
+166
+922
+199
+percentage-bus-rider
+percentage-bus-rider
+0
+100
+80.0
 1
 1
 NIL

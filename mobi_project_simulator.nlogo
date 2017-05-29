@@ -17,7 +17,8 @@ globals [
   walker
   bus-rider
 
-  beacons
+  erba-beacons
+  feki-beacons
 
   tmp-course-id
   tmp-target
@@ -69,7 +70,8 @@ to setup
   setup-students
   setup-bus
 
-  set beacons 0
+  set erba-beacons 0
+  set feki-beacons 0
 
   ask patches [
     set pcolor grey + 2
@@ -319,12 +321,12 @@ end
 to check-beacon; student procedure
   if target = one-of buildings with [name = "erba"]
   [ if random 100 < 30 [
-    set beacons beacons + 1
+    set erba-beacons erba-beacons + 1
     set beacon-counter beacon-counter + 1 ]
   ]
   if target = one-of buildings with [name = "feki"]
   [ if random 100 < 30 [
-    set beacons beacons + 1
+    set feki-beacons feki-beacons + 1
     set beacon-counter beacon-counter + 1 ]
   ]
 end
@@ -421,12 +423,23 @@ NIL
 HORIZONTAL
 
 MONITOR
-8
-227
-185
-272
-Interaction Students Beacons
-beacons
+31
+232
+184
+277
+ERBA Beacon Interactions
+erba-beacons
+17
+1
+11
+
+MONITOR
+32
+293
+184
+338
+FEKI Beacon Interactions
+feki-beacons
 17
 1
 11

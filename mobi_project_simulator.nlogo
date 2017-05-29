@@ -20,8 +20,15 @@ globals [
   walker
   bus-rider
 
+<<<<<<< HEAD
+=======
+  erba-beacons
+  feki-beacons
+
+>>>>>>> 2e910b1c6e48ab3d46dec9d2bd10a85ed9bf37f5
   tmp-course-id
   tmp-target
+
   pause
 ]
 
@@ -40,7 +47,11 @@ students-own [
   speed
   class-probability
   timetable
+<<<<<<< HEAD
   current-course
+=======
+  beacon-counter
+>>>>>>> 2e910b1c6e48ab3d46dec9d2bd10a85ed9bf37f5
 ]
 
 buses-own [
@@ -58,6 +69,7 @@ courses-own [
 
 to setup
   clear-all
+  import-drawing "map.png"
   set-variables
   define-timetables
   define-courses
@@ -67,6 +79,9 @@ to setup
   setup-buildings
   setup-students
   setup-bus
+
+  set erba-beacons 0
+  set feki-beacons 0
 
   ask patches [
     set pcolor grey + 2
@@ -105,10 +120,10 @@ to set-variables
   set amount-wi-students 20
   set total-amount-students (amount-ai-students + amount-wi-students)
 
-  set feki-xcor 10
-  set feki-ycor 10
-  set erba-xcor -10
-  set erba-ycor -10
+  set feki-xcor 9
+  set feki-ycor 5
+  set erba-xcor -13
+  set erba-ycor 2
 
   set walker "walker"
   set cyclist "cyclist"
@@ -159,6 +174,7 @@ to setup-students
   set-default-shape students "person"
   ask students[
     set timetable ai-timetable
+    set beacon-counter 0
   ]
 
   ask n-of amount-wi-students students[
@@ -188,16 +204,16 @@ to go
 
   if ticks = 300 [stop]
 
-  ask buses  [
-    move-bus
-  ]
-
   if (ticks = counter) [
     set-target
     ask students [
       set-vehicle
     ]
     set counter counter + 30
+  ]
+
+    ask buses  [
+    move-bus
   ]
 
   move-to-target
@@ -230,6 +246,10 @@ to move-to-target
       face target
       ifelse distance target < 1 [
         move-to target
+        check-beacon
+        if (count link-neighbors < 1) [
+        set target pause
+        ]
         change-to-person
       ]
       [ if (vehicle = cyclist) [fd 2]
@@ -314,6 +334,19 @@ to change-to-person; student procedure
   set shape "person"
   set color black
   set size 1
+end
+
+to check-beacon; student procedure
+  if target = one-of buildings with [name = "erba"]
+  [ if random 100 < 30 [
+    set erba-beacons erba-beacons + 1
+    set beacon-counter beacon-counter + 1 ]
+  ]
+  if target = one-of buildings with [name = "feki"]
+  [ if random 100 < 30 [
+    set feki-beacons feki-beacons + 1
+    set beacon-counter beacon-counter + 1 ]
+  ]
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
@@ -436,6 +469,50 @@ exercise-course-probability
 1
 NIL
 HORIZONTAL
+
+MONITOR
+31
+232
+184
+277
+ERBA Beacon Interactions
+erba-beacons
+17
+1
+11
+
+MONITOR
+32
+293
+184
+338
+FEKI Beacon Interactions
+feki-beacons
+17
+1
+11
+
+MONITOR
+45
+374
+155
+419
+students at Feki
+count students with [\n(shape = \"person\") and\n(color = black) and\n(size = 1) and\n(xcor <= 10) and\n(xcor >= 8) and\n(ycor <= 6) and \n(ycor >= 4)\n]
+17
+1
+11
+
+MONITOR
+46
+442
+159
+487
+students at Erba
+count students with [\n (shape = \"person\") and\n (color = black) and\n (size = 1) and\n (xcor < -11) and\n (xcor > -14) and\n (ycor < 3) and\n (ycor > 1)\n]
+17
+1
+11
 
 @#$#@#$#@
 ## WHAT IS IT?

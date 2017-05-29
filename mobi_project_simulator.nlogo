@@ -16,13 +16,17 @@ globals [
   cyclist
   walker
   bus-rider
-
+  
+  tmp-course-id
+  tmp-target
   pause
 ]
 
 breed [buildings campus]
 breed [students student]
 breed [buses bus]
+breed [courses course]
+
 
 buildings-own [
   name]
@@ -41,10 +45,18 @@ buses-own [
   current-passenger-amount
 ]
 
+courses-own [
+  course_id
+  course_name
+  course_location
+  course_type
+]
+
 to setup
   clear-all
   set-variables
   define-timetables
+  define-courses
 
   create-students total-amount-students
 
@@ -58,8 +70,22 @@ to setup
   reset-ticks
 end
 
+to define-courses
+  file-open "courses.txt"
+  while [ not file-at-end? ] [
+     create-courses 1 [
+       set course_id file-read
+       set course_name file-read
+       set course_location file-read
+       set course_type file-read
+       set size 0
+     ]
+  ]
+  file-close
+end
+
 to define-timetables
-  file-open "timetables.txt"
+  file-open "timetables_test.txt"
   while [ not file-at-end? ] [
     set ai-timetable list (file-read) (file-read)
     repeat 8 [ set ai-timetable lput file-read ai-timetable]
@@ -167,14 +193,20 @@ end
 
 to set-target
   ask students [
-    if (item 0 timetable = "erba") [
-      set target one-of buildings with [name = "erba"]
-    ]
-    if (item 0 timetable = "feki") [
-      set target one-of buildings with [name = "feki"]
-    ]
-    set timetable but-first timetable
+   set tmp-course-id item 0 timetable
+   set tmp-target [course_location] of one-of courses with [course_id = tmp-course-id]
+   set target one-of buildings with [name = tmp-target]
+   set timetable but-first timetable
   ]
+;  ask students [
+;    if (item 0 timetable = "erba") [
+;      set target one-of buildings with [name = "erba"]
+;    ]
+;    if (item 0 timetable = "feki") [
+;      set target one-of buildings with [name = "feki"]
+;    ]
+;    set timetable but-first timetable
+;  ]
 end
 
 to move-to-target
@@ -206,7 +238,7 @@ to move-bus ;bus procedure
   ]
   [
     fd 4
-    ask out-link-neighbors [
+    ask link-neighbors [
       face target
       fd 4]
   ]
@@ -215,7 +247,7 @@ end
 to drop-students ;bus-procedure
   let passengers count link-neighbors
   set current-passenger-amount current-passenger-amount - passengers
-  ask out-link-neighbors [
+  ask link-neighbors [
     set target pause
     set color black
   ]
@@ -227,16 +259,16 @@ end
 to pick-up-students ;bus-procedure
   let bus-target target
   create-links-with students-here with [vehicle = bus-rider]
-  ask out-link-neighbors [
+  ask link-neighbors [
     if (target != bus-target)[
       ask my-links [
         die]
     ]
   ]
 
-  ask out-link-neighbors [set color yellow]
+  ask link-neighbors [set color yellow]
 
-  let passengers count out-link-neighbors
+  let passengers count link-neighbors
   set current-passenger-amount current-passenger-amount + passengers
   show "current passenger amount:"
   show current-passenger-amount
@@ -275,10 +307,10 @@ end
 GRAPHICS-WINDOW
 210
 10
-713
-514
--1
--1
+715
+536
+16
+16
 15.0
 1
 10
@@ -342,7 +374,7 @@ percentage-cyclist
 percentage-cyclist
 0
 100
-21.0
+21
 1
 1
 NIL
@@ -357,7 +389,7 @@ percentage-bus-rider
 percentage-bus-rider
 0
 100
-80.0
+80
 1
 1
 NIL
@@ -746,8 +778,9 @@ false
 0
 Polygon -7500403 true true 270 75 225 30 30 225 75 270
 Polygon -7500403 true true 30 75 75 30 270 225 225 270
+
 @#$#@#$#@
-NetLogo 6.0.1
+NetLogo 5.0.4
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
@@ -774,6 +807,7 @@ true
 0
 Line -7500403 true 150 150 90 180
 Line -7500403 true 150 150 210 180
+
 @#$#@#$#@
 0
 @#$#@#$#@

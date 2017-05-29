@@ -13,10 +13,13 @@ globals [
   erba-xcor
   erba-ycor
 
+  lecture
+  exercise
+
   cyclist
   walker
   bus-rider
-  
+
   tmp-course-id
   tmp-target
   pause
@@ -37,6 +40,7 @@ students-own [
   speed
   class-probability
   timetable
+  current-course
 ]
 
 buses-own [
@@ -73,13 +77,13 @@ end
 to define-courses
   file-open "courses.txt"
   while [ not file-at-end? ] [
-     create-courses 1 [
-       set course_id file-read
-       set course_name file-read
-       set course_location file-read
-       set course_type file-read
-       set size 0
-     ]
+    create-courses 1 [
+      set course_id file-read
+      set course_name file-read
+      set course_location file-read
+      set course_type file-read
+      set size 0
+    ]
   ]
   file-close
 end
@@ -110,6 +114,8 @@ to set-variables
   set cyclist "cyclist"
   set bus-rider "bus-rider"
   set pause "pause"
+  set lecture "v"
+  set exercise "u"
 end
 
 to setup-buildings
@@ -132,8 +138,15 @@ to setup-buildings
     set color blue
   ]
 
-  ask buildings [
-    create-links-with other buildings
+  create-buildings 100 [
+    set name "random-target"
+    set xcor random-xcor
+    set ycor random-ycor
+    hide-turtle
+  ]
+
+  ask buildings with [name != "random-target"] [
+    create-links-with other buildings with [name != "random-target"]
   ]
 
   ask links [
@@ -193,20 +206,22 @@ end
 
 to set-target
   ask students [
-   set tmp-course-id item 0 timetable
-   set tmp-target [course_location] of one-of courses with [course_id = tmp-course-id]
-   set target one-of buildings with [name = tmp-target]
-   set timetable but-first timetable
+    set tmp-course-id item 0 timetable
+    set tmp-target [course_location] of one-of courses with [course_id = tmp-course-id]
+    set target one-of buildings with [name = tmp-target]
+    set timetable but-first timetable
+
+    ;set probability of not going to class
+    set current-course one-of courses with [course_id = tmp-course-id]
+    ask current-course [
+    ]
   ]
-;  ask students [
-;    if (item 0 timetable = "erba") [
-;      set target one-of buildings with [name = "erba"]
-;    ]
-;    if (item 0 timetable = "feki") [
-;      set target one-of buildings with [name = "feki"]
-;    ]
-;    set timetable but-first timetable
-;  ]
+
+  let lecture-students students with [current-course = one-of courses with [course_type = lecture]]
+
+  ask n-of (lecture-probability * count lecture-students) lecture-students [
+    set target one-of buildings with [name = "random-target"]
+  ]
 end
 
 to move-to-target
@@ -227,6 +242,7 @@ end
 
 to walk-if-no-bus-stop ;student procedure
   if (not ((xcor = feki-xcor and ycor = feki-ycor) or (xcor = erba-xcor and ycor = erba-ycor))) [fd 1]
+  if (target != one-of buildings with [name = "random-target"]) [fd 1]
 end
 
 to move-bus ;bus procedure
@@ -252,8 +268,6 @@ to drop-students ;bus-procedure
     set color black
   ]
   ask my-links with [ other-end = students ] [ die ]
-  ;show "dropped students: current passenger amount"
-  ;show current-passenger-amount
 end
 
 to pick-up-students ;bus-procedure
@@ -270,8 +284,6 @@ to pick-up-students ;bus-procedure
 
   let passengers count link-neighbors
   set current-passenger-amount current-passenger-amount + passengers
-  show "current passenger amount:"
-  show current-passenger-amount
 end
 
 to setup-bus
@@ -307,10 +319,10 @@ end
 GRAPHICS-WINDOW
 210
 10
-715
-536
-16
-16
+713
+514
+-1
+-1
 15.0
 1
 10
@@ -374,7 +386,7 @@ percentage-cyclist
 percentage-cyclist
 0
 100
-21
+12.0
 1
 1
 NIL
@@ -389,8 +401,38 @@ percentage-bus-rider
 percentage-bus-rider
 0
 100
-80
+100.0
 1
+1
+NIL
+HORIZONTAL
+
+SLIDER
+749
+229
+921
+262
+lecture-probability
+lecture-probability
+0
+1
+0.0
+0.1
+1
+NIL
+HORIZONTAL
+
+SLIDER
+742
+292
+942
+325
+exercise-course-probability
+exercise-course-probability
+0
+1
+0.5
+0.1
 1
 NIL
 HORIZONTAL
@@ -778,9 +820,8 @@ false
 0
 Polygon -7500403 true true 270 75 225 30 30 225 75 270
 Polygon -7500403 true true 30 75 75 30 270 225 225 270
-
 @#$#@#$#@
-NetLogo 5.0.4
+NetLogo 6.0.1
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
@@ -807,7 +848,6 @@ true
 0
 Line -7500403 true 150 150 90 180
 Line -7500403 true 150 150 210 180
-
 @#$#@#$#@
 0
 @#$#@#$#@

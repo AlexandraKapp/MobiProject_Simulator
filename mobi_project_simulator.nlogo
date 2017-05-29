@@ -19,12 +19,17 @@ globals [
 
   beacons
 
+  tmp-course-id
+  tmp-target
+
   pause
 ]
 
 breed [buildings campus]
 breed [students student]
 breed [buses bus]
+breed [courses course]
+
 
 buildings-own [
   name]
@@ -44,10 +49,19 @@ buses-own [
   current-passenger-amount
 ]
 
+courses-own [
+  course_id
+  course_name
+  course_location
+  course_type
+]
+
 to setup
   clear-all
+  import-drawing "map.png"
   set-variables
   define-timetables
+  define-courses
 
   create-students total-amount-students
 
@@ -63,8 +77,22 @@ to setup
   reset-ticks
 end
 
+to define-courses
+  file-open "courses.txt"
+  while [ not file-at-end? ] [
+     create-courses 1 [
+       set course_id file-read
+       set course_name file-read
+       set course_location file-read
+       set course_type file-read
+       set size 0
+     ]
+  ]
+  file-close
+end
+
 to define-timetables
-  file-open "timetables.txt"
+  file-open "timetables_test.txt"
   while [ not file-at-end? ] [
     set ai-timetable list (file-read) (file-read)
     repeat 8 [ set ai-timetable lput file-read ai-timetable]
@@ -80,10 +108,10 @@ to set-variables
   set amount-wi-students 20
   set total-amount-students (amount-ai-students + amount-wi-students)
 
-  set feki-xcor 10
-  set feki-ycor 10
-  set erba-xcor -10
-  set erba-ycor -10
+  set feki-xcor 9
+  set feki-ycor 5
+  set erba-xcor -13
+  set erba-ycor 2
 
   set walker "walker"
   set cyclist "cyclist"
@@ -173,14 +201,20 @@ end
 
 to set-target
   ask students [
-    if (item 0 timetable = "erba") [
-      set target one-of buildings with [name = "erba"]
-    ]
-    if (item 0 timetable = "feki") [
-      set target one-of buildings with [name = "feki"]
-    ]
-    set timetable but-first timetable
+   set tmp-course-id item 0 timetable
+   set tmp-target [course_location] of one-of courses with [course_id = tmp-course-id]
+   set target one-of buildings with [name = tmp-target]
+   set timetable but-first timetable
   ]
+;  ask students [
+;    if (item 0 timetable = "erba") [
+;      set target one-of buildings with [name = "erba"]
+;    ]
+;    if (item 0 timetable = "feki") [
+;      set target one-of buildings with [name = "feki"]
+;    ]
+;    set timetable but-first timetable
+;  ]
 end
 
 to move-to-target
@@ -216,7 +250,7 @@ to move-bus ;bus procedure
   ]
   [
     fd 4
-    ask out-link-neighbors [
+    ask link-neighbors [
       face target
       fd 4]
   ]
@@ -225,7 +259,7 @@ end
 to drop-students ;bus-procedure
   let passengers count link-neighbors
   set current-passenger-amount current-passenger-amount - passengers
-  ask out-link-neighbors [
+  ask link-neighbors [
     set target pause
     set color black
   ]
@@ -237,16 +271,16 @@ end
 to pick-up-students ;bus-procedure
   let bus-target target
   create-links-with students-here with [vehicle = bus-rider]
-  ask out-link-neighbors [
+  ask link-neighbors [
     if (target != bus-target)[
       ask my-links [
         die]
     ]
   ]
 
-  ask out-link-neighbors [set color yellow]
+  ask link-neighbors [set color yellow]
 
-  let passengers count out-link-neighbors
+  let passengers count link-neighbors
   set current-passenger-amount current-passenger-amount + passengers
   show "current passenger amount:"
   show current-passenger-amount

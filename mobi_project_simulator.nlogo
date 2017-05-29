@@ -334,10 +334,10 @@ end
 GRAPHICS-WINDOW
 210
 10
-713
-514
--1
--1
+715
+536
+16
+16
 15.0
 1
 10
@@ -401,7 +401,7 @@ percentage-cyclist
 percentage-cyclist
 0
 100
-21.0
+21
 1
 1
 NIL
@@ -416,7 +416,7 @@ percentage-bus-rider
 percentage-bus-rider
 0
 100
-80.0
+80
 1
 1
 NIL
@@ -440,6 +440,28 @@ MONITOR
 338
 FEKI Beacon Interactions
 feki-beacons
+17
+1
+11
+
+MONITOR
+45
+374
+155
+419
+students at Feki
+count students with [\n(shape = \"person\") and\n(color = black) and\n(size = 1) and\n(xcor <= 10) and\n(xcor >= 8) and\n(ycor <= 6) and \n(ycor >= 4)\n]
+17
+1
+11
+
+MONITOR
+46
+442
+159
+487
+students at Erba
+count students with [\n (shape = \"person\") and\n (color = black) and\n (size = 1) and\n (xcor < -11) and\n (xcor > -14) and\n (ycor < 3) and\n (ycor > 1)\n]
 17
 1
 11
@@ -827,8 +849,9 @@ false
 0
 Polygon -7500403 true true 270 75 225 30 30 225 75 270
 Polygon -7500403 true true 30 75 75 30 270 225 225 270
+
 @#$#@#$#@
-NetLogo 6.0.1
+NetLogo 5.0.4
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
@@ -855,6 +878,7 @@ true
 0
 Line -7500403 true 150 150 90 180
 Line -7500403 true 150 150 210 180
+
 @#$#@#$#@
 0
 @#$#@#$#@

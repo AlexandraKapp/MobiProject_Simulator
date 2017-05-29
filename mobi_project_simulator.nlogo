@@ -17,6 +17,8 @@ globals [
   walker
   bus-rider
 
+  beacons
+
   pause
 ]
 
@@ -33,6 +35,7 @@ students-own [
   speed
   class-probability
   timetable
+  beacon-counter
 ]
 
 buses-own [
@@ -51,6 +54,8 @@ to setup
   setup-buildings
   setup-students
   setup-bus
+
+  set beacons 0
 
   ask patches [
     set pcolor grey + 2
@@ -120,6 +125,7 @@ to setup-students
   set-default-shape students "person"
   ask students[
     set timetable ai-timetable
+    set beacon-counter 0
   ]
 
   ask n-of amount-wi-students students[
@@ -149,16 +155,16 @@ to go
 
   if ticks = 300 [stop]
 
-  ask buses  [
-    move-bus
-  ]
-
   if (ticks = counter) [
     set-target
     ask students [
       set-vehicle
     ]
     set counter counter + 30
+  ]
+
+    ask buses  [
+    move-bus
   ]
 
   move-to-target
@@ -183,6 +189,10 @@ to move-to-target
       face target
       ifelse distance target < 1 [
         move-to target
+        check-beacon
+        if (count link-neighbors < 1) [
+        set target pause
+        ]
         change-to-person
       ]
       [ if (vehicle = cyclist) [fd 2]
@@ -270,6 +280,19 @@ to change-to-person; student procedure
   set shape "person"
   set color black
   set size 1
+end
+
+to check-beacon; student procedure
+  if target = one-of buildings with [name = "erba"]
+  [ if random 100 < 30 [
+    set beacons beacons + 1
+    set beacon-counter beacon-counter + 1 ]
+  ]
+  if target = one-of buildings with [name = "feki"]
+  [ if random 100 < 30 [
+    set beacons beacons + 1
+    set beacon-counter beacon-counter + 1 ]
+  ]
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
@@ -362,6 +385,17 @@ percentage-bus-rider
 1
 NIL
 HORIZONTAL
+
+MONITOR
+8
+227
+185
+272
+Interaction Students Beacons
+beacons
+17
+1
+11
 
 @#$#@#$#@
 ## WHAT IS IT?

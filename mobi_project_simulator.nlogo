@@ -54,6 +54,7 @@ courses-own [
 
 to setup
   clear-all
+  import-drawing "map.png"
   set-variables
   define-timetables
   define-courses
@@ -101,10 +102,10 @@ to set-variables
   set amount-wi-students 20
   set total-amount-students (amount-ai-students + amount-wi-students)
 
-  set feki-xcor 10
-  set feki-ycor 10
-  set erba-xcor -10
-  set erba-ycor -10
+  set feki-xcor 9
+  set feki-ycor 5
+  set erba-xcor -13
+  set erba-ycor 2
 
   set walker "walker"
   set cyclist "cyclist"
@@ -374,7 +375,7 @@ percentage-cyclist
 percentage-cyclist
 0
 100
-21
+18
 1
 1
 NIL
@@ -389,7 +390,7 @@ percentage-bus-rider
 percentage-bus-rider
 0
 100
-80
+41
 1
 1
 NIL

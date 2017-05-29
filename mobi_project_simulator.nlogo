@@ -20,12 +20,9 @@ globals [
   walker
   bus-rider
 
-<<<<<<< HEAD
-=======
   erba-beacons
   feki-beacons
 
->>>>>>> 2e910b1c6e48ab3d46dec9d2bd10a85ed9bf37f5
   tmp-course-id
   tmp-target
 
@@ -47,11 +44,8 @@ students-own [
   speed
   class-probability
   timetable
-<<<<<<< HEAD
   current-course
-=======
   beacon-counter
->>>>>>> 2e910b1c6e48ab3d46dec9d2bd10a85ed9bf37f5
 ]
 
 buses-own [
@@ -229,8 +223,6 @@ to set-target
 
     ;set probability of not going to class
     set current-course one-of courses with [course_id = tmp-course-id]
-    ask current-course [
-    ]
   ]
 
   let lecture-students students with [current-course = one-of courses with [course_type = lecture]]
@@ -449,7 +441,7 @@ lecture-probability
 lecture-probability
 0
 1
-0.0
+0.6
 0.1
 1
 NIL

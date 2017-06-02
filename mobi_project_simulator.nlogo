@@ -1,5 +1,6 @@
 globals [
   counter
+  is-break
 
   total-amount-students
   amount-ai-students
@@ -109,7 +110,8 @@ to define-timetables
 end
 
 to set-variables
-  set counter 0
+  set counter 30 ;initial starttime to get to the first time slot
+  set is-break true
   set amount-ai-students 20
   set amount-wi-students 20
   set total-amount-students (amount-ai-students + amount-wi-students)
@@ -192,25 +194,37 @@ to setup-students
     ]
   ]
 
+  set-target ;set inital target
+    ask students [
+      set-vehicle
+    ]
 end
 
 to go
 
-  if ticks = 300 [stop]
+  if ticks = 750 [stop] ; 1 tick one minute 750min = 12,5 h
 
   ask buses  [
     move-bus
   ]
 
-  if (ticks = counter) [
+  if (ticks = counter and is-break = true) [
+    set counter counter + 90 ;90 min for one time-slot
+    set is-break false
+  ]
+
+if (is-break = true) [
+  move-to-target ;only move during breaks
+  ]
+
+  if (ticks = counter and is-break = false) [
+    set is-break true ;after the time slot of 90 min is over it's break time
+    set counter counter + 30 ;30 min break
     set-target
     ask students [
       set-vehicle
     ]
-    set counter counter + 30
   ]
-
-  move-to-target
   tick
 end
 
@@ -226,8 +240,13 @@ to set-target
   ]
 
   let lecture-students students with [current-course = one-of courses with [course_type = lecture]]
+  let exercise-students students with [current-course = one-of courses with [course_type = exercise]]
 
-  ask n-of (lecture-probability * count lecture-students) lecture-students [
+  ask n-of (skip-lecture-probability * count lecture-students) lecture-students [
+    set target one-of buildings with [name = "random-target"]
+  ]
+
+  ask n-of (skip-exercise-course-probability * count exercise-students) exercise-students [
     set target one-of buildings with [name = "random-target"]
   ]
 end
@@ -260,7 +279,6 @@ end
 to move-bus ;bus procedure
   face target
   ifelse distance target < 2 [
-    show "distance < 1"
     change-direction
     drop-students
     pick-up-students
@@ -412,7 +430,7 @@ percentage-cyclist
 percentage-cyclist
 0
 100
-12.0
+80.0
 1
 1
 NIL
@@ -427,7 +445,7 @@ percentage-bus-rider
 percentage-bus-rider
 0
 100
-100.0
+20.0
 1
 1
 NIL
@@ -436,13 +454,13 @@ HORIZONTAL
 SLIDER
 749
 229
-921
+922
 262
-lecture-probability
-lecture-probability
+skip-lecture-probability
+skip-lecture-probability
 0
 1
-0.6
+0.4
 0.1
 1
 NIL
@@ -451,10 +469,10 @@ HORIZONTAL
 SLIDER
 742
 292
-942
+965
 325
-exercise-course-probability
-exercise-course-probability
+skip-exercise-course-probability
+skip-exercise-course-probability
 0
 1
 0.5

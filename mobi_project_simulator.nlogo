@@ -198,16 +198,16 @@ to go
 
   if ticks = 300 [stop]
 
+  ask buses  [
+    move-bus
+  ]
+
   if (ticks = counter) [
     set-target
     ask students [
       set-vehicle
     ]
     set counter counter + 30
-  ]
-
-    ask buses  [
-    move-bus
   ]
 
   move-to-target
@@ -240,7 +240,7 @@ to move-to-target
         move-to target
         check-beacon
         if (count link-neighbors < 1) [
-        set target pause
+          set target pause
         ]
         change-to-person
       ]
@@ -259,7 +259,8 @@ end
 
 to move-bus ;bus procedure
   face target
-  ifelse distance target < 1 [
+  ifelse distance target < 2 [
+    show "distance < 1"
     change-direction
     drop-students
     pick-up-students

@@ -1,6 +1,8 @@
 globals [
   counter
+  timerCount
   is-break
+  weekday
 
   total-amount-students
   amount-ai-students
@@ -110,7 +112,7 @@ to define-timetables
 end
 
 to set-variables
-  set counter 30 ;initial starttime to get to the first time slot
+  set counter 75 ;initial starttime to get to the first time slot
   set is-break true
   set amount-ai-students 20
   set amount-wi-students 20
@@ -127,6 +129,8 @@ to set-variables
   set pause "pause"
   set lecture "v"
   set exercise "u"
+
+  set weekday 1
 end
 
 to setup-buildings
@@ -166,17 +170,17 @@ to setup-buildings
 
 end
 
+to assign-timetables ;student procedure
+  ask students [set timetable ai-timetable]
+  ask n-of amount-wi-students students[set timetable wi-timetable]
+end
+
 to setup-students
   set-default-shape students "person"
   ask students[
-    set timetable ai-timetable
+    assign-timetables
     set beacon-counter 0
   ]
-
-  ask n-of amount-wi-students students[
-    set timetable wi-timetable
-  ]
-
 
   ask students[
     set vehicle walker
@@ -195,14 +199,20 @@ to setup-students
   ]
 
   set-target ;set inital target
-    ask students [
-      set-vehicle
-    ]
+  ask students [
+    set-vehicle
+  ]
 end
 
 to go
 
-  if ticks = 750 [stop] ; 1 tick one minute 750min = 12,5 h
+  if timerCount = 780 [ ;day is over -> start new day
+    set timerCount 0 ;set time back to 7am
+    ifelse (weekday < 5) [set weekday weekday + 1] ;increase weekday
+    [set weekday 1]
+
+    define-timetables
+    assign-timetables] ;restart the schedule
 
   ask buses  [
     move-bus
@@ -213,8 +223,8 @@ to go
     set is-break false
   ]
 
-if (is-break = true) [
-  move-to-target ;only move during breaks
+  if (is-break = true) [
+    move-to-target ;only move during breaks
   ]
 
   if (ticks = counter and is-break = false) [
@@ -226,6 +236,7 @@ if (is-break = true) [
     ]
   ]
   tick
+  set timercount timercount + 1
 end
 
 to set-target
@@ -388,10 +399,10 @@ ticks
 30.0
 
 BUTTON
-63
-92
-126
-125
+8
+10
+71
+43
 NIL
 setup
 NIL
@@ -405,10 +416,10 @@ NIL
 1
 
 BUTTON
-66
-150
-129
-183
+77
+10
+140
+43
 NIL
 go
 T
@@ -524,6 +535,38 @@ count students with [\n (shape = \"person\") and\n (color = black) and\n (size =
 17
 1
 11
+
+MONITOR
+81
+71
+138
+116
+time
+7 + (timerCount / 60)
+2
+1
+11
+
+MONITOR
+8
+69
+71
+114
+weekday
+weekday
+0
+1
+11
+
+TEXTBOX
+10
+125
+160
+195
+1 Monday\n2 Tuesday\n3 Wednesday\n4 Thursday\n5 Friday\n
+11
+0.0
+1
 
 @#$#@#$#@
 ## WHAT IS IT?

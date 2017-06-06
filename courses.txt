@@ -1,3 +1,5 @@
 "1" "EiAPS" "erba" "v"
 "2" "Statistik" "feki" "v"
 "3" "Statistik" "feki" "u"
+"4" "Psychologie" "markus" "v"
+"5" "Geo" "kranen" "v"

@@ -15,6 +15,10 @@ globals [
   feki-ycor
   erba-xcor
   erba-ycor
+  markus-xcor
+  markus-ycor
+  kranen-xcor
+  kranen-ycor
 
   lecture
   exercise
@@ -53,6 +57,7 @@ students-own [
 ]
 
 buses-own [
+  name
   target
   total-capacity
   current-passenger-amount
@@ -123,6 +128,10 @@ to set-variables
   set feki-ycor 5
   set erba-xcor -13
   set erba-ycor 2
+  set markus-xcor -5
+  set markus-ycor -5
+  set kranen-xcor -2
+  set kranen-ycor -8
 
   set walker "walker"
   set cyclist "cyclist"
@@ -152,6 +161,22 @@ to setup-buildings
     set ycor erba-ycor
     set size 4
     set color blue
+  ]
+  
+  create-buildings 1 [
+    set name "markus"
+    set xcor markus-xcor
+    set ycor markus-ycor
+    set size 4
+    set color green 
+  ]
+  
+  create-buildings 1 [
+    set name "kranen"
+    set xcor kranen-xcor
+    set ycor kranen-ycor
+    set size 4
+    set color yellow 
   ]
 
   create-buildings 1000 [
@@ -337,17 +362,52 @@ end
 to setup-bus
   set-default-shape buses "bus"
   create-buses 1 [
+    set name "feki-erba"
     setxy feki-xcor feki-ycor
     set target one-of buildings with [name = "erba"]
     set size 2
     set color yellow
   ]
+  create-buses 1 [
+    set name "feki-kranen"
+    setxy kranen-xcor kranen-ycor
+    set target one-of buildings with [name = "feki"]
+    set size 2
+    set color yellow
+  ]
+  create-buses 1 [
+    set name "kranen-erba"
+    setxy erba-xcor erba-ycor
+    set target one-of buildings with [name = "kranen"]
+    set size 2
+    set color yellow
+  ]
+  
 end
 
 to change-direction ;bus procedure
-  ifelse target = one-of buildings with [name = "erba"]
-      [set target one-of buildings with [name = "feki"]]
-  [set target one-of buildings with [name = "erba"]]
+  if name = "feki-erba" [
+    ifelse target = one-of buildings with [name = "erba"][
+      set target one-of buildings with [name = "feki"]
+    ][
+      set target one-of buildings with [name = "erba"]
+    ]  
+  ] 
+  if name = "feki-kranen" [
+    ifelse target = one-of buildings with [name = "feki"][
+      set target one-of buildings with [name = "kranen"]
+    ][
+      set target one-of buildings with [name = "feki"]
+    ]
+  ]
+  if name = "kranen-erba" [
+    ifelse target = one-of buildings with [name = "erba"][
+      set target one-of buildings with [name = "kranen"]
+    ][
+      set target one-of buildings with [name = "erba"]
+    ]
+  ]
+  
 end
 
 to set-vehicle; student procedure
@@ -380,10 +440,10 @@ end
 GRAPHICS-WINDOW
 210
 10
-713
-514
--1
--1
+715
+536
+16
+16
 15.0
 1
 10
@@ -447,7 +507,7 @@ percentage-cyclist
 percentage-cyclist
 0
 100
-80.0
+80
 1
 1
 NIL
@@ -462,7 +522,7 @@ percentage-bus-rider
 percentage-bus-rider
 0
 100
-20.0
+20
 1
 1
 NIL
@@ -477,7 +537,7 @@ skip-lecture-probability
 skip-lecture-probability
 0
 1
-0.0
+0
 0.1
 1
 NIL
@@ -492,7 +552,7 @@ skip-exercise-course-probability
 skip-exercise-course-probability
 0
 1
-0.0
+0
 0.1
 1
 NIL
@@ -957,8 +1017,9 @@ false
 0
 Polygon -7500403 true true 270 75 225 30 30 225 75 270
 Polygon -7500403 true true 30 75 75 30 270 225 225 270
+
 @#$#@#$#@
-NetLogo 6.0.1
+NetLogo 5.0.4
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
@@ -985,6 +1046,7 @@ true
 0
 Line -7500403 true 150 150 90 180
 Line -7500403 true 150 150 210 180
+
 @#$#@#$#@
 0
 @#$#@#$#@

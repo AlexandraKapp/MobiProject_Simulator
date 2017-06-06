@@ -43,6 +43,7 @@ buildings-own [
 
 students-own [
   target
+  homeTarget
   vehicle
   speed
   class-probability
@@ -112,8 +113,8 @@ to define-timetables
 end
 
 to set-variables
-  set counter 75 ;initial starttime to get to the first time slot
   set is-break true
+  set counter 75 ;initial starttime to get to the first time slot
   set amount-ai-students 20
   set amount-wi-students 20
   set total-amount-students (amount-ai-students + amount-wi-students)
@@ -153,7 +154,7 @@ to setup-buildings
     set color blue
   ]
 
-  create-buildings 100 [
+  create-buildings 1000 [
     set name "random-target"
     set xcor random-xcor
     set ycor random-ycor
@@ -185,7 +186,8 @@ to setup-students
   ask students[
     set vehicle walker
     set color black
-    setxy random-xcor random-ycor
+    set homeTarget one-of buildings with [name = "random-target"]
+    move-to homeTarget
   ]
 
   ask n-of (percentage-cyclist / 100 * total-amount-students) students [
@@ -206,8 +208,9 @@ end
 
 to go
 
-  if timerCount = 780 [ ;day is over -> start new day
+  if timerCount = 795 [ ;day is over -> start new day
     set timerCount 0 ;set time back to 7am
+    set counter 75 ;initial starttime to get to the first time slot
     ifelse (weekday < 5) [set weekday weekday + 1] ;increase weekday
     [set weekday 1]
 
@@ -218,7 +221,7 @@ to go
     move-bus
   ]
 
-  if (ticks = counter and is-break = true) [
+  if (timerCount = counter and is-break = true) [
     set counter counter + 90 ;90 min for one time-slot
     set is-break false
   ]
@@ -227,10 +230,13 @@ to go
     move-to-target ;only move during breaks
   ]
 
-  if (ticks = counter and is-break = false) [
+  if (timerCount = counter and is-break = false) [
     set is-break true ;after the time slot of 90 min is over it's break time
     set counter counter + 30 ;30 min break
-    set-target
+
+    ifelse (timerCount = 765) [
+      ask students [set target homeTarget]]
+    [set-target]
     ask students [
       set-vehicle
     ]
@@ -471,7 +477,7 @@ skip-lecture-probability
 skip-lecture-probability
 0
 1
-0.4
+0.0
 0.1
 1
 NIL
@@ -486,7 +492,7 @@ skip-exercise-course-probability
 skip-exercise-course-probability
 0
 1
-0.5
+0.0
 0.1
 1
 NIL

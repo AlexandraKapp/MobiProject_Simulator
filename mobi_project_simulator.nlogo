@@ -162,21 +162,21 @@ to setup-buildings
     set size 4
     set color blue
   ]
-  
+
   create-buildings 1 [
     set name "markus"
     set xcor markus-xcor
     set ycor markus-ycor
     set size 4
-    set color green 
+    set color green
   ]
-  
+
   create-buildings 1 [
     set name "kranen"
     set xcor kranen-xcor
     set ycor kranen-ycor
     set size 4
-    set color yellow 
+    set color yellow
   ]
 
   create-buildings 1000 [
@@ -382,7 +382,7 @@ to setup-bus
     set size 2
     set color yellow
   ]
-  
+
 end
 
 to change-direction ;bus procedure
@@ -391,8 +391,8 @@ to change-direction ;bus procedure
       set target one-of buildings with [name = "feki"]
     ][
       set target one-of buildings with [name = "erba"]
-    ]  
-  ] 
+    ]
+  ]
   if name = "feki-kranen" [
     ifelse target = one-of buildings with [name = "feki"][
       set target one-of buildings with [name = "kranen"]
@@ -407,7 +407,7 @@ to change-direction ;bus procedure
       set target one-of buildings with [name = "erba"]
     ]
   ]
-  
+
 end
 
 to set-vehicle; student procedure
@@ -440,10 +440,10 @@ end
 GRAPHICS-WINDOW
 210
 10
-715
-536
-16
-16
+713
+514
+-1
+-1
 15.0
 1
 10
@@ -507,7 +507,7 @@ percentage-cyclist
 percentage-cyclist
 0
 100
-80
+80.0
 1
 1
 NIL
@@ -522,7 +522,7 @@ percentage-bus-rider
 percentage-bus-rider
 0
 100
-20
+20.0
 1
 1
 NIL
@@ -537,7 +537,7 @@ skip-lecture-probability
 skip-lecture-probability
 0
 1
-0
+0.5
 0.1
 1
 NIL
@@ -552,7 +552,7 @@ skip-exercise-course-probability
 skip-exercise-course-probability
 0
 1
-0
+0.3
 0.1
 1
 NIL
@@ -586,7 +586,7 @@ MONITOR
 155
 419
 students at Feki
-count students with [\n(shape = \"person\") and\n(color = black) and\n(size = 1) and\n(xcor <= 10) and\n(xcor >= 8) and\n(ycor <= 6) and \n(ycor >= 4)\n]
+count students with [\n(shape = \"person\") and\n(color = black) and\n(size = 1) and\n(xcor <= 10) and\n(xcor >= 8) and\n(ycor <= 6) and\n(ycor >= 4)\n]
 17
 1
 11
@@ -633,6 +633,24 @@ TEXTBOX
 11
 0.0
 1
+
+PLOT
+743
+354
+943
+504
+students at Feki
+time
+amount students
+0.0
+5000.0
+0.0
+100.0
+true
+false
+"" ""
+PENS
+"feki-students" 1.0 0 -7500403 true "" "plot count students with [\n(shape = \"person\") and\n(color = black) and\n(size = 1) and\n(xcor <= 10) and\n(xcor >= 8) and\n(ycor <= 6) and\n(ycor >= 4)\n]"
 
 @#$#@#$#@
 ## WHAT IS IT?
@@ -1017,9 +1035,8 @@ false
 0
 Polygon -7500403 true true 270 75 225 30 30 225 75 270
 Polygon -7500403 true true 30 75 75 30 270 225 225 270
-
 @#$#@#$#@
-NetLogo 5.0.4
+NetLogo 6.0.1
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
@@ -1046,7 +1063,6 @@ true
 0
 Line -7500403 true 150 150 90 180
 Line -7500403 true 150 150 210 180
-
 @#$#@#$#@
 0
 @#$#@#$#@

@@ -33,6 +33,9 @@ globals [
   tmp-course-id
   tmp-target
 
+  weather-skip-probability
+  weather-variable
+
   pause
 ]
 
@@ -85,6 +88,8 @@ to setup
 
   set erba-beacons 0
   set feki-beacons 0
+
+  check-weather
 
   ask patches [
     set pcolor grey + 2
@@ -239,8 +244,11 @@ to go
     ifelse (weekday < 5) [set weekday weekday + 1] ;increase weekday
     [set weekday 1]
 
+    check-weather
+
     define-timetables
     assign-timetables] ;restart the schedule
+
 
   ask buses  [
     move-bus
@@ -288,8 +296,20 @@ to set-target
     set target one-of buildings with [name = "random-target"]
   ]
 
+  ask n-of (weather-skip-probability * count lecture-students) lecture-students [
+    if (target != "random-target") [
+      set target homeTarget
+    ]
+  ]
+
   ask n-of (skip-exercise-course-probability * count exercise-students) exercise-students [
     set target one-of buildings with [name = "random-target"]
+  ]
+
+  ask n-of (weather-skip-probability * count exercise-students) exercise-students [
+    if (target != "random-target") [
+      set target homeTarget
+    ]
   ]
 end
 
@@ -434,6 +454,38 @@ to check-beacon; student procedure
   [ if random 100 < 30 [
     set feki-beacons feki-beacons + 1
     set beacon-counter beacon-counter + 1 ]
+  ]
+end
+
+to check-weather
+   set weather-variable random 100
+   if weather-conditions = "summer-term" [
+    if weather-variable <= 35 [
+      ;rain
+      set weather-skip-probability 0.6
+    ]
+    if (weather-variable > 35 and weather-variable <= 65) [
+      ;cloudy
+      set weather-skip-probability 0.1
+    ]
+    if weather-variable > 65 [
+      ;sunny
+      set weather-skip-probability 0.3
+    ]
+  ]
+  if weather-conditions = "winter-term" [
+    if weather-variable <= 40 [
+    ;rain/snow
+    set weather-skip-probability 0.8
+    ]
+    if (weather-variable > 40 and weather-variable <= 65) [
+      ;cloudy
+      set weather-skip-probability 0.2
+    ]
+    if weather-variable > 66 [
+      ;sunny
+      set weather-skip-probability 0.2
+    ]
   ]
 end
 @#$#@#$#@
@@ -651,6 +703,16 @@ false
 "" ""
 PENS
 "feki-students" 1.0 0 -7500403 true "" "plot count students with [\n(shape = \"person\") and\n(color = black) and\n(size = 1) and\n(xcor <= 10) and\n(xcor >= 8) and\n(ycor <= 6) and\n(ycor >= 4)\n]"
+
+CHOOSER
+753
+32
+891
+77
+weather-conditions
+weather-conditions
+"summer-term" "winter-term"
+0
 
 @#$#@#$#@
 ## WHAT IS IT?

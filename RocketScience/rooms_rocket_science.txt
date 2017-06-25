@@ -1,0 +1,16 @@
+"entrance_seminar" "entrance" "in" "ground" -7 1
+"entrance_foyer" "entrance" "in" "ground" 7 1
+"entrance_stage" "entrance" "in" "ground" 2 1
+"entrance_cafeteria" "entrance" "ground" "in" -2 1
+"entrance_side" "entrance" "in" "ground" -3 4
+"lecture_big" "lecture" "in" "ground" 0 6
+"lecture_small" "lecture" "in" "ground" -3 6
+"seminar_tower" "lecture" "upstairs" "in" -11 5
+"office_upstairs" "lecture" "upstairs" "in" 2 3
+"cafeteria" "sitting" "in" "ground" -2 2
+"library" "sitting" "in" "ground" 11 7
+"outside" "sitting" "out" "ground" 0 -4
+"north" "arrival" "out" "ground" 12 -7
+"south" "arrival" "out" "ground" -14 -4
+"west" "arrival" "out" "ground" -5 9
+"east" "arrival" "out" "ground" -6 -9

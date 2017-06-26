@@ -1,25 +1,30 @@
 globals [
   total-amount-of-students
-  
+
   is_break
   timer_counter
-  
+
   ;global strings
   s_room_type_entrance
   s_room_type_lecture
   s_room_type_sitting
   s_room_type_arrival
-  
+
   s_room_area_in
   s_room_area_out
-  
+
   s_room_level_ground
   s_room_level_upstairs
-  
+
   s_file_rooms
   s_file_timetables
   s_file_courses
-  
+
+  weekday
+  timerCount
+  counter
+  is-break
+
 ]
 
 breed [rooms room]
@@ -28,30 +33,30 @@ breed [courses course]
 breed [timetables timetable]
 
 rooms-own [
- room_name
- room_type ;values: "entrance", "lecture", "sitting" or "arrival"
- room_area ;values: "in" or "out"
- room_level ;values: "ground" or "upstairs"
+  room_name
+  room_type ;values: "entrance", "lecture", "sitting" or "arrival"
+  room_area ;values: "in" or "out"
+  room_level ;values: "ground" or "upstairs"
 ]
 
 students-own [
- stud_target
- stud_home_target
- stud_timetable
- stud_courrent_course
- stud_beacon_counter 
+  stud_target
+  stud_home_target
+  stud_timetable
+  stud_courrent_course
+  stud_beacon_counter
 ]
 
 courses-own [
- course_id
- course_name
- course_location
- course_type
- course_room
+  course_id
+  course_name
+  course_location
+  course_type
+  course_room
 ]
 
 timetables-own [
- table 
+  table
 ]
 
 
@@ -73,41 +78,45 @@ to setup-variables
   set s_room_type_lecture "lecture"
   set s_room_type_sitting "sitting"
   set s_room_type_arrival "arrival"
-  
+
   set s_room_area_in "in"
   set s_room_area_out "out"
-  
+
   set s_room_level_ground "ground"
   set s_room_level_upstairs "upstairs"
-  
+
   set s_file_rooms "rooms_rocket_science.txt"
   set s_file_timetables "timetables_rocket_science.txt"
   set s_file_courses "courses_rocket_science.txt"
+
+  set weekday 1
+  set is-break true
+  set counter 75; initial starttime to get to the first time slot
 end
 
 to setup-courses
   file-open s_file_courses
   while [ not file-at-end? ] [
-   let tmp_id file-read
-   let tmp_name file-read
-   let tmp_location file-read
-   let tmp_type file-read
-   let tmp_room file-read
-   if tmp_location = "erba" [
-    create-courses 1 [
-      set course_id tmp_id
-      set course_name tmp_name
-      set course_location tmp_location
-      set course_type tmp_type
-      set course_room tmp_room
-      set size 0
-    ] 
-   ] 
+    let tmp_id file-read
+    let tmp_name file-read
+    let tmp_location file-read
+    let tmp_type file-read
+    let tmp_room file-read
+    if tmp_location = "erba" [
+      create-courses 1 [
+        set course_id tmp_id
+        set course_name tmp_name
+        set course_location tmp_location
+        set course_type tmp_type
+        set course_room tmp_room
+        set size 0
+      ]
+    ]
   ]
   file-close
 end
 
-to setup-timetables 
+to setup-timetables
   file-open s_file_timetables
   while [ not file-at-end? ] [
     create-timetables 1 [
@@ -122,7 +131,7 @@ end
 to setup-rooms
   file-open s_file_rooms
   while [ not file-at-end? ] [
-   create-rooms 1 [
+    create-rooms 1 [
       set room_name file-read
       set room_type file-read
       set room_area file-read
@@ -130,7 +139,7 @@ to setup-rooms
       set xcor file-read
       set ycor file-read
       set size 1
-      set shape "house"
+      set shape "circle"
       if room_type = s_room_type_entrance [
         set color red
       ]
@@ -163,16 +172,62 @@ to setup-students
 end
 
 to go
-  
+  if timerCount = 795 [ ;day is over -> start new day
+    set timerCount 0 ;set time back to 7am
+    set counter 75 ;initial starttime to get to the first time slot
+    ifelse (weekday < 5) [set weekday weekday + 1] ;increase weekday
+    [set weekday 1]
+    ]
+
+  if (timerCount = counter and is-break = true) [
+    set counter counter + 90 ;90 min for one time-slot
+    set is-break false
+  ]
+
+  if (is-break = true) [
+    move-to-target ;only move during breaks
+  ]
+
+  if (timerCount = counter and is-break = false) [
+    set is-break true ;after the time slot of 90 min is over it's break time
+    set counter counter + 30 ;30 min break
+
+    ifelse (timerCount = 765) [
+      ask students [set stud_target stud_home_target]]
+    [set-target]
+  ]
+  tick
+  set timercount timercount + 1
+end
+
+to set-target
+  ask students [
+     set stud_target one-of rooms with [room_type = s_room_type_lecture]
+  ]
+end
+
+
+to move-to-target
+  ask students [
+    ;if (stud_target != pause) [
+    face stud_target
+    ifelse distance stud_target < 1 [
+      move-to stud_target
+      ;check-beacon
+      ;if (count link-neighbors < 1) [
+      ;  set target pause
+    ]
+    [fd 1]
+  ]
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
 210
 10
-649
-470
-16
-16
+647
+448
+-1
+-1
 13.0
 1
 10
@@ -194,10 +249,10 @@ ticks
 30.0
 
 BUTTON
-69
-71
-135
-104
+51
+73
+117
+106
 setup
 setup
 NIL
@@ -217,7 +272,7 @@ BUTTON
 152
 go
 go
-NIL
+T
 1
 T
 OBSERVER
@@ -225,6 +280,48 @@ NIL
 NIL
 NIL
 NIL
+0
+
+TEXTBOX
+716
+71
+866
+155
+Color explanation:\n\nyellow -> arrival\nred -> entrance\nblue -> sitting\ngreen -> lecture
+11
+0.0
+1
+
+MONITOR
+57
+181
+120
+226
+weekday
+weekday
+0
+1
+11
+
+MONITOR
+131
+182
+188
+227
+time
+7 + (timerCount / 60)
+2
+1
+11
+
+TEXTBOX
+59
+244
+209
+314
+1 Monday\n2 Tuesday\n3 Wednesday\n4 Thursday\n5 Friday
+11
+0.0
 1
 
 @#$#@#$#@
@@ -568,9 +665,8 @@ false
 0
 Polygon -7500403 true true 270 75 225 30 30 225 75 270
 Polygon -7500403 true true 30 75 75 30 270 225 225 270
-
 @#$#@#$#@
-NetLogo 5.0.4
+NetLogo 6.0.1
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
@@ -578,15 +674,14 @@ NetLogo 5.0.4
 @#$#@#$#@
 default
 0.0
--0.2 0 1.0 0.0
+-0.2 0 0.0 1.0
 0.0 1 1.0 0.0
-0.2 0 1.0 0.0
+0.2 0 0.0 1.0
 link direction
 true
 0
 Line -7500403 true 150 150 90 180
 Line -7500403 true 150 150 210 180
-
 @#$#@#$#@
 0
 @#$#@#$#@

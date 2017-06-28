@@ -24,6 +24,11 @@ globals [
   timerCount
   counter
   is-break
+  pause
+
+  cafeteria_beacon
+  cafeteria_beacons_total_count
+  current_cafeteria_beacon_interactions
 
 ]
 
@@ -44,7 +49,7 @@ students-own [
   stud_home_target
   stud_timetable
   stud_courrent_course
-  stud_beacon_counter
+  stud_beacon_interaction
 ]
 
 courses-own [
@@ -92,6 +97,9 @@ to setup-variables
   set weekday 1
   set is-break true
   set counter 75; initial starttime to get to the first time slot
+  set pause "pause"
+  set current_cafeteria_beacon_interactions 0
+  set cafeteria_beacon "cafeteria-beacon"
 end
 
 to setup-courses
@@ -163,7 +171,7 @@ to setup-students
     set stud_home_target stud_target
     set stud_timetable [table] of one-of timetables
     set stud_courrent_course but-first stud_timetable
-    set stud_beacon_counter 0
+    set stud_beacon_interaction "none"
     set color black
     set shape "person"
     set size 1
@@ -177,7 +185,7 @@ to go
     set counter 75 ;initial starttime to get to the first time slot
     ifelse (weekday < 5) [set weekday weekday + 1] ;increase weekday
     [set weekday 1]
-    ]
+  ]
 
   if (timerCount = counter and is-break = true) [
     set counter counter + 90 ;90 min for one time-slot
@@ -202,22 +210,39 @@ end
 
 to set-target
   ask students [
-     set stud_target one-of rooms with [room_type = s_room_type_lecture]
+    set stud_target one-of rooms
   ]
 end
 
 
 to move-to-target
   ask students [
-    ;if (stud_target != pause) [
-    face stud_target
-    ifelse distance stud_target < 1 [
-      move-to stud_target
-      ;check-beacon
-      ;if (count link-neighbors < 1) [
-      ;  set target pause
+    if (stud_target != pause) [
+      face stud_target
+      ifelse distance stud_target < 1 [
+        move-to stud_target
+        set stud_target pause
+      ]
+      [
+        fd 1
+        if stud_beacon_interaction = cafeteria_beacon [
+          set current_cafeteria_beacon_interactions  current_cafeteria_beacon_interactions - 1
+          set stud_beacon_interaction "none"]
+      ]
+      check-beacon
     ]
-    [fd 1]
+  ]
+end
+
+;TODO find bug -> too many detections
+to check-beacon; student procedure
+  if any? rooms with [room_name = "cafeteria" and (abs (ycor - [ ycor ] of myself) = 0) and (abs (xcor - [ xcor ] of myself) = 0) ] and stud_beacon_interaction != cafeteria_beacon
+  ;if xcor = xcor one-of rooms with [room_name = "cafeteria"] and stud_beacon_interaction != cafeteria_beacon
+  [if random 100 < detection_probability [
+    set stud_beacon_interaction cafeteria_beacon
+    set cafeteria_beacons_total_count cafeteria_beacons_total_count + 1
+    set current_cafeteria_beacon_interactions  current_cafeteria_beacon_interactions + 1
+    ]
   ]
 end
 @#$#@#$#@
@@ -323,6 +348,54 @@ TEXTBOX
 11
 0.0
 1
+
+MONITOR
+670
+186
+849
+231
+Cafeteria Beacon Interactions
+cafeteria_beacons_total_count
+17
+1
+11
+
+SLIDER
+671
+327
+843
+360
+detection_probability
+detection_probability
+0
+100
+50.0
+1
+1
+NIL
+HORIZONTAL
+
+MONITOR
+714
+15
+820
+60
+Students at Erba
+total-amount-of-students
+17
+1
+11
+
+MONITOR
+656
+248
+881
+293
+Current Beacon Interactions Cafeteria
+current_cafeteria_beacon_interactions
+17
+1
+11
 
 @#$#@#$#@
 ## WHAT IS IT?

@@ -47,6 +47,8 @@ rooms-own [
 students-own [
   stud_target
   stud_home_target
+  stud_tmp_target
+  stud_current_location
   stud_timetable
   stud_courrent_course
   stud_beacon_interaction
@@ -168,6 +170,7 @@ end
 to setup-students
   create-students total-amount-of-students [
     set stud_target one-of rooms with [room_type = s_room_type_arrival]
+    set stud_current_location stud_target
     set stud_home_target stud_target
     set stud_timetable [table] of one-of timetables
     set stud_courrent_course but-first stud_timetable
@@ -176,7 +179,9 @@ to setup-students
     set shape "person"
     set size 1
   ]
-  ask students [move-to stud_home_target]
+  ask students [
+    move-to stud_home_target
+  ]
 end
 
 to go
@@ -201,7 +206,16 @@ to go
     set counter counter + 30 ;30 min break
 
     ifelse (timerCount = 765) [
-      ask students [set stud_target stud_home_target]]
+      ask students [
+        ifelse ([room_area] of stud_current_location) != s_room_area_out [
+          set stud_tmp_target stud_home_target
+          set stud_target one-of rooms with [room_type = s_room_type_entrance]
+        ][
+          set stud_target stud_home_target
+        ]
+        set stud_timetable [table] of one-of timetables
+      ]
+    ]
     [set-target]
   ]
   tick
@@ -210,8 +224,23 @@ end
 
 to set-target
   ask students [
-    set stud_target one-of rooms
+    let tmp_course_id item 0 stud_timetable
+    show tmp_course_id
+    ifelse tmp_course_id = "0" [
+      set stud_target one-of rooms with [room_type = s_room_type_sitting]  
+    ][       
+      let tmp_target [course_room] of one-of courses with [course_id = tmp_course_id]
+      set stud_target one-of rooms with [room_name = tmp_target]  
+    ]
+    set stud_timetable but-first stud_timetable
+    if ([room_area] of stud_current_location) != ([room_area] of stud_target) [
+      set stud_tmp_target stud_target
+      set stud_target one-of rooms with [room_type = s_room_type_entrance]
+    ]
   ]
+  ;ask students [
+  ;  set stud_target one-of rooms
+  ;]
 end
 
 
@@ -221,7 +250,13 @@ to move-to-target
       face stud_target
       ifelse distance stud_target < 1 [
         move-to stud_target
-        set stud_target pause
+        set stud_current_location stud_target
+        ifelse ([room_type] of stud_current_location) = s_room_type_entrance [
+          set stud_target stud_tmp_target
+          set stud_tmp_target ""  
+        ][
+          set stud_target pause
+        ] 
       ]
       [
         fd 1
@@ -249,10 +284,10 @@ end
 GRAPHICS-WINDOW
 210
 10
-647
-448
--1
--1
+649
+470
+16
+16
 13.0
 1
 10
@@ -369,7 +404,7 @@ detection_probability
 detection_probability
 0
 100
-50.0
+50
 1
 1
 NIL
@@ -738,8 +773,9 @@ false
 0
 Polygon -7500403 true true 270 75 225 30 30 225 75 270
 Polygon -7500403 true true 30 75 75 30 270 225 225 270
+
 @#$#@#$#@
-NetLogo 6.0.1
+NetLogo 5.0.4
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
@@ -755,6 +791,7 @@ true
 0
 Line -7500403 true 150 150 90 180
 Line -7500403 true 150 150 210 180
+
 @#$#@#$#@
 0
 @#$#@#$#@

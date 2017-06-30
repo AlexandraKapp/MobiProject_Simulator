@@ -30,6 +30,13 @@ globals [
   cafeteria_beacons_total_count
   current_cafeteria_beacon_interactions
 
+  entrance_foyer_beacon
+  entrance_foyer_beacons_total_count
+  current_entrance_foyer_beacon_interactions
+
+  entrance_seminar_beacon
+  entrance_seminar_beacons_total_count
+  current_entrance_seminar_beacon_interactions
 ]
 
 breed [rooms room]
@@ -100,8 +107,11 @@ to setup-variables
   set is-break true
   set counter 75; initial starttime to get to the first time slot
   set pause "pause"
-  set current_cafeteria_beacon_interactions 0
+
   set cafeteria_beacon "cafeteria-beacon"
+  set entrance_foyer_beacon "foyer-entrance-beacon"
+  set entrance_seminar_beacon "seminar-entrance-beacon"
+
 end
 
 to setup-courses
@@ -227,10 +237,10 @@ to set-target
     let tmp_course_id item 0 stud_timetable
     show tmp_course_id
     ifelse tmp_course_id = "0" [
-      set stud_target one-of rooms with [room_type = s_room_type_sitting]  
-    ][       
+      set stud_target one-of rooms with [room_type = s_room_type_sitting]
+    ][
       let tmp_target [course_room] of one-of courses with [course_id = tmp_course_id]
-      set stud_target one-of rooms with [room_name = tmp_target]  
+      set stud_target one-of rooms with [room_name = tmp_target]
     ]
     set stud_timetable but-first stud_timetable
     if ([room_area] of stud_current_location) != ([room_area] of stud_target) [
@@ -253,15 +263,21 @@ to move-to-target
         set stud_current_location stud_target
         ifelse ([room_type] of stud_current_location) = s_room_type_entrance [
           set stud_target stud_tmp_target
-          set stud_tmp_target ""  
+          set stud_tmp_target ""
         ][
           set stud_target pause
-        ] 
+        ]
       ]
       [
         fd 1
         if stud_beacon_interaction = cafeteria_beacon [
           set current_cafeteria_beacon_interactions  current_cafeteria_beacon_interactions - 1
+          set stud_beacon_interaction "none"]
+        if stud_beacon_interaction = entrance_foyer_beacon [
+          set current_entrance_foyer_beacon_interactions  current_entrance_foyer_beacon_interactions - 1
+          set stud_beacon_interaction "none"]
+        if stud_beacon_interaction = entrance_seminar_beacon [
+          set current_entrance_seminar_beacon_interactions  current_entrance_seminar_beacon_interactions - 1
           set stud_beacon_interaction "none"]
       ]
       check-beacon
@@ -269,25 +285,37 @@ to move-to-target
   ]
 end
 
-;TODO find bug -> too many detections
 to check-beacon; student procedure
   if any? rooms with [room_name = "cafeteria" and (abs (ycor - [ ycor ] of myself) = 0) and (abs (xcor - [ xcor ] of myself) = 0) ] and stud_beacon_interaction != cafeteria_beacon
-  ;if xcor = xcor one-of rooms with [room_name = "cafeteria"] and stud_beacon_interaction != cafeteria_beacon
   [if random 100 < detection_probability [
     set stud_beacon_interaction cafeteria_beacon
     set cafeteria_beacons_total_count cafeteria_beacons_total_count + 1
     set current_cafeteria_beacon_interactions  current_cafeteria_beacon_interactions + 1
     ]
   ]
+  if any? rooms with [room_name = "entrance_foyer" and (abs (ycor - [ ycor ] of myself) = 0) and (abs (xcor - [ xcor ] of myself) = 0) ] and stud_beacon_interaction != entrance_foyer_beacon
+  [if random 100 < detection_probability [
+    set stud_beacon_interaction entrance_foyer_beacon
+    set entrance_foyer_beacons_total_count entrance_foyer_beacons_total_count + 1
+    set current_entrance_foyer_beacon_interactions  current_entrance_foyer_beacon_interactions + 1
+    ]
+  ]
+    if any? rooms with [room_name = "entrance_seminar" and (abs (ycor - [ ycor ] of myself) = 0) and (abs (xcor - [ xcor ] of myself) = 0) ] and stud_beacon_interaction != entrance_seminar_beacon
+    [if random 100 < detection_probability [
+      set stud_beacon_interaction entrance_seminar_beacon
+      set entrance_seminar_beacons_total_count entrance_seminar_beacons_total_count + 1
+      set current_entrance_seminar_beacon_interactions  current_entrance_seminar_beacon_interactions + 1
+      ]
+    ]
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
 210
 10
-649
-470
-16
-16
+647
+448
+-1
+-1
 13.0
 1
 10
@@ -385,10 +413,10 @@ TEXTBOX
 1
 
 MONITOR
-670
-186
-849
-231
+1113
+15
+1292
+60
 Cafeteria Beacon Interactions
 cafeteria_beacons_total_count
 17
@@ -404,7 +432,7 @@ detection_probability
 detection_probability
 0
 100
-50
+100.0
 1
 1
 NIL
@@ -422,12 +450,56 @@ total-amount-of-students
 11
 
 MONITOR
-656
-248
-881
-293
+878
+14
+1103
+59
 Current Beacon Interactions Cafeteria
 current_cafeteria_beacon_interactions
+17
+1
+11
+
+MONITOR
+877
+68
+1102
+113
+Current Beacon Interactions Entrance Foyer
+current_entrance_foyer_beacon_interactions
+17
+1
+11
+
+MONITOR
+1113
+69
+1293
+114
+Entrance Foyer Beacon Interactions
+entrance_foyer_beacons_total_count
+17
+1
+11
+
+MONITOR
+860
+125
+1103
+170
+Currrent Beacon Interactions Seminar Entrance
+current_entrance_seminar_beacon_interactions
+17
+1
+11
+
+MONITOR
+1115
+125
+1293
+170
+Seminar Entrance Beacon Interactions
+entrance_seminar_beacons_total_count
 17
 1
 11
@@ -773,9 +845,8 @@ false
 0
 Polygon -7500403 true true 270 75 225 30 30 225 75 270
 Polygon -7500403 true true 30 75 75 30 270 225 225 270
-
 @#$#@#$#@
-NetLogo 5.0.4
+NetLogo 6.0.1
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
@@ -791,7 +862,6 @@ true
 0
 Line -7500403 true 150 150 90 180
 Line -7500403 true 150 150 210 180
-
 @#$#@#$#@
 0
 @#$#@#$#@

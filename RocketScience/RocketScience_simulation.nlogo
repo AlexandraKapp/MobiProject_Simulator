@@ -28,15 +28,23 @@ globals [
 
   cafeteria_beacon
   cafeteria_beacons_total_count
+  cafeteria_beacons_detections_total_count
   current_cafeteria_beacon_interactions
 
   entrance_foyer_beacon
   entrance_foyer_beacons_total_count
+  entrance_foyer_beacons_detections_total_count
   current_entrance_foyer_beacon_interactions
 
   entrance_seminar_beacon
   entrance_seminar_beacons_total_count
+  entrance_seminar_beacons_detections_total_count
   current_entrance_seminar_beacon_interactions
+
+  lecture_hall_right_beacon
+  lecture_hall_right_beacons_total_count
+  lecture_hall_right_beacons_detections_total_count
+  current_lecture_hall_right_beacon_interactions
 ]
 
 breed [rooms room]
@@ -111,6 +119,7 @@ to setup-variables
   set cafeteria_beacon "cafeteria-beacon"
   set entrance_foyer_beacon "foyer-entrance-beacon"
   set entrance_seminar_beacon "seminar-entrance-beacon"
+  set lecture_hall_right_beacon "lecture-hall-right-beacon"
 
 end
 
@@ -279,6 +288,9 @@ to move-to-target
         if stud_beacon_interaction = entrance_seminar_beacon [
           set current_entrance_seminar_beacon_interactions  current_entrance_seminar_beacon_interactions - 1
           set stud_beacon_interaction "none"]
+        if stud_beacon_interaction = lecture_hall_right_beacon [
+          set current_lecture_hall_right_beacon_interactions  current_lecture_hall_right_beacon_interactions - 1
+          set stud_beacon_interaction "none"]
       ]
       check-beacon
     ]
@@ -288,25 +300,44 @@ end
 to check-beacon; student procedure
   if any? rooms with [room_name = "cafeteria" and (abs (ycor - [ ycor ] of myself) = 0) and (abs (xcor - [ xcor ] of myself) = 0) ] and stud_beacon_interaction != cafeteria_beacon
   [if random 100 < detection_probability [
-    set stud_beacon_interaction cafeteria_beacon
-    set cafeteria_beacons_total_count cafeteria_beacons_total_count + 1
-    set current_cafeteria_beacon_interactions  current_cafeteria_beacon_interactions + 1
+    set cafeteria_beacons_detections_total_count cafeteria_beacons_detections_total_count + 1
+    if random 100 < interaction_probability [
+      set stud_beacon_interaction cafeteria_beacon
+      set cafeteria_beacons_total_count cafeteria_beacons_total_count + 1
+      set current_cafeteria_beacon_interactions  current_cafeteria_beacon_interactions + 1
+    ]
     ]
   ]
   if any? rooms with [room_name = "entrance_foyer" and (abs (ycor - [ ycor ] of myself) = 0) and (abs (xcor - [ xcor ] of myself) = 0) ] and stud_beacon_interaction != entrance_foyer_beacon
   [if random 100 < detection_probability [
-    set stud_beacon_interaction entrance_foyer_beacon
-    set entrance_foyer_beacons_total_count entrance_foyer_beacons_total_count + 1
-    set current_entrance_foyer_beacon_interactions  current_entrance_foyer_beacon_interactions + 1
+    set entrance_foyer_beacons_detections_total_count entrance_foyer_beacons_detections_total_count + 1
+    if random 100 < interaction_probability [
+      set stud_beacon_interaction entrance_foyer_beacon
+      set entrance_foyer_beacons_total_count entrance_foyer_beacons_total_count + 1
+      set current_entrance_foyer_beacon_interactions  current_entrance_foyer_beacon_interactions + 1
+    ]
     ]
   ]
-    if any? rooms with [room_name = "entrance_seminar" and (abs (ycor - [ ycor ] of myself) = 0) and (abs (xcor - [ xcor ] of myself) = 0) ] and stud_beacon_interaction != entrance_seminar_beacon
-    [if random 100 < detection_probability [
+  if any? rooms with [room_name = "entrance_seminar" and (abs (ycor - [ ycor ] of myself) = 0) and (abs (xcor - [ xcor ] of myself) = 0) ] and stud_beacon_interaction != entrance_seminar_beacon
+  [if random 100 < detection_probability [
+    set entrance_seminar_beacons_detections_total_count entrance_seminar_beacons_detections_total_count + 1
+    if random 100 < interaction_probability [
       set stud_beacon_interaction entrance_seminar_beacon
       set entrance_seminar_beacons_total_count entrance_seminar_beacons_total_count + 1
       set current_entrance_seminar_beacon_interactions  current_entrance_seminar_beacon_interactions + 1
-      ]
     ]
+    ]
+  ]
+  if any? rooms with [room_name = "lecture_big" and (abs (ycor - [ ycor ] of myself) = 0) and (abs (xcor - [ xcor ] of myself) = 0) ] and stud_beacon_interaction != lecture_hall_right_beacon
+  [if random 100 < detection_probability [
+    set lecture_hall_right_beacons_detections_total_count lecture_hall_right_beacons_detections_total_count + 1
+    if random 100 < interaction_probability [
+      set stud_beacon_interaction lecture_hall_right_beacon
+      set lecture_hall_right_beacons_total_count lecture_hall_right_beacons_total_count + 1
+      set current_lecture_hall_right_beacon_interactions  current_lecture_hall_right_beacon_interactions + 1
+    ]
+    ]
+  ]
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
@@ -413,26 +444,26 @@ TEXTBOX
 1
 
 MONITOR
-1113
-15
-1292
-60
-Cafeteria Beacon Interactions
+1342
+17
+1545
+62
+Cafeteria: Total Interactions
 cafeteria_beacons_total_count
 17
 1
 11
 
 SLIDER
-671
-327
-843
-360
+690
+265
+862
+298
 detection_probability
 detection_probability
 0
 100
-100.0
+50.0
 1
 1
 NIL
@@ -452,9 +483,9 @@ total-amount-of-students
 MONITOR
 878
 14
-1103
+1107
 59
-Current Beacon Interactions Cafeteria
+Cafeteria: Current Beacon Interactions
 current_cafeteria_beacon_interactions
 17
 1
@@ -463,20 +494,20 @@ current_cafeteria_beacon_interactions
 MONITOR
 877
 68
-1102
+1143
 113
-Current Beacon Interactions Entrance Foyer
+ Entrance Foyer: Current Beacon Interactions
 current_entrance_foyer_beacon_interactions
 17
 1
 11
 
 MONITOR
-1113
-69
-1293
-114
-Entrance Foyer Beacon Interactions
+1342
+71
+1546
+116
+Entrance Foyer: Total Interactions
 entrance_foyer_beacons_total_count
 17
 1
@@ -485,21 +516,102 @@ entrance_foyer_beacons_total_count
 MONITOR
 860
 125
-1103
+1139
 170
-Currrent Beacon Interactions Seminar Entrance
+Seminar Entrance: Currrent Beacon Interactions
 current_entrance_seminar_beacon_interactions
 17
 1
 11
 
 MONITOR
-1115
-125
-1293
-170
-Seminar Entrance Beacon Interactions
+1344
+127
+1546
+172
+Seminar Entrance: Total Interactions
 entrance_seminar_beacons_total_count
+17
+1
+11
+
+MONITOR
+1345
+189
+1548
+234
+Lecture Hall Right: Total interactions
+lecture_hall_right_beacons_total_count
+17
+1
+11
+
+MONITOR
+865
+187
+1139
+232
+Lecture Hall Right: Current Beacon Interactions
+current_lecture_hall_right_beacon_interactions
+17
+1
+11
+
+SLIDER
+694
+315
+867
+348
+interaction_probability
+interaction_probability
+0
+100
+100.0
+1
+1
+NIL
+HORIZONTAL
+
+MONITOR
+1162
+17
+1320
+62
+Cafeteria Total Detections
+cafeteria_beacons_detections_total_count
+17
+1
+11
+
+MONITOR
+1147
+70
+1339
+115
+Entrance Foyer Total Detections
+entrance_foyer_beacons_detections_total_count
+17
+1
+11
+
+MONITOR
+1140
+126
+1343
+171
+Seminar Entrance Total Detections
+entrance_seminar_beacons_detections_total_count
+17
+1
+11
+
+MONITOR
+1141
+188
+1344
+233
+Lecture Hall Right Total Detections
+lecture_hall_right_beacons_detections_total_count
 17
 1
 11

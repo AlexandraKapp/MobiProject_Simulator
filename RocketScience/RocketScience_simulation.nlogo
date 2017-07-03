@@ -299,9 +299,9 @@ end
 
 to check-beacon; student procedure
   if any? rooms with [room_name = "cafeteria" and (abs (ycor - [ ycor ] of myself) = 0) and (abs (xcor - [ xcor ] of myself) = 0) ] and stud_beacon_interaction != cafeteria_beacon
-  [if random 100 < detection_probability [
+  [if random 100 < technical_detection_probability [
     set cafeteria_beacons_detections_total_count cafeteria_beacons_detections_total_count + 1
-    if random 100 < interaction_probability [
+    if random 100 < walking_interaction_probability [
       set stud_beacon_interaction cafeteria_beacon
       set cafeteria_beacons_total_count cafeteria_beacons_total_count + 1
       set current_cafeteria_beacon_interactions  current_cafeteria_beacon_interactions + 1
@@ -309,9 +309,9 @@ to check-beacon; student procedure
     ]
   ]
   if any? rooms with [room_name = "entrance_foyer" and (abs (ycor - [ ycor ] of myself) = 0) and (abs (xcor - [ xcor ] of myself) = 0) ] and stud_beacon_interaction != entrance_foyer_beacon
-  [if random 100 < detection_probability [
+  [if random 100 < technical_detection_probability [
     set entrance_foyer_beacons_detections_total_count entrance_foyer_beacons_detections_total_count + 1
-    if random 100 < interaction_probability [
+    if random 100 < walking_interaction_probability [
       set stud_beacon_interaction entrance_foyer_beacon
       set entrance_foyer_beacons_total_count entrance_foyer_beacons_total_count + 1
       set current_entrance_foyer_beacon_interactions  current_entrance_foyer_beacon_interactions + 1
@@ -319,9 +319,9 @@ to check-beacon; student procedure
     ]
   ]
   if any? rooms with [room_name = "entrance_seminar" and (abs (ycor - [ ycor ] of myself) = 0) and (abs (xcor - [ xcor ] of myself) = 0) ] and stud_beacon_interaction != entrance_seminar_beacon
-  [if random 100 < detection_probability [
+  [if random 100 < technical_detection_probability [
     set entrance_seminar_beacons_detections_total_count entrance_seminar_beacons_detections_total_count + 1
-    if random 100 < interaction_probability [
+    if random 100 < walking_interaction_probability [
       set stud_beacon_interaction entrance_seminar_beacon
       set entrance_seminar_beacons_total_count entrance_seminar_beacons_total_count + 1
       set current_entrance_seminar_beacon_interactions  current_entrance_seminar_beacon_interactions + 1
@@ -329,9 +329,9 @@ to check-beacon; student procedure
     ]
   ]
   if any? rooms with [room_name = "lecture_big" and (abs (ycor - [ ycor ] of myself) = 0) and (abs (xcor - [ xcor ] of myself) = 0) ] and stud_beacon_interaction != lecture_hall_right_beacon
-  [if random 100 < detection_probability [
+  [if random 100 < technical_detection_probability [
     set lecture_hall_right_beacons_detections_total_count lecture_hall_right_beacons_detections_total_count + 1
-    if random 100 < interaction_probability [
+    if random 100 < walking_interaction_probability [
       set stud_beacon_interaction lecture_hall_right_beacon
       set lecture_hall_right_beacons_total_count lecture_hall_right_beacons_total_count + 1
       set current_lecture_hall_right_beacon_interactions  current_lecture_hall_right_beacon_interactions + 1
@@ -457,10 +457,10 @@ cafeteria_beacons_total_count
 SLIDER
 690
 265
-862
+911
 298
-detection_probability
-detection_probability
+technical_detection_probability
+technical_detection_probability
 0
 100
 50.0
@@ -560,10 +560,10 @@ current_lecture_hall_right_beacon_interactions
 SLIDER
 694
 315
-867
+914
 348
-interaction_probability
-interaction_probability
+walking_interaction_probability
+walking_interaction_probability
 0
 100
 100.0
@@ -662,15 +662,60 @@ NIL
 HORIZONTAL
 
 SLIDER
-1090
-382
-1278
-415
+1151
+409
+1339
+442
 bluetooth_always_active
 bluetooth_always_active
 0
 100
 23.0
+1
+1
+NIL
+HORIZONTAL
+
+SLIDER
+894
+426
+1119
+459
+iphone_with_physical_web_app
+iphone_with_physical_web_app
+0
+100
+6.0
+1
+1
+NIL
+HORIZONTAL
+
+SLIDER
+1355
+411
+1670
+444
+bluetooth_probability_when_not_always_active
+bluetooth_probability_when_not_always_active
+0
+100
+20.0
+1
+1
+NIL
+HORIZONTAL
+
+SLIDER
+940
+317
+1153
+350
+sitting_interaction_probability
+sitting_interaction_probability
+0
+100
+50.0
 1
 1
 NIL

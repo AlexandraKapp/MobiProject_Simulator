@@ -283,7 +283,6 @@ end
 to set-target
   ask students [
     let tmp_course_id item 0 stud_timetable
-    show tmp_course_id
     ifelse tmp_course_id = "0" [
       set stud_target one-of rooms with [room_type = s_room_type_sitting]
     ][
@@ -516,7 +515,7 @@ technical_detection_probability
 technical_detection_probability
 0
 100
-47
+100
 1
 1
 NIL

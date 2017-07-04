@@ -20,6 +20,10 @@ globals [
   s_file_timetables
   s_file_courses
 
+  s_stud_phone_iphone
+  s_stud_phone_android
+  s_stud_phone_none
+  
   weekday
   timerCount
   counter
@@ -67,6 +71,10 @@ students-own [
   stud_timetable
   stud_courrent_course
   stud_beacon_interaction
+  stud_phone
+  stud_phone_can_detect_beacons
+  stud_phone_bluetooth_always_active
+  stud_phone_is_scanning
 ]
 
 courses-own [
@@ -110,6 +118,10 @@ to setup-variables
   set s_file_rooms "rooms_rocket_science.txt"
   set s_file_timetables "timetables_rocket_science.txt"
   set s_file_courses "courses_rocket_science.txt"
+  
+  set s_stud_phone_iphone "iphone"
+  set s_stud_phone_android "android"
+  set s_stud_phone_none "none"
 
   set weekday 1
   set is-break true
@@ -194,6 +206,33 @@ to setup-students
     set stud_timetable [table] of one-of timetables
     set stud_courrent_course but-first stud_timetable
     set stud_beacon_interaction "none"
+    let phone_prob random 100
+    if phone_prob <= android_share [
+      set stud_phone s_stud_phone_android
+    ]
+    ifelse phone_prob <= (android_share + iphone_share) [
+      set stud_phone s_stud_phone_iphone
+    ][
+      set stud_phone s_stud_phone_none
+    ]
+    set stud_phone_can_detect_beacons false
+    let compatible_prob random 100
+    if stud_phone = s_stud_phone_android [
+      if compatible_prob <= nearby_compatible [
+        set stud_phone_can_detect_beacons true
+      ]
+    ]
+    if stud_phone = s_stud_phone_iphone [
+        if compatible_prob <= iphone_with_physical_web_app [
+          set stud_phone_can_detect_beacons true  
+        ]
+    ]
+    let bluetooth_prob random 100
+    ifelse bluetooth_prob <= bluetooth_always_active [
+      set stud_phone_bluetooth_always_active true
+    ][
+      set stud_phone_bluetooth_always_active false
+    ]
     set color black
     set shape "person"
     set size 1
@@ -255,6 +294,20 @@ to set-target
     if ([room_area] of stud_current_location) != ([room_area] of stud_target) [
       set stud_tmp_target stud_target
       set stud_target one-of rooms with [room_type = s_room_type_entrance]
+    ]
+    ;setup phone
+    set stud_phone_is_scanning false
+    if stud_phone != s_stud_phone_none [
+      if stud_phone_can_detect_beacons [
+        ifelse stud_phone_bluetooth_always_active [
+          set stud_phone_is_scanning true
+        ][
+          let scanning_prob random 100
+          if scanning_prob <= bluetooth_probability_if_not_always_active [
+             set stud_phone_is_scanning true  
+          ]
+        ]  
+      ]
     ]
   ]
   ;ask students [
@@ -343,10 +396,10 @@ end
 GRAPHICS-WINDOW
 210
 10
-647
-448
--1
--1
+649
+470
+16
+16
 13.0
 1
 10
@@ -463,7 +516,7 @@ technical_detection_probability
 technical_detection_probability
 0
 100
-50.0
+47
 1
 1
 NIL
@@ -566,7 +619,7 @@ walking_interaction_probability
 walking_interaction_probability
 0
 100
-100.0
+100
 1
 1
 NIL
@@ -625,7 +678,7 @@ android_share
 android_share
 0
 100
-80.0
+80
 1
 1
 NIL
@@ -640,7 +693,7 @@ iphone_share
 iphone_share
 0
 100
-17.0
+17
 1
 1
 NIL
@@ -655,7 +708,7 @@ nearby_compatible
 nearby_compatible
 0
 100
-71.0
+71
 1
 1
 NIL
@@ -670,7 +723,7 @@ bluetooth_always_active
 bluetooth_always_active
 0
 100
-23.0
+23
 1
 1
 NIL
@@ -685,7 +738,7 @@ iphone_with_physical_web_app
 iphone_with_physical_web_app
 0
 100
-6.0
+6
 1
 1
 NIL
@@ -694,13 +747,13 @@ HORIZONTAL
 SLIDER
 1355
 411
-1670
+1674
 444
-bluetooth_probability_when_not_always_active
-bluetooth_probability_when_not_always_active
+bluetooth_probability_if_not_always_active
+bluetooth_probability_if_not_always_active
 0
 100
-20.0
+25
 1
 1
 NIL
@@ -715,7 +768,7 @@ sitting_interaction_probability
 sitting_interaction_probability
 0
 100
-50.0
+50
 1
 1
 NIL
@@ -1062,8 +1115,9 @@ false
 0
 Polygon -7500403 true true 270 75 225 30 30 225 75 270
 Polygon -7500403 true true 30 75 75 30 270 225 225 270
+
 @#$#@#$#@
-NetLogo 6.0.1
+NetLogo 5.0.4
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
@@ -1079,6 +1133,7 @@ true
 0
 Line -7500403 true 150 150 90 180
 Line -7500403 true 150 150 210 180
+
 @#$#@#$#@
 0
 @#$#@#$#@

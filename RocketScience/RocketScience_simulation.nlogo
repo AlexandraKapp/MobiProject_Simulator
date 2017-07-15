@@ -103,7 +103,7 @@ end
 
 
 to setup-variables
-  set total-amount-of-students 200
+  set total-amount-of-students 1000
   set s_room_type_entrance "entrance"
   set s_room_type_lecture "lecture"
   set s_room_type_sitting "sitting"
@@ -356,7 +356,7 @@ to check-beacon; student procedure
 
     let temp_prob 0
     ifelse stud_target = "pause" [
-      set temp_prob sitting_interaction_probability]
+      set temp_prob cafeteria_interaction_probability]
     [set temp_prob walking_interaction_probability]
     if random 100 < temp_prob [
       set stud_beacon_interaction cafeteria_beacon
@@ -369,10 +369,7 @@ to check-beacon; student procedure
   [if stud_phone_is_scanning[
     set entrance_foyer_beacons_detections_total_count entrance_foyer_beacons_detections_total_count + 1
 
-    let temp_prob 0
-    ifelse stud_target = "pause" [
-      set temp_prob sitting_interaction_probability]
-    [set temp_prob walking_interaction_probability]
+   let temp_prob walking_interaction_probability
     if random 100 < temp_prob [
       set stud_beacon_interaction entrance_foyer_beacon
       set entrance_foyer_beacons_total_count entrance_foyer_beacons_total_count + 1
@@ -384,10 +381,7 @@ to check-beacon; student procedure
   [if stud_phone_is_scanning[
     set entrance_seminar_beacons_detections_total_count entrance_seminar_beacons_detections_total_count + 1
 
-    let temp_prob 0
-    ifelse stud_target = "pause" [
-      set temp_prob sitting_interaction_probability]
-    [set temp_prob walking_interaction_probability]
+    let temp_prob walking_interaction_probability
     if random 100 < temp_prob [
       set stud_beacon_interaction entrance_seminar_beacon
       set entrance_seminar_beacons_total_count entrance_seminar_beacons_total_count + 1
@@ -401,7 +395,7 @@ to check-beacon; student procedure
 
     let temp_prob 0
     ifelse stud_target = "pause" [
-      set temp_prob sitting_interaction_probability]
+      set temp_prob lecture_room_interaction_probability]
     [set temp_prob walking_interaction_probability]
     if random 100 < temp_prob [
       set stud_beacon_interaction lecture_hall_right_beacon
@@ -535,7 +529,7 @@ technical_detection_probability
 technical_detection_probability
 0
 100
-100.0
+80.0
 1
 1
 NIL
@@ -638,7 +632,7 @@ walking_interaction_probability
 walking_interaction_probability
 0
 100
-5.0
+0.0
 1
 1
 NIL
@@ -764,15 +758,15 @@ NIL
 HORIZONTAL
 
 SLIDER
-1355
-411
-1674
-444
+1151
+452
+1470
+485
 bluetooth_probability_if_not_always_active
 bluetooth_probability_if_not_always_active
 0
 100
-25.0
+24.0
 1
 1
 NIL
@@ -781,13 +775,28 @@ HORIZONTAL
 SLIDER
 940
 317
-1153
+1169
 350
-sitting_interaction_probability
-sitting_interaction_probability
+cafeteria_interaction_probability
+cafeteria_interaction_probability
 0
 100
-20.0
+2.0
+1
+1
+NIL
+HORIZONTAL
+
+SLIDER
+1166
+317
+1418
+350
+lecture_room_interaction_probability
+lecture_room_interaction_probability
+0
+100
+7.0
 1
 1
 NIL

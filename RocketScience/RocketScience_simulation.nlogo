@@ -27,7 +27,7 @@ globals [
   s_stud_phone_iphone
   s_stud_phone_android
   s_stud_phone_none
-  
+
   weekday
   time
   timerCount
@@ -117,7 +117,7 @@ to setup-variables
   
   set students_at_cafeteria 0
   set students_at_library 0
-  
+
   set s_room_type_entrance "entrance"
   set s_room_type_lecture "lecture"
   set s_room_type_sitting "sitting"
@@ -132,7 +132,7 @@ to setup-variables
   set s_file_rooms "rooms_rocket_science.txt"
   set s_file_timetables "timetables_rocket_science.txt"
   set s_file_courses "courses_rocket_science_new.txt"
-  
+
   set s_stud_phone_iphone "iphone"
   set s_stud_phone_android "android"
   set s_stud_phone_none "none"
@@ -245,9 +245,9 @@ to setup-students
       ]
     ]
     if stud_phone = s_stud_phone_iphone [
-        if compatible_prob <= iphone_with_physical_web_app [
-          set stud_phone_can_detect_beacons true  
-        ]
+      if compatible_prob <= iphone_with_physical_web_app [
+        set stud_phone_can_detect_beacons true
+      ]
     ]
     let bluetooth_prob random 100
     ifelse bluetooth_prob <= bluetooth_always_active [
@@ -386,24 +386,6 @@ to set-target
      ]
    ] 
   ]
-
-  
-    
-  ;ask students [
-  ;  let tmp_course_id item 0 stud_timetable
-  ;  ifelse tmp_course_id = "0" [
-  ;    set stud_target one-of rooms with [room_type = s_room_type_sitting]
-  ;  ][
-  ;    let tmp_target [course_room] of one-of courses with [course_id = tmp_course_id]
-  ;    set stud_target one-of rooms with [room_name = tmp_target]
-  ;  ]
-  ;  set stud_timetable but-first stud_timetable
-    
-    
-  ;]
-  ;ask students [
-  ;  set stud_target one-of rooms
-  ;]
 end
 
 
@@ -443,9 +425,14 @@ end
 
 to check-beacon; student procedure
   if any? rooms with [room_name = "cafeteria" and (abs (ycor - [ ycor ] of myself) = 0) and (abs (xcor - [ xcor ] of myself) = 0) ] and stud_beacon_interaction != cafeteria_beacon
-  [if random 100 < technical_detection_probability [
+  [if stud_phone_is_scanning[
     set cafeteria_beacons_detections_total_count cafeteria_beacons_detections_total_count + 1
-    if random 100 < walking_interaction_probability [
+
+    let temp_prob 0
+    ifelse stud_target = "pause" [
+      set temp_prob cafeteria_interaction_probability]
+    [set temp_prob walking_interaction_probability]
+    if random 100 < temp_prob [
       set stud_beacon_interaction cafeteria_beacon
       set cafeteria_beacons_total_count cafeteria_beacons_total_count + 1
       set current_cafeteria_beacon_interactions  current_cafeteria_beacon_interactions + 1
@@ -453,9 +440,11 @@ to check-beacon; student procedure
     ]
   ]
   if any? rooms with [room_name = "entrance_foyer" and (abs (ycor - [ ycor ] of myself) = 0) and (abs (xcor - [ xcor ] of myself) = 0) ] and stud_beacon_interaction != entrance_foyer_beacon
-  [if random 100 < technical_detection_probability [
+  [if stud_phone_is_scanning[
     set entrance_foyer_beacons_detections_total_count entrance_foyer_beacons_detections_total_count + 1
-    if random 100 < walking_interaction_probability [
+
+   let temp_prob walking_interaction_probability
+    if random 100 < temp_prob [
       set stud_beacon_interaction entrance_foyer_beacon
       set entrance_foyer_beacons_total_count entrance_foyer_beacons_total_count + 1
       set current_entrance_foyer_beacon_interactions  current_entrance_foyer_beacon_interactions + 1
@@ -463,9 +452,11 @@ to check-beacon; student procedure
     ]
   ]
   if any? rooms with [room_name = "entrance_seminar" and (abs (ycor - [ ycor ] of myself) = 0) and (abs (xcor - [ xcor ] of myself) = 0) ] and stud_beacon_interaction != entrance_seminar_beacon
-  [if random 100 < technical_detection_probability [
+  [if stud_phone_is_scanning[
     set entrance_seminar_beacons_detections_total_count entrance_seminar_beacons_detections_total_count + 1
-    if random 100 < walking_interaction_probability [
+
+    let temp_prob walking_interaction_probability
+    if random 100 < temp_prob [
       set stud_beacon_interaction entrance_seminar_beacon
       set entrance_seminar_beacons_total_count entrance_seminar_beacons_total_count + 1
       set current_entrance_seminar_beacon_interactions  current_entrance_seminar_beacon_interactions + 1
@@ -473,9 +464,14 @@ to check-beacon; student procedure
     ]
   ]
   if any? rooms with [room_name = "lecture_big" and (abs (ycor - [ ycor ] of myself) = 0) and (abs (xcor - [ xcor ] of myself) = 0) ] and stud_beacon_interaction != lecture_hall_right_beacon
-  [if random 100 < technical_detection_probability [
+  [if stud_phone_is_scanning[
     set lecture_hall_right_beacons_detections_total_count lecture_hall_right_beacons_detections_total_count + 1
-    if random 100 < walking_interaction_probability [
+
+    let temp_prob 0
+    ifelse stud_target = "pause" [
+      set temp_prob lecture_room_interaction_probability]
+    [set temp_prob walking_interaction_probability]
+    if random 100 < temp_prob [
       set stud_beacon_interaction lecture_hall_right_beacon
       set lecture_hall_right_beacons_total_count lecture_hall_right_beacons_total_count + 1
       set current_lecture_hall_right_beacon_interactions  current_lecture_hall_right_beacon_interactions + 1
@@ -487,10 +483,10 @@ end
 GRAPHICS-WINDOW
 210
 10
-649
-470
-16
-16
+647
+448
+-1
+-1
 13.0
 1
 10
@@ -607,7 +603,11 @@ technical_detection_probability
 technical_detection_probability
 0
 100
+<<<<<<< HEAD
 0
+=======
+80.0
+>>>>>>> e6769f70ddbde24973a0f13bc0328195ba6c17a1
 1
 1
 NIL
@@ -710,7 +710,7 @@ walking_interaction_probability
 walking_interaction_probability
 0
 100
-100
+0.0
 1
 1
 NIL
@@ -769,7 +769,7 @@ android_share
 android_share
 0
 100
-80
+80.0
 1
 1
 NIL
@@ -784,7 +784,7 @@ iphone_share
 iphone_share
 0
 100
-17
+17.0
 1
 1
 NIL
@@ -799,7 +799,7 @@ nearby_compatible
 nearby_compatible
 0
 100
-71
+71.0
 1
 1
 NIL
@@ -814,7 +814,7 @@ bluetooth_always_active
 bluetooth_always_active
 0
 100
-23
+23.0
 1
 1
 NIL
@@ -829,22 +829,22 @@ iphone_with_physical_web_app
 iphone_with_physical_web_app
 0
 100
-6
+6.0
 1
 1
 NIL
 HORIZONTAL
 
 SLIDER
-1355
-411
-1674
-444
+1151
+452
+1470
+485
 bluetooth_probability_if_not_always_active
 bluetooth_probability_if_not_always_active
 0
 100
-25
+24.0
 1
 1
 NIL
@@ -853,13 +853,28 @@ HORIZONTAL
 SLIDER
 940
 317
-1153
+1169
 350
-sitting_interaction_probability
-sitting_interaction_probability
+cafeteria_interaction_probability
+cafeteria_interaction_probability
 0
 100
-50
+2.0
+1
+1
+NIL
+HORIZONTAL
+
+SLIDER
+1166
+317
+1418
+350
+lecture_room_interaction_probability
+lecture_room_interaction_probability
+0
+100
+7.0
 1
 1
 NIL
@@ -1284,9 +1299,8 @@ false
 0
 Polygon -7500403 true true 270 75 225 30 30 225 75 270
 Polygon -7500403 true true 30 75 75 30 270 225 225 270
-
 @#$#@#$#@
-NetLogo 5.0.4
+NetLogo 6.0.1
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
@@ -1302,7 +1316,6 @@ true
 0
 Line -7500403 true 150 150 90 180
 Line -7500403 true 150 150 210 180
-
 @#$#@#$#@
 0
 @#$#@#$#@

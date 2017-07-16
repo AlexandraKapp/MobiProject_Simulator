@@ -603,11 +603,7 @@ technical_detection_probability
 technical_detection_probability
 0
 100
-<<<<<<< HEAD
 0
-=======
-80.0
->>>>>>> e6769f70ddbde24973a0f13bc0328195ba6c17a1
 1
 1
 NIL

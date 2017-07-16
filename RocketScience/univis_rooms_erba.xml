@@ -1,0 +1,1347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE UnivIS SYSTEM "http://univis.uni-bamberg.de/univis.dtd">
+<UnivIS version="1.7" semester="2017s">
+	<Person key="Person.human.eefeu.kunst.kunst.ochslu">
+	<firstname>Annette</firstname>
+	<id>40589338</id>
+	<lastname>Ochs-Lunz</lastname>
+	<lehr>nein</lehr>
+	<locations>
+		<location>
+			<buildingkey>WE5</buildingkey>
+			<email>kunstdidaktik@uni-bamberg.de</email>
+			<floor>03</floor>
+			<ort>96047 Bamberg</ort>
+			<office>WE5/03.057</office>
+			<street>An der Weberei 5</street>
+			<tel>0951/863 1917</tel>
+			<url>http://www.uni-bamberg.de/fakultaeten/huwi/faecher/kunst/didaktik_der_kunst/</url>
+		</location>
+	</locations>
+	<officehours>
+		<officehour>
+			<endtime>12:30</endtime>
+			<repeat>w1 1</repeat>
+			<office>WE5 03.057</office>
+			<starttime>10:30</starttime>
+		</officehour>
+		<officehour>
+			<endtime>12:30</endtime>
+			<repeat>w1 2</repeat>
+			<office>WE5 03.057</office>
+			<starttime>10:30</starttime>
+		</officehour>
+		<officehour>
+			<endtime>12:30</endtime>
+			<repeat>w1 3</repeat>
+			<office>WE5 03.057</office>
+			<starttime>10:30</starttime>
+		</officehour>
+		<officehour>
+			<endtime>12:30</endtime>
+			<repeat>w1 4</repeat>
+			<office>WE5 03.057</office>
+			<starttime>10:30</starttime>
+		</officehour>
+	</officehours>
+	<orgname>Fachvertretung f&#xFC;r Didaktik der Kunst</orgname>
+	<orgunits>
+		<orgunit>Fakult&#xE4;t Humanwissenschaften</orgunit>
+		<orgunit>Institut f&#xFC;r Erforschung und Entwicklung fachbezogenen Unterrichts - EE-feU</orgunit>
+		<orgunit>Kunst</orgunit>
+		<orgunit>Fachvertretung f&#xFC;r Didaktik der Kunst</orgunit>
+	</orgunits>
+	<visible>ja</visible>
+</Person>
+<Person key="Person.wiai.zentr.zentr.schaib">
+	<firstname>Babette</firstname>
+	<id>20254986</id>
+	<lastname>Schaible</lastname>
+	<lehr>nein</lehr>
+	<locations>
+		<location>
+			<buildingkey>WE5</buildingkey>
+			<email>dekanat.wiai@uni-bamberg.de</email>
+			<floor>01</floor>
+			<ort>96047 Bamberg</ort>
+			<office>WE5/01.090</office>
+			<street>An der Weberei 5</street>
+			<tel>0951/863 2801</tel>
+			<url>http://www.uni-bamberg.de/wiai/</url>
+		</location>
+	</locations>
+	<officehours>
+		<officehour>
+			<endtime>12:00</endtime>
+			<repeat>w1 1,2,3,4</repeat>
+			<office>WE5/01.090</office>
+			<starttime>9:00</starttime>
+		</officehour>
+	</officehours>
+	<orgname>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgname>
+	<orgunits>
+		<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+	</orgunits>
+	<pub_visible>nein</pub_visible>
+	<visible>ja</visible>
+</Person>
+<Person key="Person.human.eefeu.musik.musik.scharn_4">
+	<firstname>Johanne</firstname>
+	<id>20953369</id>
+	<lastname>Scharnick</lastname>
+	<lehr>nein</lehr>
+	<lehraufg>Sekretariat</lehraufg>
+	<locations>
+	<location>
+	<buildingkey>WE5</buildingkey>
+	<email>johanne.scharnick@uni-bamberg.de</email>
+	<fax>(0951) 863 1927</fax>
+	<floor>02</floor>
+	<ort>96047 Bamberg</ort>
+	<office>WE5/02.102</office>
+	<street>An der Weberei 5</street>
+	<tel>(0951) 863 1926</tel>
+	<url>http://www.uni-bamberg.de/musikpaed</url>
+	</location>
+	</locations>
+	<orgname>Lehrstuhl f&#xFC;r Musikp&#xE4;dagogik und Musikdidaktik</orgname>
+	<orgunits>
+	<orgunit>Fakult&#xE4;t Humanwissenschaften</orgunit>
+	<orgunit>Institut f&#xFC;r Erforschung und Entwicklung fachbezogenen Unterrichts - EE-feU</orgunit>
+	<orgunit>Musikp&#xE4;dagogik und Musikdidaktik</orgunit>
+	<orgunit>Lehrstuhl f&#xFC;r Musikp&#xE4;dagogik und Musikdidaktik</orgunit>
+	</orgunits>
+	<visible>ja</visible>
+</Person>
+<Person key="Person.sprach.zentr.bertbr">
+	<firstname>Britta</firstname>
+	<id>41129643</id>
+	<lastname>B&#xF6;&#xDF;ert</lastname>
+	<lehr>nein</lehr>
+	<locations>
+	<location>
+	<buildingkey>WE5</buildingkey>
+	<email>sekretariat.sz@uni-bamberg.de</email>
+	<floor>05</floor>
+	<ort>96047 Bamberg</ort>
+	<office>WE5/05.068</office>
+	<street>An der Weberei 5</street>
+	<tel>0951/863-1272</tel>
+	<url>http://www.uni-bamberg.de/sz/</url>
+	</location>
+	</locations>
+	<officehours>
+	<officehour>
+	<office>WE5/05.068</office>
+	</officehour>
+	</officehours>
+	<orgname>Sprachenzentrum</orgname>
+	<orgunits>
+	<orgunit>Sprachenzentrum</orgunit>
+	</orgunits>
+	<pub_visible>ja</pub_visible>
+	<visible>ja</visible>
+	<work>Zust&#xE4;ndig f&#xFC;r Lehrende der Sprachbereiche DaF und weitere Sprachen, Englisch, Franz&#xF6;sisch und Wirtschaftsfranz&#xF6;sisch, Italienisch und Wirtschaftsitalienisch, Portugiesisch</work>
+</Person>
+<Person key="Person.human.zentr.zentr.ochslu_7">
+	<firstname>Annette</firstname>
+	<id>41557211</id>
+	<lastname>Ochs-Lunz</lastname>
+	<lehr>nein</lehr>
+	<locations>
+	<location>
+	<buildingkey>M3</buildingkey>
+	<email>dekanatssekretariat.huwi@uni-bamberg.de</email>
+	<floor>01</floor>
+	<ort>96047 Bamberg</ort>
+	<office>M3/01.14</office>
+	<street>Markusplatz 3</street>
+	<tel>0951 863 1802</tel>
+	</location>
+	</locations>
+	<officehours>
+	<officehour>
+	<endtime>13:00</endtime>
+	<repeat>w1 1</repeat>
+	<office>M3/01.14</office>
+	<starttime>10:00</starttime>
+	</officehour>
+	<officehour>
+	<endtime>12:00</endtime>
+	<repeat>w1 3</repeat>
+	<office>M3/01.14</office>
+	<starttime>9:00</starttime>
+	</officehour>
+	</officehours>
+	<orgname>Fakult&#xE4;t Humanwissenschaften</orgname>
+	<orgunits>
+	<orgunit>Fakult&#xE4;t Humanwissenschaften</orgunit>
+	</orgunits>
+	<pub_visible>nein</pub_visible>
+	<visible>ja</visible>
+</Person>
+<Person key="Person.wiai.bereic.lehrst_2.planer">
+	<firstname>Claudia</firstname>
+	<id>21196738</id>
+	<lastname>Tischler</lastname>
+	<lehr>nein</lehr>
+	<locations>
+	<location>
+	<buildingkey>WE5</buildingkey>
+	<email>claudia.tischler@uni-bamberg.de</email>
+	<fax>0951 / 863-3945</fax>
+	<floor>01</floor>
+	<ort>96049 Bamberg</ort>
+	<office>WE5/01.33</office>
+	<street>An der Weberei 5</street>
+	<tel>0951 / 863-3941</tel>
+	<url>http://www.uni-bamberg.de/hci/team/claudia-tischler/</url>
+	</location>
+	</locations>
+	<orgname>Lehrstuhl f&#xFC;r Mensch-Computer-Interaktion</orgname>
+	<orgunits>
+	<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+	<orgunit>Bereich Angewandte Informatik</orgunit>
+	<orgunit>Lehrstuhl f&#xFC;r Mensch-Computer-Interaktion</orgunit>
+	</orgunits>
+	<visible>ja</visible>
+	<zweitmgl>human</zweitmgl>
+</Person>
+<Person key="Person.wiai.bereic_2.junior.stilke">
+	<firstname>Gudrun</firstname>
+	<gender>f</gender>
+	<id>21237107</id>
+	<lastname>Stilkerich</lastname>
+	<lehr>ja</lehr>
+	<locations>
+	<location>
+	<buildingkey>WE5</buildingkey>
+	<email>gudrun.stilkerich@uni-bamberg.de</email>
+	<fax>0951/863-2872</fax>
+	<floor>01</floor>
+	<ort>96047 Bamberg</ort>
+	<office>WE5/01.055</office>
+	<street>An der Weberei 5</street>
+	<tel>0951/863-2894</tel>
+	</location>
+	</locations>
+	<orgname>Lehrstuhl f&#xFC;r Wirtschaftsinformatik, insbes. Soziale Netzwerke</orgname>
+	<orgunits>
+	<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+	<orgunit>Bereich Wirtschaftsinformatik</orgunit>
+	<orgunit>Lehrstuhl f&#xFC;r Wirtschaftsinformatik, insbes. Soziale Netzwerke</orgunit>
+	</orgunits>
+	<pub_visible>ja</pub_visible>
+	<visible>ja</visible>
+</Person>
+<Person key="Person.guk.zentr.zentr.hafner">
+	<firstname>Sandra</firstname>
+	<id>49928496</id>
+	<lastname>Ther</lastname>
+	<lehr>nein</lehr>
+	<locations>
+	<location>
+	<buildingkey>K20</buildingkey>
+	<email>dekanatssekretariat.guk@uni-bamberg.de</email>
+	<fax>0951/863-2302</fax>
+	<floor>02</floor>
+	<ort>96047 Bamberg</ort>
+	<office>K20/02.02</office>
+	<street>Kapuzinerstra&#xDF;e 20/22</street>
+	<tel>0951/863-2301</tel>
+	</location>
+	</locations>
+	<orgname>Fakult&#xE4;t Geistes- und Kulturwissenschaften</orgname>
+	<orgunits>
+	<orgunit>Fakult&#xE4;t Geistes- und Kulturwissenschaften</orgunit>
+	</orgunits>
+	<pub_visible>ja</pub_visible>
+	<visible>ja</visible>
+	<work>Dekanatssekret&#xE4;rin</work>
+</Person>
+<Person key="Person.wiai.bereic.lehrst_1.henric">
+	<firstname>Andreas</firstname>
+	<id>40327698</id>
+	<lastname>Henrich</lastname>
+	<lehr>ja</lehr>
+	<lehrtyp>hochsc</lehrtyp>
+	<locations>
+	<location>
+	<buildingkey>WE5</buildingkey>
+	<email>andreas.henrich@uni-bamberg.de</email>
+	<fax>0951 863 2852</fax>
+	<floor>02</floor>
+	<ort>96047 Bamberg</ort>
+	<office>WE5/02.031</office>
+	<street>An der Weberei 5</street>
+	<tel>0951 863 2850</tel>
+	<url>http://www.uni-bamberg.de/?id=5453</url>
+	</location>
+	</locations>
+	<orgname>Lehrstuhl f&#xFC;r Medieninformatik</orgname>
+	<orgunits>
+	<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+	<orgunit>Bereich Angewandte Informatik</orgunit>
+	<orgunit>Lehrstuhl f&#xFC;r Medieninformatik</orgunit>
+	</orgunits>
+	<title>Prof.  Dr.</title>
+	<visible>ja</visible>
+</Person>
+<Person key="Person.wiai.bereic_1.lehrst_1.homera">
+	<firstname>Alexandra</firstname>
+	<id>20911233</id>
+	<lastname>Homer</lastname>
+	<lehr>nein</lehr>
+	<lehraufg>Informatik</lehraufg>
+	<locations>
+	<location>
+	<buildingkey>WE5</buildingkey>
+	<email>sekretariat@swt-bamberg.de</email>
+	<fax>+49 (0)951 863-3855</fax>
+	<floor>03</floor>
+	<ort>96049 Bamberg</ort>
+	<office>WE5/03.013</office>
+	<street>An der Weberei 5</street>
+	<tel>+49 (0)951 863-3851</tel>
+	<url>http://www.uni-bamberg.de/swt/team/alexandra-homer/</url>
+	</location>
+	</locations>
+	<orgname>Lehrstuhl f&#xFC;r Praktische Informatik, insbesondere Softwaretechnik und Programmiersprachen</orgname>
+	<orgunits>
+	<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+	<orgunit>Bereich Informatik</orgunit>
+	<orgunit>Lehrstuhl f&#xFC;r Praktische Informatik, insbesondere Softwaretechnik und Programmiersprachen</orgunit>
+	</orgunits>
+	<visible>ja</visible>
+	<work>Sekretariat</work>
+</Person>
+<Person key="Person.guk.kommwiss.kommu.mllerh">
+	<firstname>Holger</firstname>
+	<id>40991065</id>
+	<lastname>M&#xFC;ller</lastname>
+	<lehr>ja</lehr>
+	<lehrtyp>mitarb</lehrtyp>
+	<locations>
+	<location>
+	<buildingkey>WE5</buildingkey>
+	<email>holger.mueller@uni-bamberg.de</email>
+	<fax>863-2159</fax>
+	<floor>04</floor>
+	<ort>96047 Bamberg</ort>
+	<office>WE5/04.115</office>
+	<street>An der Weberei 5</street>
+	<tel>(0951) 863-2163</tel>
+	<url>http://www.uni-bamberg.de/kowi</url>
+	</location>
+	</locations>
+	<orgname>Lehrstuhl f&#xFC;r Kommunikationswissenschaft</orgname>
+	<orgunits>
+	<orgunit>Fakult&#xE4;t Geistes- und Kulturwissenschaften</orgunit>
+	<orgunit>Institut f&#xFC;r Kommunikationswissenschaft</orgunit>
+	<orgunit>Lehrstuhl f&#xFC;r Kommunikationswissenschaft</orgunit>
+	</orgunits>
+	<visible>ja</visible>
+</Person>
+<Room key="Room.human.eefeu.kunst.kunst.f017">
+	<address>An der Weberei 5</address>
+	<beam>ja</beam>
+	<buildingkey>WE5</buildingkey>
+	<contacts>
+	<contact><UnivISRef type="Person" key="Person.human.eefeu.kunst.kunst.ochslu" /></contact>
+	</contacts>
+	<description>Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+	<floor>00</floor>
+	<id>29967754</id>
+	<name>Werkraum Ton</name>
+	<orgname>Fachvertretung f&#xFC;r Didaktik der Kunst</orgname>
+	<orgunits>
+	<orgunit>Fakult&#xE4;t Humanwissenschaften</orgunit>
+	<orgunit>Institut f&#xFC;r Erforschung und Entwicklung fachbezogenen Unterrichts - EE-feU</orgunit>
+	<orgunit>Kunst</orgunit>
+	<orgunit>Fachvertretung f&#xFC;r Didaktik der Kunst</orgunit>
+	</orgunits>
+	<short>WE5/00.004</short>
+	<size>22</size>
+</Room>
+<Room key="Room.human.eefeu.kunst.kunst.f020">
+	<address>An der Weberei 5</address>
+	<beam>ja</beam>
+	<buildingkey>WE5</buildingkey>
+	<contacts>
+	<contact><UnivISRef type="Person" key="Person.human.eefeu.kunst.kunst.ochslu" /></contact>
+	</contacts>
+	<description>Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+	<floor>00</floor>
+	<id>20312027</id>
+	<name>Werkraum Metall/Textil/Papier</name>
+	<orgname>Fachvertretung f&#xFC;r Didaktik der Kunst</orgname>
+	<orgunits>
+		<orgunit>Fakult&#xE4;t Humanwissenschaften</orgunit>
+		<orgunit>Institut f&#xFC;r Erforschung und Entwicklung fachbezogenen Unterrichts - EE-feU</orgunit>
+		<orgunit>Kunst</orgunit>
+		<orgunit>Fachvertretung f&#xFC;r Didaktik der Kunst</orgunit>
+	</orgunits>
+	<short>WE5/00.010</short>
+</Room>
+<Room key="Room.human.eefeu.kunst.kunst.f019">
+	<address>An der Weberei 5</address>
+	<beam>ja</beam>
+	<buildingkey>WE5</buildingkey>
+	<contacts>
+	<contact><UnivISRef type="Person" key="Person.human.eefeu.kunst.kunst.ochslu" /></contact>
+	</contacts>
+	<description>Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+	<floor>00</floor>
+	<id>29947666</id>
+	<name>Werkraum Holz</name>
+	<orgname>Fachvertretung f&#xFC;r Didaktik der Kunst</orgname>
+	<orgunits>
+	<orgunit>Fakult&#xE4;t Humanwissenschaften</orgunit>
+	<orgunit>Institut f&#xFC;r Erforschung und Entwicklung fachbezogenen Unterrichts - EE-feU</orgunit>
+	<orgunit>Kunst</orgunit>
+	<orgunit>Fachvertretung f&#xFC;r Didaktik der Kunst</orgunit>
+	</orgunits>
+	<short>WE5/00.013</short>
+	<size>20</size>
+</Room>
+<Room key="Room.wiai.zentr.zentr.019">
+	<address>An der Weberei 5</address>
+	<bluray>ja</bluray>
+	<buildingkey>WE5</buildingkey>
+	<contacts>
+	<contact><UnivISRef type="Person" key="Person.wiai.zentr.zentr.schaib" /></contact>
+	</contacts>
+	<dark>ja</dark>
+	<dbeam>ja</dbeam>
+	<description>Projektor: HDMI, VGA, PC, DocCam, Blu-Ray; Ton: 3,5 mm Klinke, CD</description>
+	<dvd>ja</dvd>
+	<floor>00</floor>
+	<funk>ja</funk>
+	<id>41221748</id>
+	<induk>ja</induk>
+	<mikr>ja</mikr>
+	<name>H&#xF6;rsaal</name>
+	<orgname>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgname>
+	<orgunits>
+	<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+	</orgunits>
+	<pc>ja</pc>
+	<pruef>ja</pruef>
+	<short>WE5/00.019</short>
+	<size>156</size>
+	<visu>ja</visu>
+</Room>
+<Room key="Room.wiai.zentr.zentr.022">
+	<address>An der Weberei 5</address>
+	<bluray>ja</bluray>
+	<buildingkey>WE5</buildingkey>
+	<contacts>
+	<contact><UnivISRef type="Person" key="Person.wiai.zentr.zentr.schaib" /></contact>
+	</contacts>
+	<dark>ja</dark>
+	<dbeam>ja</dbeam>
+	<description>Projektor: HDMI, VGA, PC, DocCam, Blu-Ray; Ton: 3,5 mm Klinke, CD</description>
+	<dvd>ja</dvd>
+	<floor>00</floor>
+	<funk>ja</funk>
+	<id>41211748</id>
+	<induk>ja</induk>
+	<mikr>ja</mikr>
+	<name>H&#xF6;rsaal</name>
+	<orgname>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgname>
+	<orgunits>
+	<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+	</orgunits>
+	<pc>ja</pc>
+	<pruef>ja</pruef>
+	<short>WE5/00.022</short>
+	<size>241</size>
+</Room>
+<Room key="Room.human.eefeu.musik.musik.033">
+	<address>An der Weberei 5</address>
+	<beam>ja</beam>
+	<buildingkey>WE5</buildingkey>
+	<contacts>
+	<contact><UnivISRef type="Person" key="Person.human.eefeu.musik.musik.scharn_4" /></contact>
+	</contacts>
+	<description>Projektor: HDMI, VGA, Blu-Ray; Ton: HDMI, 3,5 mm Klinke, CD</description>
+	<floor>00</floor>
+	<id>41281748</id>
+	<name>Irmler-Musiksaal</name>
+	<orgname>Lehrstuhl f&#xFC;r Musikp&#xE4;dagogik und Musikdidaktik</orgname>
+	<orgunits>
+	<orgunit>Fakult&#xE4;t Humanwissenschaften</orgunit>
+	<orgunit>Institut f&#xFC;r Erforschung und Entwicklung fachbezogenen Unterrichts - EE-feU</orgunit>
+	<orgunit>Musikp&#xE4;dagogik und Musikdidaktik</orgunit>
+	<orgunit>Lehrstuhl f&#xFC;r Musikp&#xE4;dagogik und Musikdidaktik</orgunit>
+	</orgunits>
+	<pruef>ja</pruef>
+	<short>WE5/00.033</short>
+</Room>
+<Room key="Room.sprach.zentr.043">
+	<address>An der Weberei 5</address>
+	<beam>ja</beam>
+	<bluray>ja</bluray>
+	<buildingkey>WE5</buildingkey>
+	<contacts>
+	<contact><UnivISRef type="Person" key="Person.sprach.zentr.bertbr" /></contact>
+	</contacts>
+	<dark>ja</dark>
+	<description>Projektor: HDMI, VGA, PC, DocCam, Blu-Ray; Ton: HDMI, 3,5 mm Klinke, CD</description>
+	<dvd>ja</dvd>
+	<floor>00</floor>
+	<id>21326576</id>
+	<lose>ja</lose>
+	<mikr>ja</mikr>
+	<name>Seminarraum</name>
+	<orgname>Sprachenzentrum</orgname>
+	<orgunits>
+	<orgunit>Sprachenzentrum</orgunit>
+	</orgunits>
+	<pc>ja</pc>
+	<pruef>ja</pruef>
+	<short>WE5/00.043</short>
+	<size>50</size>
+	<visu>ja</visu>
+</Room>
+<Room key="Room.wiai.zentr.zentr.003_7">
+	<address>An der Weberei 5</address>
+	<buildingkey>WE5</buildingkey>
+	<contacts>
+	<contact><UnivISRef type="Person" key="Person.wiai.zentr.zentr.schaib" /></contact>
+	</contacts>
+	<dbeam>ja</dbeam>
+	<description>Projektor: HDMI, VGA, PC, DocCam; Ton: HDMI, 3,5 mm Klinke, PC</description>
+	<floor>01</floor>
+	<id>41281521</id>
+	<name>PC-Pool</name>
+	<orgname>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgname>
+	<orgunits>
+	<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+	</orgunits>
+	<pc>ja</pc>
+	<short>WE5/01.003</short>
+	<size>35</size>
+	<visu>ja</visu>
+</Room>
+<Room key="Room.human.zentr.zentr.004">
+	<address>An der Weberei 5</address>
+	<bluray>ja</bluray>
+	<buildingkey>WE5</buildingkey>
+	<contacts>
+	<contact><UnivISRef type="Person" key="Person.human.zentr.zentr.ochslu_7" /></contact>
+	</contacts>
+	<dark>ja</dark>
+	<dbeam>ja</dbeam>
+	<description>Projektor: HDMI, VGA, PC, DocCam, Blu-Ray; Ton: 3,5 mm Klinke, CD</description>
+	<dvd>ja</dvd>
+	<floor>01</floor>
+	<id>21346576</id>
+	<lose>ja</lose>
+	<mikr>ja</mikr>
+	<name>Seminarraum</name>
+	<orgname>Fakult&#xE4;t Humanwissenschaften</orgname>
+	<orgunits>
+	<orgunit>Fakult&#xE4;t Humanwissenschaften</orgunit>
+	</orgunits>
+	<pc>ja</pc>
+	<pruef>ja</pruef>
+	<short>WE5/01.004</short>
+	<size>112</size>
+	<visu>ja</visu>
+</Room>
+<Room key="Room.wiai.zentr.zentr.006">
+	<address>An der Weberei 5</address>
+	<bluray>ja</bluray>
+	<buildingkey>WE5</buildingkey>
+	<contacts>
+	<contact><UnivISRef type="Person" key="Person.wiai.zentr.zentr.schaib" /></contact>
+	</contacts>
+	<dark>ja</dark>
+	<dbeam>ja</dbeam>
+	<description>Projektor: HDMI, VGA, PC, DocCam, Blu-Ray; Ton: HDMI, 3,5 mm Klinke, CD</description>
+	<dvd>ja</dvd>
+	<floor>01</floor>
+	<id>41231748</id>
+	<lose>ja</lose>
+	<mikr>ja</mikr>
+	<name>Seminarraum</name>
+	<orgname>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgname>
+	<orgunits>
+	<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+	</orgunits>
+	<pc>ja</pc>
+	<pruef>ja</pruef>
+	<short>WE5/01.006</short>
+	<size>70</size>
+	<visu>ja</visu>
+</Room>
+<Room key="Room.sprach.zentr.017">
+	<address>An der Weberei 5</address>
+	<beam>ja</beam>
+	<buildingkey>WE5</buildingkey>
+	<contacts>
+	<contact><UnivISRef type="Person" key="Person.sprach.zentr.bertbr" /></contact>
+	</contacts>
+	<dark>ja</dark>
+	<description>Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+	<floor>01</floor>
+	<id>21336576</id>
+	<lose>ja</lose>
+	<name>Seminarraum</name>
+	<orgname>Sprachenzentrum</orgname>
+	<orgunits>
+	<orgunit>Sprachenzentrum</orgunit>
+	</orgunits>
+	<short>WE5/01.017</short>
+	<size>24</size>
+</Room>
+<Room key="Room.wiai.bereic.lehrst_2.045">
+	<address>An der Weberei 5</address>
+	<beam>ja</beam>
+	<buildingkey>WE5</buildingkey>
+	<contacts>
+	<contact><UnivISRef type="Person" key="Person.wiai.bereic.lehrst_2.planer" /></contact>
+	</contacts>
+	<description>Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+	<floor>01</floor>
+	<id>21398135</id>
+	<orgname>Lehrstuhl f&#xFC;r Mensch-Computer-Interaktion</orgname>
+	<orgunits>
+	<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+	<orgunit>Bereich Angewandte Informatik</orgunit>
+	<orgunit>Lehrstuhl f&#xFC;r Mensch-Computer-Interaktion</orgunit>
+	</orgunits>
+	<short>WE5/01.045&#x09;</short>
+	<size>12</size>
+</Room>
+<Room key="Room.wiai.bereic.lehrst_2.046">
+	<address>An der Weberei 5</address>
+	<beam>ja</beam>
+	<buildingkey>WE5</buildingkey>
+	<contacts>
+	<contact><UnivISRef type="Person" key="Person.wiai.bereic.lehrst_2.planer" /></contact>
+	</contacts>
+	<description>Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+	<floor>01</floor>
+	<id>21309135</id>
+	<orgname>Lehrstuhl f&#xFC;r Mensch-Computer-Interaktion</orgname>
+	<orgunits>
+	<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+	<orgunit>Bereich Angewandte Informatik</orgunit>
+	<orgunit>Lehrstuhl f&#xFC;r Mensch-Computer-Interaktion</orgunit>
+	</orgunits>
+	<short>WE5/01.046</short>
+	<size>6</size>
+</Room>
+<Room key="Room.wiai.bereic_2.junior.059">
+	<address>An der Weberei 5</address>
+	<beam>ja</beam>
+	<buildingkey>WE5</buildingkey>
+	<contacts>
+	<contact><UnivISRef type="Person" key="Person.wiai.bereic_2.junior.stilke" /></contact>
+	</contacts>
+	<description>Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+	<floor>01</floor>
+	<id>41409407</id>
+	<name>PC-Labor</name>
+	<orgname>Lehrstuhl f&#xFC;r Wirtschaftsinformatik, insbes. Soziale Netzwerke</orgname>
+	<orgunits>
+	<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+	<orgunit>Bereich Wirtschaftsinformatik</orgunit>
+	<orgunit>Lehrstuhl f&#xFC;r Wirtschaftsinformatik, insbes. Soziale Netzwerke</orgunit>
+	</orgunits>
+	<short>WE5/01.059</short>
+</Room>
+<Room key="Room.human.zentr.zentr.067">
+	<address>An der Weberei 5</address>
+	<beam>ja</beam>
+	<buildingkey>WE5</buildingkey>
+	<contacts>
+	<contact><UnivISRef type="Person" key="Person.human.zentr.zentr.ochslu_7" /></contact>
+	</contacts>
+	<description>Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+	<floor>01</floor>
+	<id>21356576</id>
+	<name>Seminarraum</name>
+	<orgname>Fakult&#xE4;t Humanwissenschaften</orgname>
+	<orgunits>
+	<orgunit>Fakult&#xE4;t Humanwissenschaften</orgunit>
+	</orgunits>
+	<short>WE5/01.067</short>
+	<size>30</size>
+</Room>
+<Room key="Room.human.eefeu.musik.musik.069">
+	<address>An der Weberei 5</address>
+	<buildingkey>WE5</buildingkey>
+	<contacts>
+	<contact><UnivISRef type="Person" key="Person.human.eefeu.musik.musik.scharn_4" /></contact>
+	</contacts>
+	<floor>01</floor>
+	<id>41264588</id>
+	<name>Medien-/Regieraum</name>
+	<orgname>Lehrstuhl f&#xFC;r Musikp&#xE4;dagogik und Musikdidaktik</orgname>
+	<orgunits>
+	<orgunit>Fakult&#xE4;t Humanwissenschaften</orgunit>
+	<orgunit>Institut f&#xFC;r Erforschung und Entwicklung fachbezogenen Unterrichts - EE-feU</orgunit>
+	<orgunit>Musikp&#xE4;dagogik und Musikdidaktik</orgunit>
+	<orgunit>Lehrstuhl f&#xFC;r Musikp&#xE4;dagogik und Musikdidaktik</orgunit>
+	</orgunits>
+	<short>WE5/01.069</short>
+</Room>
+<Room key="Room.human.eefeu.musik.musik.f507">
+	<address>An der Weberei 5</address>
+	<beam>ja</beam>
+	<buildingkey>WE5</buildingkey>
+	<contacts>
+	<contact><UnivISRef type="Person" key="Person.human.eefeu.musik.musik.scharn_4" /></contact>
+	</contacts>
+	<description>Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+	<floor>01</floor>
+	<id>29966878</id>
+	<name>Kleiner Musiksaal</name>
+	<orgname>Lehrstuhl f&#xFC;r Musikp&#xE4;dagogik und Musikdidaktik</orgname>
+	<orgunits>
+	<orgunit>Fakult&#xE4;t Humanwissenschaften</orgunit>
+	<orgunit>Institut f&#xFC;r Erforschung und Entwicklung fachbezogenen Unterrichts - EE-feU</orgunit>
+	<orgunit>Musikp&#xE4;dagogik und Musikdidaktik</orgunit>
+	<orgunit>Lehrstuhl f&#xFC;r Musikp&#xE4;dagogik und Musikdidaktik</orgunit>
+	</orgunits>
+	<short>WE5/01.072</short>
+	<smart>ja</smart>
+</Room>
+<Room key="Room.human.eefeu.musik.musik.f503">
+	<address>An der Weberei 5</address>
+	<beam>ja</beam>
+	<buildingkey>WE5</buildingkey>
+	<contacts>
+	<contact><UnivISRef type="Person" key="Person.human.eefeu.musik.musik.scharn_4" /></contact>
+	</contacts>
+	<dark>ja</dark>
+	<description>Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+	<floor>01</floor>
+	<id>29933293</id>
+	<lose>ja</lose>
+	<name>Kleiner Seminarraum</name>
+	<orgname>Lehrstuhl f&#xFC;r Musikp&#xE4;dagogik und Musikdidaktik</orgname>
+	<orgunits>
+	<orgunit>Fakult&#xE4;t Humanwissenschaften</orgunit>
+	<orgunit>Institut f&#xFC;r Erforschung und Entwicklung fachbezogenen Unterrichts - EE-feU</orgunit>
+	<orgunit>Musikp&#xE4;dagogik und Musikdidaktik</orgunit>
+	<orgunit>Lehrstuhl f&#xFC;r Musikp&#xE4;dagogik und Musikdidaktik</orgunit>
+	</orgunits>
+	<short>WE5/01.076</short>
+	<smart>ja</smart>
+</Room>
+<Room key="Room.guk.zentr.zentr.003">
+	<address>An der Weberei 5</address>
+	<beam>ja</beam>
+	<buildingkey>WE5</buildingkey>
+	<contacts>
+	<contact><UnivISRef type="Person" key="Person.guk.zentr.zentr.hafner" /></contact>
+	</contacts>
+	<dark>ja</dark>
+	<description>Dieser Raum darf bis 4 Wochen nach Freischaltung des neuen Semesters nur vom Institut f&#xFC;r Kommunikation belegt werden. Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+	<floor>02</floor>
+	<id>21200259</id>
+	<lose>ja</lose>
+	<name>Seminarraum</name>
+	<orgname>Fakult&#xE4;t Geistes- und Kulturwissenschaften</orgname>
+	<orgunits>
+	<orgunit>Fakult&#xE4;t Geistes- und Kulturwissenschaften</orgunit>
+	</orgunits>
+	<short>WE5/02.003</short>
+	<size>24</size>
+</Room>
+<Room key="Room.guk.zentr.zentr.004">
+<address>An der Weberei 5</address>
+<bluray>ja</bluray>
+<buildingkey>WE5</buildingkey>
+<contacts>
+<contact><UnivISRef type="Person" key="Person.guk.zentr.zentr.hafner" /></contact>
+</contacts>
+<dark>ja</dark>
+<dbeam>ja</dbeam>
+<description>Dieser Raum darf bis 4 Wochen nach Freischaltung des neuen Semesters nur vom Institut f&#xFC;r Kommunikation belegt werden. Projektor: HDMI, VGA, PC, DocCam, Blu-Ray; Ton: 3,5 mm Klinke, CD</description>
+<dvd>ja</dvd>
+<floor>02</floor>
+<id>21244176</id>
+<lose>ja</lose>
+<mikr>ja</mikr>
+<name>Seminarraum</name>
+<orgname>Fakult&#xE4;t Geistes- und Kulturwissenschaften</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Geistes- und Kulturwissenschaften</orgunit>
+</orgunits>
+<pc>ja</pc>
+<pruef>ja</pruef>
+<short>WE5/02.004</short>
+<size>60</size>
+<visu>ja</visu>
+</Room>
+<Room key="Room.wiai.zentr.zentr.005_2">
+<address>An der Weberei 5</address>
+<buildingkey>WE5</buildingkey>
+<contacts>
+<contact><UnivISRef type="Person" key="Person.wiai.zentr.zentr.schaib" /></contact>
+</contacts>
+<dbeam>ja</dbeam>
+<description>Projektor: HDMI, VGA, PC, DocCam; Ton: HDMI, 3,5 mm Klinke, PC</description>
+<fest>ja</fest>
+<floor>02</floor>
+<id>41200763</id>
+<name>PC-Pool</name>
+<orgname>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+</orgunits>
+<pc>ja</pc>
+<short>WE5/02.005</short>
+<size>35</size>
+<visu>ja</visu>
+</Room>
+<Room key="Room.guk.zentr.zentr.006">
+<address>An der Weberei 5</address>
+<bluray>ja</bluray>
+<buildingkey>WE5</buildingkey>
+<contacts>
+<contact><UnivISRef type="Person" key="Person.guk.zentr.zentr.hafner" /></contact>
+</contacts>
+<dark>ja</dark>
+<dbeam>ja</dbeam>
+<description>Dieser Raum darf bis 4 Wochen nach Freischaltung des neuen Semesters nur vom Institut f&#xFC;r Kommunikation belegt werden. Projektor: HDMI, VGA, PC, DocCam, Blu-Ray; Ton: 3,5 mm Klinke, CD</description>
+<dvd>ja</dvd>
+<floor>02</floor>
+<id>21290042</id>
+<lose>ja</lose>
+<mikr>ja</mikr>
+<name>Seminarraum</name>
+<orgname>Fakult&#xE4;t Geistes- und Kulturwissenschaften</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Geistes- und Kulturwissenschaften</orgunit>
+</orgunits>
+<pc>ja</pc>
+<pruef>ja</pruef>
+<short>WE5/02.006</short>
+<size>112</size>
+<visu>ja</visu>
+</Room>
+<Room key="Room.sprach.zentr.008">
+<address>An der Weberei 5</address>
+<beam>ja</beam>
+<bluray>ja</bluray>
+<buildingkey>WE5</buildingkey>
+<contacts>
+<contact><UnivISRef type="Person" key="Person.sprach.zentr.bertbr" /></contact>
+</contacts>
+<dark>ja</dark>
+<description>Projektor: HDMI, VGA, PC, DocCam, Blu-Ray; Ton: HDMI, 3,5 mm Klinke, CD</description>
+<dvd>ja</dvd>
+<floor>02</floor>
+<id>21235497</id>
+<lose>ja</lose>
+<mikr>ja</mikr>
+<name>Seminarraum</name>
+<orgname>Sprachenzentrum</orgname>
+<orgunits>
+<orgunit>Sprachenzentrum</orgunit>
+</orgunits>
+<pc>ja</pc>
+<pruef>ja</pruef>
+<short>WE5/02.008</short>
+<size>60</size>
+<visu>ja</visu>
+</Room>
+<Room key="Room.wiai.zentr.zentr.003">
+<address>An der Weberei 5</address>
+<beam>ja</beam>
+<buildingkey>WE5</buildingkey>
+<contacts>
+<contact><UnivISRef type="Person" key="Person.wiai.zentr.zentr.schaib" /></contact>
+</contacts>
+<dark>ja</dark>
+<description>Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+<floor>02</floor>
+<id>41251748</id>
+<lose>ja</lose>
+<name>Seminarraum</name>
+<orgname>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+</orgunits>
+<short>WE5/02.020</short>
+<size>32</size>
+</Room>
+<Room key="Room.sprach.zentr.we5050">
+<address>An der Weberei 5</address>
+<beam>ja</beam>
+<buildingkey>WE5</buildingkey>
+<contacts>
+<contact><UnivISRef type="Person" key="Person.sprach.zentr.bertbr" /></contact>
+</contacts>
+<dark>ja</dark>
+<description>Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+<floor>02</floor>
+<id>21206499</id>
+<lose>ja</lose>
+<name>Seminarraum</name>
+<orgname>Sprachenzentrum</orgname>
+<orgunits>
+<orgunit>Sprachenzentrum</orgunit>
+</orgunits>
+<short>WE5/02.048</short>
+<size>16</size>
+</Room>
+<Room key="Room.human.eefeu.musik.musik.02078">
+<address>An der Weberei 5</address>
+<buildingkey>WE5</buildingkey>
+<contacts>
+<contact><UnivISRef type="Person" key="Person.human.eefeu.musik.musik.scharn_4" /></contact>
+</contacts>
+<floor>02</floor>
+<id>41299772</id>
+<name>Kammermusikraum</name>
+<orgname>Lehrstuhl f&#xFC;r Musikp&#xE4;dagogik und Musikdidaktik</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Humanwissenschaften</orgunit>
+<orgunit>Institut f&#xFC;r Erforschung und Entwicklung fachbezogenen Unterrichts - EE-feU</orgunit>
+<orgunit>Musikp&#xE4;dagogik und Musikdidaktik</orgunit>
+<orgunit>Lehrstuhl f&#xFC;r Musikp&#xE4;dagogik und Musikdidaktik</orgunit>
+</orgunits>
+<short>WE5/02.087</short>
+<size>8</size>
+</Room>
+<Room key="Room.wiai.bereic.lehrst_1.116">
+<address>An der Weberei 5</address>
+<buildingkey>WE5</buildingkey>
+<contacts>
+<contact><UnivISRef type="Person" key="Person.wiai.bereic.lehrst_1.henric" /></contact>
+</contacts>
+<floor>02</floor>
+<id>41275268</id>
+<name>PC-Labor</name>
+<orgname>Lehrstuhl f&#xFC;r Medieninformatik</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+<orgunit>Bereich Angewandte Informatik</orgunit>
+<orgunit>Lehrstuhl f&#xFC;r Medieninformatik</orgunit>
+</orgunits>
+<short>WE5/02.116</short>
+<size>18</size>
+</Room>
+<Room key="Room.wiai.zentr.zentr.004_3">
+<address>An der Weberei 5</address>
+<beam>ja</beam>
+<buildingkey>WE5</buildingkey>
+<contacts>
+<contact><UnivISRef type="Person" key="Person.wiai.zentr.zentr.schaib" /></contact>
+</contacts>
+<dark>ja</dark>
+<description>Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+<floor>03</floor>
+<id>41267637</id>
+<lose>ja</lose>
+<name>Seminarraum</name>
+<orgname>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+</orgunits>
+<short>WE5/03.004</short>
+<size>30</size>
+</Room>
+<Room key="Room.human.eefeu.kunst.kunst.f153">
+<address>An der Weberei 5</address>
+<beam>ja</beam>
+<buildingkey>WE5</buildingkey>
+<contacts>
+<contact><UnivISRef type="Person" key="Person.human.eefeu.kunst.kunst.ochslu" /></contact>
+</contacts>
+<description>Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+<floor>03</floor>
+<id>29913398</id>
+<name>Pr&#xFC;fungsvorbereitung</name>
+<orgname>Fachvertretung f&#xFC;r Didaktik der Kunst</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Humanwissenschaften</orgunit>
+<orgunit>Institut f&#xFC;r Erforschung und Entwicklung fachbezogenen Unterrichts - EE-feU</orgunit>
+<orgunit>Kunst</orgunit>
+<orgunit>Fachvertretung f&#xFC;r Didaktik der Kunst</orgunit>
+</orgunits>
+<short>WE5/03.049</short>
+<size>20</size>
+</Room>
+<Room key="Room.human.eefeu.kunst.kunst.050">
+<address>An der Weberei 5</address>
+<beam>ja</beam>
+<buildingkey>WE5</buildingkey>
+<contacts>
+<contact><UnivISRef type="Person" key="Person.human.eefeu.kunst.kunst.ochslu" /></contact>
+</contacts>
+<dark>ja</dark>
+<description>Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+<floor>03</floor>
+<id>21244122</id>
+<name>Seminarraum Neue Medien</name>
+<orgname>Fachvertretung f&#xFC;r Didaktik der Kunst</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Humanwissenschaften</orgunit>
+<orgunit>Institut f&#xFC;r Erforschung und Entwicklung fachbezogenen Unterrichts - EE-feU</orgunit>
+<orgunit>Kunst</orgunit>
+<orgunit>Fachvertretung f&#xFC;r Didaktik der Kunst</orgunit>
+</orgunits>
+<short>WE5/03.050</short>
+<size>16</size>
+</Room>
+<Room key="Room.human.eefeu.kunst.kunst.064_9">
+<address>An der Weberei 5</address>
+<buildingkey>WE5</buildingkey>
+<contacts>
+<contact><UnivISRef type="Person" key="Person.human.eefeu.kunst.kunst.ochslu" /></contact>
+</contacts>
+<floor>03</floor>
+<id>21213595</id>
+<name>Werkraum Drucken</name>
+<orgname>Fachvertretung f&#xFC;r Didaktik der Kunst</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Humanwissenschaften</orgunit>
+<orgunit>Institut f&#xFC;r Erforschung und Entwicklung fachbezogenen Unterrichts - EE-feU</orgunit>
+<orgunit>Kunst</orgunit>
+<orgunit>Fachvertretung f&#xFC;r Didaktik der Kunst</orgunit>
+</orgunits>
+<short>WE5/03.064</short>
+</Room>
+<Room key="Room.human.eefeu.kunst.kunst.065">
+<address>An der Weberei 5</address>
+<beam>ja</beam>
+<buildingkey>WE5</buildingkey>
+<contacts>
+<contact><UnivISRef type="Person" key="Person.human.eefeu.kunst.kunst.ochslu" /></contact>
+</contacts>
+<description>Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+<floor>03</floor>
+<id>21296919</id>
+<name>Zeichensaal 1</name>
+<orgname>Fachvertretung f&#xFC;r Didaktik der Kunst</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Humanwissenschaften</orgunit>
+<orgunit>Institut f&#xFC;r Erforschung und Entwicklung fachbezogenen Unterrichts - EE-feU</orgunit>
+<orgunit>Kunst</orgunit>
+<orgunit>Fachvertretung f&#xFC;r Didaktik der Kunst</orgunit>
+</orgunits>
+<short>WE5/03.065</short>
+<size>20</size>
+</Room>
+<Room key="Room.human.eefeu.kunst.kunst.f255">
+<address>An der Weberei 5</address>
+<beam>ja</beam>
+<buildingkey>WE5</buildingkey>
+<contacts>
+<contact><UnivISRef type="Person" key="Person.human.eefeu.kunst.kunst.ochslu" /></contact>
+</contacts>
+<description>Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+<floor>03</floor>
+<id>29978447</id>
+<name>Zeichensaal 1</name>
+<orgname>Fachvertretung f&#xFC;r Didaktik der Kunst</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Humanwissenschaften</orgunit>
+<orgunit>Institut f&#xFC;r Erforschung und Entwicklung fachbezogenen Unterrichts - EE-feU</orgunit>
+<orgunit>Kunst</orgunit>
+<orgunit>Fachvertretung f&#xFC;r Didaktik der Kunst</orgunit>
+</orgunits>
+<short>WE5/03.067</short>
+<size>30</size>
+</Room>
+<Room key="Room.wiai.bereic_1.lehrst_1.097">
+<address>An der Weberei 5</address>
+<buildingkey>WE5</buildingkey>
+<contacts>
+<contact><UnivISRef type="Person" key="Person.wiai.bereic_1.lehrst_1.homera" /></contact>
+</contacts>
+<description>Die Raumbelegung dieses PC-Labors ist ausschlie&#xDF;lich durch die Raumvergabeverantwortliche m&#xF6;glich.</description>
+<floor>03</floor>
+<id>41567272</id>
+<name>PC-Labor</name>
+<orgname>Lehrstuhl f&#xFC;r Praktische Informatik, insbesondere Softwaretechnik und Programmiersprachen</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+<orgunit>Bereich Informatik</orgunit>
+<orgunit>Lehrstuhl f&#xFC;r Praktische Informatik, insbesondere Softwaretechnik und Programmiersprachen</orgunit>
+</orgunits>
+<short>WE5/03.097</short>
+</Room>
+<Room key="Room.wiai.bereic_1.lehrst_1.098">
+<address>An der Weberei 5</address>
+<beam>ja</beam>
+<buildingkey>WE5</buildingkey>
+<contacts>
+<contact><UnivISRef type="Person" key="Person.wiai.bereic_1.lehrst_1.homera" /></contact>
+</contacts>
+<description>Die Raumbelegung dieses PC-Labors ist ausschlie&#xDF;lich durch die Raumvergabeverantwortliche m&#xF6;glich. Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+<floor>03</floor>
+<id>41557272</id>
+<name>PC-Labor</name>
+<orgname>Lehrstuhl f&#xFC;r Praktische Informatik, insbesondere Softwaretechnik und Programmiersprachen</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+<orgunit>Bereich Informatik</orgunit>
+<orgunit>Lehrstuhl f&#xFC;r Praktische Informatik, insbesondere Softwaretechnik und Programmiersprachen</orgunit>
+</orgunits>
+<short>WE5/03.098</short>
+</Room>
+<Room key="Room.wiai.zentr.zentr.003_0">
+<address>An der Weberei 5</address>
+<beam>ja</beam>
+<buildingkey>WE5</buildingkey>
+<contacts>
+<contact><UnivISRef type="Person" key="Person.wiai.zentr.zentr.schaib" /></contact>
+</contacts>
+<dark>ja</dark>
+<description>Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+<floor>04</floor>
+<id>41296907</id>
+<lose>ja</lose>
+<name>Seminarraum</name>
+<orgname>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+</orgunits>
+<short>WE5/04.003</short>
+<size>30</size>
+</Room>
+<Room key="Room.wiai.zentr.zentr.004">
+<address>An der Weberei 5</address>
+<bluray>ja</bluray>
+<buildingkey>WE5</buildingkey>
+<contacts>
+<contact><UnivISRef type="Person" key="Person.wiai.zentr.zentr.schaib" /></contact>
+</contacts>
+<dark>ja</dark>
+<dbeam>ja</dbeam>
+<description>Projektor: HDMI, VGA, PC, DocCam, Blu-Ray; Ton: 3,5 mm Klinke, CD</description>
+<dvd>ja</dvd>
+<floor>04</floor>
+<id>41241748</id>
+<lose>ja</lose>
+<mikr>ja</mikr>
+<name>Seminarraum</name>
+<orgname>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+</orgunits>
+<pc>ja</pc>
+<pruef>ja</pruef>
+<short>WE5/04.004</short>
+<size>60</size>
+<visu>ja</visu>
+</Room>
+<Room key="Room.sprach.zentr.005">
+<address>An der Weberei 5</address>
+<bluray>ja</bluray>
+<buildingkey>WE5</buildingkey>
+<contacts>
+<contact><UnivISRef type="Person" key="Person.sprach.zentr.bertbr" /></contact>
+</contacts>
+<dbeam>ja</dbeam>
+<description>F&#xFC;r computerunterst&#xFC;tzte Seminare und Phonetik&#xFC;bungen, Internetrecherche und Audioaufnahmen. Anschlussm&#xF6;glichkeiten Dozentenplatz: Projektor: HDMI, VGA, PC, DocCam; Ton: HDMI, 3,5 mm Klinke, PC</description>
+<floor>04</floor>
+<id>21238896</id>
+<mikr>ja</mikr>
+<name>Sprachlernstudio</name>
+<orgname>Sprachenzentrum</orgname>
+<orgunits>
+<orgunit>Sprachenzentrum</orgunit>
+</orgunits>
+<pc>ja</pc>
+<short>WE5/04.005</short>
+<size>18</size>
+<visu>ja</visu>
+</Room>
+<Room key="Room.guk.kommwiss.zentr.008">
+<address>An der Weberei 5</address>
+<buildingkey>WE5</buildingkey>
+<contacts>
+<contact><UnivISRef type="Person" key="Person.guk.kommwiss.kommu.mllerh" /></contact>
+</contacts>
+<description>Nicht f&#xFC;r Seminare und Vorlesungen geeignet.</description>
+<floor>04</floor>
+<id>21294803</id>
+<name>Multimedialabor</name>
+<orgname>Institut f&#xFC;r Kommunikationswissenschaft</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Geistes- und Kulturwissenschaften</orgunit>
+<orgunit>Institut f&#xFC;r Kommunikationswissenschaft</orgunit>
+</orgunits>
+<short>WE5/04.008</short>
+</Room>
+<Room key="Room.guk.kommwiss.zentr.012">
+<address>An der Weberei 5</address>
+<beam>ja</beam>
+<buildingkey>WE5</buildingkey>
+<contacts>
+<contact><UnivISRef type="Person" key="Person.guk.kommwiss.kommu.mllerh" /></contact>
+</contacts>
+<description>Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+<floor>04</floor>
+<id>21246992</id>
+<name>Lehrredaktion</name>
+<orgname>Institut f&#xFC;r Kommunikationswissenschaft</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Geistes- und Kulturwissenschaften</orgunit>
+<orgunit>Institut f&#xFC;r Kommunikationswissenschaft</orgunit>
+</orgunits>
+<short>WE5/04.012</short>
+<size>15</size>
+</Room>
+<Room key="Room.wiai.zentr.zentr.014">
+<address>An der Weberei 5</address>
+<buildingkey>WE5</buildingkey>
+<contacts>
+<contact><UnivISRef type="Person" key="Person.wiai.zentr.zentr.schaib" /></contact>
+</contacts>
+<dbeam>ja</dbeam>
+<description>Projektor: HDMI, VGA, PC, DocCam; Ton: HDMI, 3,5 mm Klinke, PC</description>
+<fest>ja</fest>
+<floor>04</floor>
+<id>41271748</id>
+<name>PC-Pool</name>
+<orgname>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+</orgunits>
+<pc>ja</pc>
+<short>WE5/04.014</short>
+<size>40</size>
+<visu>ja</visu>
+</Room>
+<Room key="Room.sprach.zentr.076">
+<address>An der Weberei 5</address>
+<beam>ja</beam>
+<buildingkey>WE5</buildingkey>
+<contacts>
+<contact><UnivISRef type="Person" key="Person.sprach.zentr.bertbr" /></contact>
+</contacts>
+<dark>ja</dark>
+<description>Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+<floor>04</floor>
+<id>21280393</id>
+<lose>ja</lose>
+<name>Seminarraum</name>
+<orgname>Sprachenzentrum</orgname>
+<orgunits>
+<orgunit>Sprachenzentrum</orgunit>
+</orgunits>
+<short>WE5/04.076</short>
+<size>30</size>
+</Room>
+<Room key="Room.wiai.bereic_2.lehrst.131">
+<address>An der Weberei 5</address>
+<buildingkey>WE5</buildingkey>
+<description>Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+<floor>04</floor>
+<id>41220872</id>
+<name>PC-Labor 2</name>
+<orgname>Lehrstuhl f&#xFC;r Wirtschaftsinformatik, insb. Informationssysteme in Dienstleistungsbereichen</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+<orgunit>Bereich Wirtschaftsinformatik</orgunit>
+<orgunit>Lehrstuhl f&#xFC;r Wirtschaftsinformatik, insb. Informationssysteme in Dienstleistungsbereichen</orgunit>
+</orgunits>
+<short>WE5/04.131</short>
+<size>6</size>
+</Room>
+<Room key="Room.wiai.bereic_2.lehrst.132">
+<address>An der Weberei 5</address>
+<beam>ja</beam>
+<buildingkey>WE5</buildingkey>
+<description>Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+<floor>04</floor>
+<id>41210872</id>
+<name>PC-Labor 1</name>
+<orgname>Lehrstuhl f&#xFC;r Wirtschaftsinformatik, insb. Informationssysteme in Dienstleistungsbereichen</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+<orgunit>Bereich Wirtschaftsinformatik</orgunit>
+<orgunit>Lehrstuhl f&#xFC;r Wirtschaftsinformatik, insb. Informationssysteme in Dienstleistungsbereichen</orgunit>
+</orgunits>
+<short>WE5/04.132</short>
+<size>12</size>
+</Room>
+<Room key="Room.wiai.zentr.zentr.003_24">
+<address>An der Weberei 5</address>
+<beam>ja</beam>
+<buildingkey>WE5</buildingkey>
+<contacts>
+<contact><UnivISRef type="Person" key="Person.wiai.zentr.zentr.schaib" /></contact>
+</contacts>
+<dark>ja</dark>
+<description>Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+<floor>05</floor>
+<id>41292536</id>
+<lose>ja</lose>
+<name>Seminarraum</name>
+<orgname>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+</orgunits>
+<short>WE5/05.003</short>
+<size>30</size>
+</Room>
+<Room key="Room.wiai.zentr.zentr.004_5">
+<address>An der Weberei 5</address>
+<beam>ja</beam>
+<buildingkey>WE5</buildingkey>
+<contacts>
+<contact><UnivISRef type="Person" key="Person.wiai.zentr.zentr.schaib" /></contact>
+</contacts>
+<dark>ja</dark>
+<description>Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+<floor>05</floor>
+<id>41235770</id>
+<lose>ja</lose>
+<name>Seminarraum</name>
+<orgname>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+</orgunits>
+<short>WE5/05.004</short>
+<size>20</size>
+</Room>
+<Room key="Room.wiai.zentr.zentr.005">
+<address>An der Weberei 5</address>
+<beam>ja</beam>
+<buildingkey>WE5</buildingkey>
+<contacts>
+<contact><UnivISRef type="Person" key="Person.wiai.zentr.zentr.schaib" /></contact>
+</contacts>
+<dark>ja</dark>
+<description>Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+<floor>05</floor>
+<id>41261748</id>
+<lose>ja</lose>
+<name>Seminarraum</name>
+<orgname>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+</orgunits>
+<short>WE5/05.005</short>
+<size>20</size>
+</Room>
+<Room key="Room.wiai.bereic_1.lehrst_2.018">
+<address>An der Weberei 5</address>
+<buildingkey>WE5</buildingkey>
+<description>Projektor: HDMI, VGA; Ton: HDMI, 3,5 mm Klinke</description>
+<floor>05</floor>
+<id>41230872</id>
+<name>PC-Labor</name>
+<orgname>Lehrstuhl f&#xFC;r Informatik, insbesondere Mobile Softwaresysteme</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+<orgunit>Bereich Informatik</orgunit>
+<orgunit>Lehrstuhl f&#xFC;r Informatik, insbesondere Mobile Softwaresysteme</orgunit>
+</orgunits>
+<short>WE5/05.018</short>
+<size>12</size>
+</Room>
+</UnivIS>
+

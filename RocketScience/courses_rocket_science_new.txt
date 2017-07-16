@@ -1,0 +1,418 @@
+"Lecture.guk.angl.angli._liter_1" "Literary Journalism" "erba" "s" "seminar_tower" 2 10 12 15
+"Lecture.guk.kommwiss.kommu.auswer_1" "Auswertung qualitativer Daten" "erba" "v" "seminar_tower" 4 10 12 15
+"Lecture.guk.kommwiss.kommu.auswer_2_1" "Auswertung Gruppendiskussion" "erba" "v" "seminar_tower" 3 8 10 15
+"Lecture.guk.kommwiss.kommu.dasmed_1" "Das Mediensystem in der Bundesrepublik Deutschland" "erba" "v" "lecture_big" 3 10 12 200
+"Lecture.guk.kommwiss.kommu.dasmed_7_1" "Das Mediensystem in der Bundesrepublik Deutschland" "erba" "v" "lecture_big" 3 10 12 200
+"Lecture.guk.kommwiss.kommu.dierep_1" "Die Reportage: Genre und Verfahren" "erba" "s" "seminar_tower" 3 16 18 15
+"Lecture.guk.kommwiss.kommu.einfhr_1" "Einführung in die Kommunikationswissenschaft (Gruppe 1)" "erba" "s" "seminar_tower" 1 8 10 20
+"Lecture.guk.kommwiss.kommu.einfhr_1_1" "Einführung in die Datenanalyse mit SPSS" "erba" "v" "seminar_tower" 2 10 12 15
+"Lecture.guk.kommwiss.kommu.einfhr_3_1" "Einführung in die Datenanalyse mit SPSS" "erba" "v" "seminar_tower" 2 8 10 15
+"Lecture.guk.kommwiss.kommu.einfhr_45_1" "Einführung in die Kommunikationswissenschaft (Gruppe 2)" "erba" "s" "seminar_tower" 1 10 12 20
+"Lecture.guk.kommwiss.kommu.einfhr_8_1" "Einführung in die Kommunikationswissenschaft (Gruppe 1)" "erba" "s" "seminar_tower" 1 8 10 20
+"Lecture.guk.kommwiss.kommu.einfhr_9_1" "Einführung in die Kommunikationswissenschaft (Gruppe 2)" "erba" "s" "seminar_tower" 1 10 12 20
+"Lecture.guk.kommwiss.kommu.europi_1" "Europäische Quality-TV-Serien. Eine Bestandsaufnahme (Gruppe 1)" "erba" "s" "seminar_tower" 3 10 12 15
+"Lecture.guk.kommwiss.kommu.europi_7_1" "Europäische Quality-TV-Serien. Eine Bestandsaufnahme (Gruppe 2)" "erba" "s" "seminar_tower" 3 10 12 15
+"Lecture.guk.kommwiss.kommu.evalua_1" "Evaluation der strategischen Kommunikation des Pfalzmuseums Forchheim - Ein Forschungskurs" "erba" "v" "seminar_tower" 2 12 14 15
+"Lecture.guk.kommwiss.kommu.filmge_1" "Filmgeschichte" "erba" "v" "lecture_big" 1 14 16 100
+"Lecture.guk.kommwiss.kommu.grundl_1" "Grundlagen der Kommunikationswissenschaft I" "erba" "s" "seminar_tower" 2 8 10 20
+"Lecture.guk.kommwiss.kommu.grundl_1_1" "Grundlagen der Kommunikationswissenschaft II (Gruppe 5)" "erba" "s" "seminar_tower" 4 8 10 15
+"Lecture.guk.kommwiss.kommu.grundl_13_1" "Grundlagen der Kommunikationswissenschaft II (Gruppe 1)" "erba" "s" "seminar_tower" 1 12 14 15
+"Lecture.guk.kommwiss.kommu.grundl_2_1" "Grundlagen der Kommunikationswissenschaft II (Gruppe 3)" "erba" "s" "seminar_tower" 2 12 14 15
+"Lecture.guk.kommwiss.kommu.grundl_5_1" "Grundlagen der Kommunikationswissenschaft II (Gruppe 2)" "erba" "s" "seminar_tower" 1 14 16 15
+"Lecture.guk.kommwiss.kommu.grundl_6_1" "Grundlagen der Kommunikationswissenschaft II (Gruppe 6)" "erba" "s" "seminar_tower" 4 10 12 15
+"Lecture.guk.kommwiss.kommu.grundl_7_1" "Grundlagen der Kommunikationswissenschaft II (Gruppe 4)" "erba" "s" "seminar_tower" 3 12 14 15
+"Lecture.guk.kommwiss.kommu.inhalt_1" "Inhaltsanalyse (Gruppe 1)" "erba" "s" "seminar_tower" 1 10 12 12
+"Lecture.guk.kommwiss.kommu.inhalt_5_1" "Inhaltsanalyse (Gruppe 2)" "erba" "s" "seminar_tower" 1 14 16 12
+"Lecture.guk.kommwiss.kommu.interc_1" "Intercultural Communication and the Globalization of Media Systems" "erba" "s" "seminar_tower" 4 8 10 15
+"Lecture.guk.kommwiss.kommu.journa_1" "Einführung in die Kommunikatorforschung" "erba" "v" "lecture_big" 4 8 10 100
+"Lecture.guk.kommwiss.kommu.kandid_1" "Kandidatenseminar - Behmer" "erba" "s" "seminar_tower" 2 16 18 40
+"Lecture.guk.kommwiss.kommu.kandid_18_1" "Kandidatenseminar - Mehling" "erba" "s" "seminar_tower" 2 16 18 15
+"Lecture.guk.kommwiss.kommu.kandid_2_1" "Kandidatenseminar - Stöber" "erba" "s" "seminar_tower" 2 16 18 10
+"Lecture.guk.kommwiss.kommu.kandid_4_1" "Kandidatenseminar - Behmer - Haller" "erba" "s" "seminar_tower" 2 16 18 40
+"Lecture.guk.kommwiss.kommu.kinofo_1" "Kinoforschung" "erba" "s" "office_upstaris" 3 10 12 15
+"Lecture.guk.kommwiss.kommu.lehrve_1" "Tutorium zur Einführung in das wissenschaftliche Arbeiten für KoWi-Studierende" "erba" "u" "seminar_tower" 3 14 16 15
+"Lecture.guk.kommwiss.kommu.litera_1" "Literary Journalism" "erba" "s" "seminar_tower" 2 10 12 15
+"Lecture.guk.kommwiss.kommu.medien_7_1" "Medien und Journalismus im Film" "erba" "v" "seminar_tower" 2 10 12 20
+"Lecture.guk.kommwiss.kommu.narrat_1" "Narratives Verstehen bei Quality-TV-Serien" "erba" "s" "seminar_tower" 2 12 14 15
+"Lecture.guk.kommwiss.kommu.oberse_1" "Kandidatenseminar - Stöber" "erba" "s" "seminar_tower" 2 16 18 10
+"Lecture.guk.kommwiss.kommu.organi_1" "Organisationskommunikation" "erba" "v" "seminar_tower" 3 14 16 100
+"Lecture.guk.kommwiss.kommu.organi_6_1" "Organisationskommunikation in Krisensituationen" "erba" "s" "seminar_tower" 1 14 16 15
+"Lecture.guk.kommwiss.kommu.politi_1" "Politische Kommunikation" "erba" "v" "lecture_big" 1 10 12 100
+"Lecture.guk.kommwiss.kommu.projek_1" "Projektmanagement" "erba" "v" "office_upstaris" 1 14 16 15
+"Lecture.guk.kommwiss.kommu.quelle_1" "Quellenkritik und -interpretation (Gruppe 1)" "erba" "s" "seminar_tower" 1 12 14 20
+"Lecture.guk.kommwiss.kommu.quelle_0_1" "Quellenkritik und -interpretation  (Gruppe 2)" "erba" "s" "seminar_tower" 1 16 18 12
+"Lecture.guk.kommwiss.kommu.theore_1" "Theoretische Grundlagen der Organisationskommunikation" "erba" "s" "seminar_tower" 1 10 12 15
+"Lecture.guk.kommwiss.kommu.wennst_1" "Wenn Straßen anfangen zu erzählen" "erba" "v" "office_upstaris" 4 16 18 15
+"Lecture.human.eefeu.kunst.kunst.basisq_3_1" "Basis-Seminar Kunst - Basisqualifikation Kunst" "erba" "s" "office_upstaris" 4 11 14 0
+"Lecture.human.eefeu.kunst.kunst.beglei_3_1" "Vorbereitung Aufnahmemappe und Abschlußmappe" "erba" "u" "office_upstaris" 2 18 20 0
+"Lecture.human.eefeu.kunst.kunst.gestal_2_1" "Gestalten in der Fläche    - Basis KP I - (Karl)" "erba" "s" "office_upstaris" 3 12 15 0
+"Lecture.human.eefeu.kunst.kunst.gestal_7_1" "Gestalten in der Fläche   - Basis KP I (Karl)" "erba" "s" "office_upstaris" 4 14 17 0
+"Lecture.human.eefeu.kunst.kunst.grundl_3_1" "Grundlagen des Gestaltens - Basis KP I -" "erba" "v" "seminar_tower" 2 9 10 0
+"Lecture.human.eefeu.kunst.kunst.grundl_55_1" "Grundlagen der Fachdidaktik - Basis KW/KD I oder Basis Kunst und Theorie ( N. Karl)" "erba" "s" "seminar_tower" 4 12 14 0
+"Lecture.human.eefeu.kunst.kunst.grundt_2_1" "Grundtechnik - Menschliche Gestalt  I + II (M. Schmidt)" "erba" "v" "office_upstaris" 4 18 20 0
+"Lecture.human.eefeu.kunst.kunst.kunstg_1" "Kunstgeschichte  -19. Jahrhundert 1. Hälfte -  Basis KW/KD II, Aufbau KW, Vertiefung KW , Vertiefung RS II" "erba" "v" "office_upstaris" 2 16 18 0
+"Lecture.human.eefeu.kunst.kunst.kunstv_1" "Fachdidaktik - Kunst vor Ort -  Barock in Bamberg -  Basis KW/KD, Aufbau KD; Vertiefung KP, Vertiefung RS II" "erba" "s" "office_upstaris" 3 14 16 0
+"Lecture.human.eefeu.kunst.kunst.plasti_2_1" "Plastisches Gestalten II-  Aufbau KP II  -(Karl)" "erba" "s" "seminar_tower" 1 14 16 0
+"Lecture.human.eefeu.musik.musik.anstze_1" "Konzeptionelle Ansätze zur Gestaltung schulischen Musikunterrichts seit Beginn des 20. Jahrhunderts" "erba" "v" "office_upstaris" 5 10 11 0
+"Lecture.human.eefeu.musik.musik.aufbau_1" "Pop-/Rockarrangement" "erba" "v" "office_upstaris" 5 15 16 0
+"Lecture.human.eefeu.musik.musik.basisq_0_1" "Basisqualifikation - Praxis des Musikunterrichts an Grundschulen (in vier Gruppen)" "erba" "s" "office_upstaris" 1 14 15 0
+"Lecture.human.eefeu.musik.musik.basisq_0_3" "Basisqualifikation - Praxis des Musikunterrichts an Grundschulen (in vier Gruppen)" "unknown" "s" "" 0 0 0 0
+"Lecture.human.eefeu.musik.musik.basisq_0_5" "Basisqualifikation - Praxis des Musikunterrichts an Grundschulen (in vier Gruppen)" "erba" "s" "office_upstaris" 0 14 15 0
+"Lecture.human.eefeu.musik.musik.basisq_1_1" "Basisqualifikation - Praxis des Musikunterrichts an Grundschulen (in vier Gruppen)" "erba" "s" "office_upstaris" 2 16 17 0
+"Lecture.human.eefeu.musik.musik.didakt_1_1" "Computer-Arrangement" "erba" "v" "office_upstaris" 1 10 11 8
+"Lecture.human.eefeu.musik.musik.didakt_35_1" "Didaktik und Methodik des Musikunterrichts in der Grundschule (in zwei Gruppen)" "erba" "s" "office_upstaris" 2 10 11 0
+"Lecture.human.eefeu.musik.musik.didakt_4_1" "Didaktik und Methodik des Musikunterrichts in der Grundschule (in zwei Gruppen)" "erba" "s" "office_upstaris" 2 12 13 0
+"Lecture.human.eefeu.musik.musik.dixie_5_1" "Jazz/Pop-Ensemble in zwei Kursen" "erba" "v" "office_upstaris" 1 17 18 0
+"Lecture.human.eefeu.musik.musik.dixie_6_1" "Jazz/Pop-Ensemble in zwei Kursen" "erba" "v" "office_upstaris" 1 16 17 0
+"Lecture.human.eefeu.musik.musik.emg_6_1" "Elementare Musiktheorie und Gehörbildung (in zwei Kursen)" "erba" "v" "office_upstaris" 4 13 13 18
+"Lecture.human.eefeu.musik.musik.emg_9_1" "Elementare Musiktheorie und Gehörbildung (in zwei Kursen)" "erba" "v" "office_upstaris" 4 12 13 18
+"Lecture.human.eefeu.musik.musik.empiri_1" "Empirische musikpädagogische Unterrichtsforschung - am Beispiel der Bandklasse" "erba" "v" "office_upstaris" 2 16 17 0
+"Lecture.human.eefeu.musik.musik.ensemb_1" "Ensembleleitung II  (BA-NF, UF)" "erba" "v" "office_upstaris" 3 14 15 20
+"Lecture.human.eefeu.musik.musik.gbldii_2_1" "Gehörbildung II (in zwei Kursen)" "erba" "v" "office_upstaris" 4 16 16 0
+"Lecture.human.eefeu.musik.musik.gbldii_6_1" "Gehörbildung II (in zwei Kursen)" "erba" "v" "office_upstaris" 4 15 16 0
+"Lecture.human.eefeu.musik.musik.gehrbi_1_1" "Gehörbildung IV (Tutorium)" "erba" "u" "office_upstaris" 4 18 18 0
+"Lecture.human.eefeu.musik.musik.gehrbi_82_1" "Gehörbildung IV (Tutorium)" "erba" "u" "office_upstaris" 3 17 18 0
+"Lecture.human.eefeu.musik.musik.gitarr_1_1" "Gitarrentutorium" "erba" "v" "office_upstaris" 3 13 14 0
+"Lecture.human.eefeu.musik.musik.gitarr_72_1" "Gitarrentutorium" "erba" "v" "office_upstaris" 2 12 13 0
+"Lecture.human.eefeu.musik.musik.gruppe_1" "Ansätze aktiven Musikhörens" "erba" "s" "office_upstaris" 5 10 11 0
+"Lecture.human.eefeu.musik.musik.harmon_1" "Harmonielehre (UF)" "erba" "v" "office_upstaris" 3 10 11 0
+"Lecture.human.eefeu.musik.musik.instru_1" "Instrumentales Musizieren -  Liedbegleitung mit Orff-Instrumenten" "erba" "v" "office_upstaris" 2 14 15 16
+"Lecture.human.eefeu.musik.musik.interk_1" "Interkulturelle / Multikulturelle / Transkulturelle Musikpädagogik" "erba" "s" "office_upstaris" 4 14 15 0
+"Lecture.human.eefeu.musik.musik.klasse_1" "Klassenmusizieren" "erba" "s" "office_upstaris" 1 14 15 0
+"Lecture.human.eefeu.musik.musik.lehrve_1" "Lehrverfahren in der Grundschule" "erba" "s" "office_upstaris" 3 12 13 0
+"Lecture.human.eefeu.musik.musik.lehrve_2_1" "Lehrverfahren in der Sekundarstufe I" "erba" "s" "office_upstaris" 3 13 14 0
+"Lecture.human.eefeu.musik.musik.lterem_1" "Grundzüge der Musikgeschichte (für Studierende des Didaktikfachs)" "erba" "s" "office_upstaris" 2 16 17 25
+"Lecture.human.eefeu.musik.musik.musika_1" "Musikalische Analyse - exemplarische Beispiele, theoretische und methodische Reflexion (II)" "erba" "v" "office_upstaris" 4 14 15 0
+"Lecture.human.eefeu.musik.musik.musikp_1" "Musikpsychologische und musiksoziologische Grundlagen der Vermittlung und Aneignung von Musik" "erba" "s" "office_upstaris" 4 10 11 0
+"Lecture.human.eefeu.musik.musik.pcbung_1" "PC-Übung" "erba" "v" "office_upstaris" 1 12 18 0
+"Lecture.human.eefeu.musik.musik.pcbung_3" "PC-Übung" "erba" "v" "office_upstaris" 4 8 15 0
+"Lecture.human.eefeu.musik.musik.pcbung_5" "PC-Übung" "erba" "v" "office_upstaris" 5 15 20 0
+"Lecture.human.eefeu.musik.musik.pcbung_7" "PC-Übung" "erba" "v" "office_upstaris" 3 8 13 0
+"Lecture.human.eefeu.musik.musik.pcbung_9" "PC-Übung" "erba" "v" "office_upstaris" 2 13 20 0
+"Lecture.human.eefeu.musik.musik.pcbung_11" "PC-Übung" "erba" "v" "office_upstaris" 1 8 10 0
+"Lecture.human.eefeu.musik.musik.pcbung_13" "PC-Übung" "erba" "v" "office_upstaris" 3 15 17 0
+"Lecture.human.eefeu.musik.musik.pcbung_15" "PC-Übung" "erba" "v" "office_upstaris" 4 17 18 0
+"Lecture.human.eefeu.musik.musik.popges_1" "Geschichte der Pop-/Rockmusik" "erba" "s" "office_upstaris" 3 16 17 15
+"Lecture.human.eefeu.musik.musik.shrman_1" "Aktuelle musikpädagogische und musikdidaktische Fachdiskussion" "erba" "s" "office_upstaris" 4 16 17 0
+"Lecture.human.paeda.paeda._einfh_0_1" "Einführung in die Erziehungswissenschaft III: Geschichte und Theorie der Erziehung und Bildung (Übung 7)" "erba" "v" "seminar_tower" 1 14 15 70
+"Lecture.human.paeda.paeda._einfh_1_1" "Einführung in die Erziehungswissenschaft III: Geschichte und Theorie der Erziehung und Bildung (Übung 3)" "erba" "v" "seminar_tower" 4 8 10 70
+"Lecture.human.paeda.paeda._einfh_23_1" "Einführung in die Erziehungswissenschaft III: Geschichte und Theorie der Erziehung und Bildung (Übung 4)" "erba" "v" "seminar_tower" 3 12 13 70
+"Lecture.human.paeda.paeda._einfh_38_1" "Einführung in die Erziehungswissenschaft III: Geschichte und Theorie der Erziehung und Bildung (Übung 4)" "erba" "v" "seminar_tower" 3 12 13 70
+"Lecture.human.paeda.paeda._einfh_4_1" "Einführung in die Erziehungswissenschaft III: Geschichte und Theorie der Erziehung und Bildung (Übung 1)" "erba" "v" "seminar_tower" 4 10 11 70
+"Lecture.human.paeda.paeda._einfh_6_1" "Einführung in die Erziehungswissenschaft III: Geschichte und Theorie der Erziehung und Bildung (Übung 2)" "erba" "v" "seminar_tower" 4 12 13 70
+"Lecture.human.paeda.paeda._einfh_7_1" "Einführung in die Erziehungswissenschaft III: Geschichte und Theorie der Erziehung und Bildung (Übung 2)" "erba" "v" "seminar_tower" 4 12 13 70
+"Lecture.human.paeda.paeda._einfh_8_1" "Einführung in die Erziehungswissenschaft III: Geschichte und Theorie der Erziehung und Bildung (Übung 1)" "erba" "v" "seminar_tower" 4 10 11 70
+"Lecture.human.paeda.paeda._einfh_88_1" "Einführung in die Erziehungswissenschaft III: Geschichte und Theorie der Erziehung und Bildung (Übung 7)" "erba" "v" "seminar_tower" 1 14 15 70
+"Lecture.human.paeda.paeda._einfh_9_1" "Einführung in die Erziehungswissenschaft III: Geschichte und Theorie der Erziehung und Bildung (Übung 3)" "erba" "v" "seminar_tower" 4 8 10 70
+"Lecture.human.paeda.paeda.bungzu_1" "Einführung in die Erziehungswissenschaft III: Geschichte und Theorie der Erziehung und Bildung (Übung 3)" "erba" "v" "seminar_tower" 4 8 10 70
+"Lecture.human.paeda.paeda.bungzu_70_1" "Wissenschaftstheorie: Übung zur Vorlesung (Übung 1)" "erba" "v" "seminar_tower" 3 8 9 70
+"Lecture.human.paeda.paeda.einfh__7_1" "Einführung in die Erziehungswissenschaft III: Geschichte und Theorie der Erziehung und Bildung (Übung 2)" "erba" "v" "seminar_tower" 4 12 13 70
+"Lecture.human.paeda.paeda.einfh__9_1" "Einführung in die Erziehungswissenschaft III: Geschichte und Theorie der Erziehung und Bildung (Übung 1)" "erba" "v" "seminar_tower" 4 10 11 70
+"Lecture.human.paeda.paeda.prosem_1" "Einführung in die Erziehungswissenschaft III: Geschichte und Theorie der Erziehung und Bildung (Übung 4)" "erba" "v" "seminar_tower" 3 12 13 70
+"Lecture.human.paeda.paeda.semina_10_1" "Einführung in die Erziehungswissenschaft III: Geschichte und Theorie der Erziehung und Bildung (Übung 7)" "erba" "v" "seminar_tower" 1 14 15 70
+"Lecture.human.paeda.sozia._sozia_1" "Sozialpädagogik und soziale Integration" "erba" "s" "office_upstaris" 2 8 10 0
+"Lecture.human.paeda.sozia._sozia_1_1" "Sozialpädagogik und soziale Integration" "erba" "s" "office_upstaris" 2 8 10 0
+"Lecture.human.paeda.sozia._sozia_6_1" "Sozialpädagogik und soziale Integration" "erba" "s" "office_upstaris" 2 8 10 0
+"Lecture.human.paeda.sozia.profes_1" "Sozialpädagogik und soziale Integration" "erba" "s" "office_upstaris" 2 8 10 0
+"Lecture.human.psycho.organ.aktuel_1" "Arbeits- und Organisationspsychologie - Handlungsfelder und aktueller Forschungsstand (Kurs B)" "erba" "s" "seminar_tower" 4 14 16 0
+"Lecture.human.psycho.organ.arbeit_1" "Vorlesung: Organisationspsychologie" "erba" "v" "seminar_tower" 5 10 12 0
+"Lecture.human.psycho.organ.arbeit_4_1" "Industrial/Organizational Psychology Reading Club" "erba" "s" "office_upstaris" 3 12 14 0
+"Lecture.human.psycho.organ.forsch_1" "Forschungsseminar Arbeits- und Organisationspsychologie" "erba" "s" "office_upstaris" 3 16 18 0
+"Lecture.human.psycho.organ.semina_1" "Gesundheitsförderung - interdisziplinäre Zugänge aus Biologie sowie Arbeits- & Organisationspsychologie" "erba" "s" "office_upstaris" 1 14 16 0
+"Lecture.human.psycho.organ.semina_0_1" "Arbeits- und Organisationspsychologie - Handlungsfelder und aktueller Forschungsstand (Kurs A)" "erba" "s" "office_upstaris" 4 10 12 0
+"Lecture.human.psycho.organ.semina_2_1" "Seminar Proaktives Handeln, Kreativität und Innovation in der Arbeit" "erba" "s" "seminar_tower" 3 14 16 0
+"Lecture.human.psycho.organ.semina_7_1" "Seminar Dark Leadership" "erba" "s" "office_upstaris" 3 14 16 0
+"Lecture.human.psycho.profes._cbasp_1" "Fallbesprechung Psychopathologie" "erba" "u" "seminar_tower" 4 14 16 0
+"Lecture.human.psycho.profes._cbasp_5_1" "Fallbesprechung Psychopathologie" "erba" "u" "seminar_tower" 4 14 16 0
+"Lecture.human.psycho.profes.psycho_1" "Fallbesprechung Psychopathologie" "erba" "u" "seminar_tower" 4 14 16 0
+"Lecture.human.psycho.profes_2._seall_1_1" "SE Allgemeine Psychologie II: Lernen (Gruppe 1)" "erba" "s" "office_upstaris" 1 16 18 0
+"Lecture.human.psycho.profes_2._seall_6_1" "SE Allgemeine Psychologie II: Lernen (Gruppe 1)" "erba" "s" "office_upstaris" 1 16 18 0
+"Lecture.human.psycho.profes_2._seall_8_1" "SE Allgemeine Psychologie II: Lernen (Gruppe 1)" "erba" "s" "office_upstaris" 1 16 18 0
+"Lecture.human.psycho.profes_2.allgem_1" "SE Allgemeine Psychologie II: Lernen (Gruppe 1)" "erba" "s" "office_upstaris" 1 16 18 0
+"Lecture.human.psycho.psych.diagno_1" "Diagnostik" "erba" "v" "seminar_tower" 2 12 14 0
+"Lecture.human.psycho.psych.semina_33_1" "Seminar zur Prüfungsvorbereitung (Schulpsychologie)" "erba" "s" "office_upstaris" 4 14 16 0
+"Lecture.human.psycho.psych2.sprach_1" "Sprachpsychologie" "erba" "s" "seminar_tower" 4 14 16 0
+"Lecture.human.psycho.psych2.sprach_3" "Sprachpsychologie" "erba" "s" "seminar_tower" 5 12 14 0
+"Lecture.sowi.bereic.lehrst.multiv_1" "Multivariate Verfahren" "erba" "v" "lecture_big" 2 14 16 0
+"Lecture.sowi.bereic.lehrst.multiv_6_1" "Multivariate Verfahren: Übung zu Multivariate Verfahren" "erba" "v" "lecture_big" 2 16 18 0
+"Lecture.sprach.abteil.zentr.advanc_0_1" "English: Advanced Grammar Usage C1" "erba" "v" "office_upstaris" 1 10 12 0
+"Lecture.sprach.abteil.zentr.advanc_3_1" "English: Advanced Grammar Usage C1" "erba" "v" "seminar_tower" 2 14 16 0
+"Lecture.sprach.abteil.zentr.englis_0_1" "Englisch: Vocabulary Skills C1" "erba" "v" "seminar_tower" 3 12 14 0
+"Lecture.sprach.abteil.zentr.englis_14_1" "Englisch: Sprachpraxis C1: Preparing for C1 (Teil 2)" "erba" "v" "office_upstaris" 3 14 16 0
+"Lecture.sprach.abteil.zentr.englis_19_1" "Englisch: Sprachpraxis B1: Preparing for B1 (Teil 2)" "erba" "v" "office_upstaris" 4 14 16 0
+"Lecture.sprach.abteil.zentr.englis_28_1" "Englisch: Sprachpraxis C1: Communication Skills" "erba" "v" "office_upstaris" 4 12 14 0
+"Lecture.sprach.abteil.zentr.englis_36_1" "Englisch: Sprachpraxis B2: Academic Writing" "erba" "v" "office_upstaris" 4 14 16 0
+"Lecture.sprach.abteil.zentr.englis_37_1" "Englisch: Sprachpraxis B2: Intermediate Grammar Usage" "erba" "v" "seminar_tower" 1 14 16 0
+"Lecture.sprach.abteil.zentr.englis_44_1" "English: Pronunciation for German Speakers of English" "erba" "u" "seminar_tower" 1 16 18 0
+"Lecture.sprach.abteil.zentr.englis_47_1" "Englisch: Vocabulary Skills B2" "erba" "v" "seminar_tower" 4 8 10 0
+"Lecture.sprach.abteil.zentr.englis_51_1" "Englisch: Sprachpraxis C1: Preparing for C1 (Teil 2)" "erba" "v" "seminar_tower" 4 12 14 0
+"Lecture.sprach.abteil.zentr.englis_57_1" "Englisch: Sprachpraxis C1: Academic Writing" "erba" "v" "seminar_tower" 2 14 16 0
+"Lecture.sprach.abteil.zentr.englis_8_1" "Englisch: Sprachpraxis B2: Communication Skills" "erba" "v" "office_upstaris" 2 10 12 0
+"Lecture.sprach.abteil.zentr.englis_83_1" "Englisch: Sprachpraxis B2: The Mistakes Clinic - Clean Up Your English!" "erba" "v" "office_upstaris" 2 8 10 0
+"Lecture.sprach.abteil.zentr.gkirep_5_1" "Grundkurs I (for Repeaters)" "erba" "v" "seminar_tower" 4 12 14 0
+"Lecture.sprach.abteil.zentr.grundk_15_1" "Grundkurs II" "erba" "v" "seminar_tower" 3 12 14 0
+"Lecture.sprach.abteil.zentr.grundk_23_1" "Grundkurs II" "erba" "v" "seminar_tower" 3 10 12 0
+"Lecture.sprach.abteil.zentr.grundk_6_1" "Grundkurs II" "erba" "v" "office_upstaris" 1 12 14 0
+"Lecture.sprach.abteil.zentr.grundk_61_1" "Grundkurs II" "erba" "v" "seminar_tower" 4 10 12 0
+"Lecture.sprach.abteil.zentr.grundk_7_1" "Grundkurs II" "erba" "v" "office_upstaris" 4 12 14 0
+"Lecture.sprach.abteil.zentr.grundk_84_1" "Grundkurs III" "erba" "v" "seminar_tower" 3 12 14 0
+"Lecture.sprach.abteil.zentr.landes_3_1" "Landeskunde US: Film and the American Landscape" "erba" "v" "office_upstaris" 3 14 16 0
+"Lecture.sprach.abteil.zentr.oberku_0_1" "Oberkurs (Neue LPO; Unterrichtsfach)" "erba" "v" "seminar_tower" 4 12 14 0
+"Lecture.sprach.abteil.zentr.oberku_1_1" "Oberkurs (Neue LPO; vertieft)" "erba" "v" "seminar_tower" 4 14 16 0
+"Lecture.sprach.abteil.zentr.oberku_14_1" "Oberkurs (Neue LPO; Unterrichtsfach)" "erba" "v" "seminar_tower" 2 12 14 0
+"Lecture.sprach.abteil.zentr.prepar_0_1" "English: Sprachpraxis B2: Preparing for B2 (intensiv)" "erba" "v" "office_upstaris" 2 10 12 0
+"Lecture.sprach.abteil.zentr.prepar_0_3" "English: Sprachpraxis B2: Preparing for B2 (intensiv)" "erba" "v" "office_upstaris" 4 10 12 0
+"Lecture.sprach.abteil.zentr.prepar_1_1" "Englisch: Sprachpraxis B2: Preparing for B2 (Teil 2)" "erba" "v" "office_upstaris" 3 10 12 0
+"Lecture.sprach.abteil.zentr.presen_4_1" "Presentation Skills (HaF)" "erba" "v" "office_upstaris" 2 12 14 0
+"Lecture.sprach.abteil.zentr.presen_65_1" "Presentation Skills (HaF)" "erba" "v" "office_upstaris" 3 10 12 0
+"Lecture.sprach.abteil.zentr.wiaifr_3_1" "IT English - Security" "erba" "u" "seminar_tower" 1 10 12 0
+"Lecture.sprach.abteil.zentr.wiaiit_2_1" "IT English - Debating Legal Issues" "erba" "u" "seminar_tower" 1 10 12 0
+"Lecture.sprach.abteil.zentr.wirtsc_0_1" "Wirtschaftsenglisch II: Business Finance" "erba" "u" "office_upstaris" 2 12 14 0
+"Lecture.sprach.abteil.zentr.wirtsc_1_1" "Wirtschaftsenglisch IV: Organisational Behaviour" "erba" "u" "seminar_tower" 3 10 12 0
+"Lecture.sprach.abteil.zentr.wirtsc_10_1" "Wirtschaftsenglisch VIII: Current Problems in International Business" "erba" "u" "seminar_tower" 2 12 14 0
+"Lecture.sprach.abteil.zentr.wirtsc_12_1" "Wirtschaftsenglisch IV: Organisational Behaviour" "erba" "u" "seminar_tower" 3 10 12 0
+"Lecture.sprach.abteil.zentr.wirtsc_16_1" "Wirtschaftsenglisch IV: Organisational Behaviour" "erba" "u" "seminar_tower" 3 8 10 0
+"Lecture.sprach.abteil.zentr.wirtsc_18_1" "Wirtschaftsenglisch VIII: Current Problems in International Business" "erba" "u" "seminar_tower" 3 14 16 0
+"Lecture.sprach.abteil.zentr.wirtsc_19_1" "Wirtschaftsenglisch II: Business Finance" "erba" "u" "office_upstaris" 2 8 10 0
+"Lecture.sprach.abteil.zentr.wirtsc_25_1" "Wirtschaftsenglisch IV: Organisational Behaviour" "erba" "u" "office_upstaris" 2 14 16 0
+"Lecture.sprach.abteil.zentr.wirtsc_26_1" "Wirtschaftsenglisch IV: Organisational Behaviour" "erba" "u" "seminar_tower" 2 14 16 0
+"Lecture.sprach.abteil.zentr.wirtsc_308_1" "Wirtschaftsenglisch II: Business Finance" "erba" "u" "office_upstaris" 3 14 16 0
+"Lecture.sprach.abteil.zentr.wirtsc_34_1" "Wirtschaftsenglisch II: Business Finance" "erba" "u" "seminar_tower" 4 12 14 0
+"Lecture.sprach.abteil.zentr.wirtsc_35_1" "Wirtschaftsenglisch II: Business Finance" "erba" "u" "office_upstaris" 3 10 12 0
+"Lecture.sprach.abteil.zentr.wirtsc_4_1" "Wirtschaftsenglisch VIII: Current Problems in International Business" "erba" "u" "seminar_tower" 3 16 18 0
+"Lecture.sprach.abteil.zentr.wirtsc_41_1" "Wirtschaftsenglisch VIII: Current Problems in International Business" "erba" "u" "seminar_tower" 2 14 16 0
+"Lecture.sprach.abteil.zentr.wirtsc_49_1" "Wirtschaftsenglisch II: Business Finance" "erba" "u" "office_upstaris" 3 12 14 0
+"Lecture.sprach.abteil.zentr.wirtsc_60_1" "Wirtschaftsenglisch II: Business Finance" "erba" "u" "seminar_tower" 1 12 14 0
+"Lecture.sprach.abteil.zentr.wirtsc_61_1" "Wirtschaftsenglisch IV: Organisational Behaviour" "erba" "u" "seminar_tower" 3 12 14 0
+"Lecture.sprach.abteil.zentr.wirtsc_64_1" "Wirtschaftsenglisch IV: Organisational Behaviour" "erba" "u" "seminar_tower" 1 14 16 0
+"Lecture.sprach.abteil.zentr.wirtsc_67_1" "Wirtschaftsenglisch VI : Public Speaking" "erba" "u" "office_upstaris" 4 10 12 0
+"Lecture.sprach.abteil.zentr.wirtsc_69_1" "Wirtschaftsenglisch II: Business Finance" "erba" "u" "office_upstaris" 3 8 10 0
+"Lecture.sprach.abteil.zentr.wirtsc_82_1" "Wirtschaftsenglisch II: Business Finance" "erba" "u" "seminar_tower" 3 12 14 0
+"Lecture.sprach.abteil.zentr.wirtsc_83_1" "Wirtschaftsenglisch IV: Organisational Behaviour" "erba" "u" "seminar_tower" 4 10 12 0
+"Lecture.sprach.abteil.zentr.wirtsc_88_1" "Wirtschaftsenglisch IV: Organisational Behaviour" "erba" "u" "office_upstaris" 1 10 12 0
+"Lecture.sprach.abteil.zentr.wirtsc_91_1" "Wirtschaftsenglisch IV: Organisational Behaviour" "erba" "u" "office_upstaris" 2 12 14 0
+"Lecture.sprach.abteil.zentr.wirtsc_92_1" "Wirtschaftsenglisch VI : Public Speaking" "erba" "u" "seminar_tower" 4 8 10 0
+"Lecture.sprach.abteil_1.zentr.bersdf_8_1" "Französisch: Traduction et version paraphrastique allemand-français C1+C2" "erba" "u" "office_upstaris" 2 14 16 0
+"Lecture.sprach.abteil_1.zentr.examen_7_1" "Spanisch: Examensvorbereitung Lehramt Sprachbeherrschung" "erba" "u" "seminar_tower" 2 16 18 0
+"Lecture.sprach.abteil_1.zentr.expres_4_1" "Spanisch: Expresión oral C1" "erba" "u" "office_upstaris" 2 16 18 0
+"Lecture.sprach.abteil_1.zentr.expror_9_1" "Französisch: Expression orale C1/C2" "erba" "u" "office_upstaris" 1 16 18 0
+"Lecture.sprach.abteil_1.zentr.franzs_55_5" "Französisch: Français A1-A2 (für Studierende der Romanistik)" "erba" "u" "office_upstaris" 4 8 10 0
+"Lecture.sprach.abteil_1.zentr.franzs_68_3" "Französisch: Sprachpraxis A1: Französisch 1" "erba" "u" "seminar_tower" 4 8 10 0
+"Lecture.sprach.abteil_1.zentr.franzs_79_1" "Französisch: Tutorium Französisch Sprachpraxis A1" "erba" "u" "office_upstaris" 3 16 17 0
+"Lecture.sprach.abteil_1.zentr.franzs_9_1" "Französisch: Tutorium Französisch Sprachpraxis A2" "erba" "u" "office_upstaris" 3 17 18 0
+"Lecture.sprach.abteil_1.zentr.grammf_9_1" "Französisch: Grammaire du français C2" "erba" "u" "office_upstaris" 1 14 16 0
+"Lecture.sprach.abteil_1.zentr.gramti_0_1" "Spanisch: Gramática C2" "erba" "u" "seminar_tower" 3 16 18 0
+"Lecture.sprach.abteil_1.zentr.grundk_6_1" "Französisch: Français B2 (für Studierende der Romanistik)" "erba" "u" "office_upstaris" 2 16 18 0
+"Lecture.sprach.abteil_1.zentr.grundk_6_3" "Französisch: Français B2 (für Studierende der Romanistik)" "erba" "u" "office_upstaris" 3 16 18 0
+"Lecture.sprach.abteil_1.zentr.grundk_6_5" "Französisch: Français B2 (für Studierende der Romanistik)" "erba" "u" "office_upstaris" 4 16 18 0
+"Lecture.sprach.abteil_1.zentr.initia_8_1" "Französisch: Expression écrite C1" "erba" "u" "seminar_tower" 1 10 12 0
+"Lecture.sprach.abteil_1.zentr.italie_17_1" "Italienisch: Sprachpraxis A1: Italienisch 1 (Italia Net A1 / Blended Learning Kurs)" "erba" "u" "seminar_tower" 3 12 14 0
+"Lecture.sprach.abteil_1.zentr.italie_74_1" "Italienisch: Sprachpraxis A2: Italienisch 2 (Italia Net A2 / Blended Learning Kurs)" "erba" "u" "office_upstaris" 3 10 12 0
+"Lecture.sprach.abteil_1.zentr.italie_98_1" "Italienisch: Lingua italiana B2" "erba" "u" "seminar_tower" 1 10 12 0
+"Lecture.sprach.abteil_1.zentr.italie_98_5" "Italienisch: Lingua italiana B2" "erba" "u" "seminar_tower" 4 10 12 0
+"Lecture.sprach.abteil_1.zentr.landes_2_1" "Spanisch: Español Cultura y civilización A Hispanoamérica Überblickwissen" "erba" "u" "office_upstaris" 1 14 16 0
+"Lecture.sprach.abteil_1.zentr.portug_30_1" "Portugiesisch: Sprachpraxis B1: Portugiesisch 3" "erba" "u" "office_upstaris" 1 8 10 0
+"Lecture.sprach.abteil_1.zentr.portug_30_3" "Portugiesisch: Sprachpraxis B1: Portugiesisch 3" "erba" "u" "seminar_tower" 3 8 10 0
+"Lecture.sprach.abteil_1.zentr.redacc_7_1" "Spanisch: Expresión escrita C2" "erba" "u" "office_upstaris" 3 14 16 0
+"Lecture.sprach.abteil_1.zentr.satext_7_1" "Französisch: Expression écrite C2" "erba" "u" "seminar_tower" 1 12 14 0
+"Lecture.sprach.abteil_1.zentr.satext_9_1" "Französisch: Expression écrite C2" "erba" "u" "office_upstaris" 4 14 16 0
+"Lecture.sprach.abteil_1.zentr.spanis_1_1" "Spanisch: Español B2 (für Studierende der Romanistik)" "erba" "u" "office_upstaris" 1 12 14 0
+"Lecture.sprach.abteil_1.zentr.spanis_1_3" "Spanisch: Español B2 (für Studierende der Romanistik)" "erba" "u" "office_upstaris" 2 12 14 0
+"Lecture.sprach.abteil_1.zentr.spanis_1_5" "Spanisch: Español B2 (für Studierende der Romanistik)" "erba" "u" "office_upstaris" 3 12 14 0
+"Lecture.sprach.abteil_1.zentr.spanis_14_1" "Spanisch: Expresión oral C2" "erba" "u" "office_upstaris" 4 16 18 0
+"Lecture.sprach.abteil_1.zentr.spanis_19_1" "Spanisch: Sprachpraxis A2: Spanisch 2" "erba" "u" "seminar_tower" 2 8 10 0
+"Lecture.sprach.abteil_1.zentr.spanis_19_3" "Spanisch: Sprachpraxis A2: Spanisch 2" "erba" "u" "office_upstaris" 4 8 10 0
+"Lecture.sprach.abteil_1.zentr.spanis_4_1" "Spanisch: Español B1 (für Studierende der Romanistik)" "erba" "u" "seminar_tower" 1 10 12 0
+"Lecture.sprach.abteil_1.zentr.spanis_4_3" "Spanisch: Español B1 (für Studierende der Romanistik)" "erba" "u" "seminar_tower" 2 10 12 0
+"Lecture.sprach.abteil_1.zentr.spanis_4_5" "Spanisch: Español B1 (für Studierende der Romanistik)" "erba" "u" "seminar_tower" 3 10 12 0
+"Lecture.sprach.abteil_1.zentr.spanis_43_1" "Spanisch: Sprachpraxis A1: Spanisch 1" "erba" "u" "seminar_tower" 2 12 14 0
+"Lecture.sprach.abteil_1.zentr.spanis_43_3" "Spanisch: Sprachpraxis A1: Spanisch 1" "erba" "u" "office_upstaris" 3 12 14 0
+"Lecture.sprach.abteil_1.zentr.spanis_53_1" "Spanisch: Sprachpraxis A2: Spanisch 2" "erba" "u" "office_upstaris" 2 14 16 0
+"Lecture.sprach.abteil_1.zentr.spanis_53_3" "Spanisch: Sprachpraxis A2: Spanisch 2" "erba" "u" "office_upstaris" 4 12 14 0
+"Lecture.sprach.abteil_1.zentr.spanis_59_1" "Spanisch: Sprachpraxis B1: Spanisch 3" "erba" "u" "seminar_tower" 2 16 18 0
+"Lecture.sprach.abteil_1.zentr.spanis_59_3" "Spanisch: Sprachpraxis B1: Spanisch 3" "erba" "u" "office_upstaris" 4 16 18 0
+"Lecture.sprach.abteil_1.zentr.spanis_6_1" "Spanisch: Sprachpraxis A1: Spanisch 1" "erba" "u" "seminar_tower" 1 8 10 0
+"Lecture.sprach.abteil_1.zentr.spanis_6_3" "Spanisch: Sprachpraxis A1: Spanisch 1" "erba" "u" "office_upstaris" 3 8 10 0
+"Lecture.sprach.abteil_1.zentr.spanis_7_1" "Spanisch: Español C1" "erba" "u" "seminar_tower" 3 14 16 0
+"Lecture.sprach.abteil_1.zentr.spanis_7_3" "Spanisch: Español C1" "erba" "u" "seminar_tower" 4 14 16 0
+"Lecture.sprach.abteil_1.zentr.spanis_9_3" "Spanisch: Sprachpraxis B2: Spanisch 4" "erba" "u" "seminar_tower" 2 12 14 0
+"Lecture.sprach.abteil_1.zentr.spanis_93_1" "Spanisch: Español Cultura y civilización B Hispanoamérica Spezialgebiete" "erba" "u" "office_upstaris" 2 14 16 0
+"Lecture.sprach.abteil_1.zentr.taller_7_1" "Spanisch: Expresión escrita C1" "erba" "u" "office_upstaris" 3 16 18 0
+"Lecture.sprach.abteil_1.zentr.tutori_0_1" "Tutorium zu Italienisch: Sprachpraxis A1: Italienisch 1 / E-Learning" "erba" "u" "seminar_tower" 4 12 14 0
+"Lecture.sprach.abteil_1.zentr.tutori_1_1" "Tutorium zu Italienisch: Cultura e civiltà italiana B" "erba" "u" "seminar_tower" 2 16 18 0
+"Lecture.sprach.abteil_1.zentr.tutori_2_1" "Tutorium zu Italienisch: Sprachpraxis A2: Italienisch 2 / E-Learning" "erba" "u" "seminar_tower" 4 12 14 0
+"Lecture.sprach.abteil_1.zentr.wirtsc_0_1" "Wirtschaftsfranzösisch IV : Entraînement à la rédaction de textes scientifiques" "erba" "u" "seminar_tower" 1 12 14 0
+"Lecture.sprach.abteil_1.zentr.wirtsc_97_1" "Wirtschaftsfranzösisch IV : Entraînement à la rédaction de textes scientifiques" "erba" "u" "seminar_tower" 1 14 16 0
+"Lecture.sprach.abteil_2.zentr.kroati_1_1" "Kroatisch/Serbisch/Bosnisch: Grammatik I" "erba" "u" "seminar_tower" 3 10 12 0
+"Lecture.sprach.abteil_2.zentr.kroati_5_1" "Kroatisch/Serbisch/Bosnisch: II" "erba" "u" "seminar_tower" 1 10 12 0
+"Lecture.sprach.abteil_2.zentr.kroati_5_3" "Kroatisch/Serbisch/Bosnisch: II" "erba" "u" "office_upstaris" 3 12 14 0
+"Lecture.sprach.abteil_2.zentr.ksb_5__1" "Kroatisch/Serbisch/Bosnisch: Übersetzung I" "erba" "u" "seminar_tower" 1 12 14 0
+"Lecture.sprach.abteil_2.zentr.ksb_6__1" "Kroatisch/Serbisch/Bosnisch: IV" "erba" "u" "seminar_tower" 2 10 12 0
+"Lecture.sprach.abteil_2.zentr.polnis_48_1" "Polnisch: Landeskunde I" "erba" "u" "office_upstaris" 3 10 12 0
+"Lecture.sprach.abteil_2.zentr.polnis_5_1" "Polnisch III" "erba" "u" "office_upstaris" 1 12 14 0
+"Lecture.sprach.abteil_2.zentr.polnis_6_1" "Polnisch I" "erba" "u" "office_upstaris" 1 10 12 0
+"Lecture.sprach.abteil_2.zentr.polnis_6_3" "Polnisch I" "erba" "u" "seminar_tower" 3 12 14 0
+"Lecture.sprach.abteil_2.zentr.russis_2_1" "Russisch II" "erba" "u" "office_upstaris" 1 10 12 0
+"Lecture.sprach.abteil_2.zentr.russis_2_3" "Russisch II" "erba" "u" "office_upstaris" 5 10 12 0
+"Lecture.sprach.abteil_2.zentr.russis_37_1" "Russisch: Grammatik II" "erba" "u" "office_upstaris" 4 12 14 0
+"Lecture.sprach.abteil_2.zentr.russis_52_1" "Russisch: Grammatik I" "erba" "u" "office_upstaris" 2 16 18 0
+"Lecture.sprach.abteil_2.zentr.russis_6_1" "Russisch: Russisch IV" "erba" "u" "office_upstaris" 1 12 14 0
+"Lecture.sprach.abteil_2.zentr.russis_6_3" "Russisch: Russisch IV" "erba" "u" "office_upstaris" 5 12 14 0
+"Lecture.sprach.abteil_2.zentr.russis_7_1" "Russisch VI" "erba" "u" "office_upstaris" 2 10 12 0
+"Lecture.sprach.abteil_2.zentr.russis_7_3" "Russisch VI" "erba" "u" "office_upstaris" 4 10 12 0
+"Lecture.sprach.abteil_2.zentr.russis_9_1" "Russisch: Übersetzung" "erba" "u" "office_upstaris" 2 14 16 0
+"Lecture.sprach.abteil_2.zentr.tschec_4_1" "Tschechisch IV" "erba" "u" "seminar_tower" 2 10 12 0
+"Lecture.sprach.abteil_2.zentr.wirtsc_29_1" "Wirtschaftsrussisch IV: Strukturwandel" "erba" "u" "seminar_tower" 3 8 10 0
+"Lecture.sprach.abteil_2.zentr.wirtsc_38_1" "Wirtschaftsrussisch VIII: Wirtschaftsstrukturen Russlands" "erba" "u" "office_upstaris" 4 10 12 0
+"Lecture.sprach.abteil_2.zentr.wirtsc_4_1" "Wirtschaftsrussisch II: Russisch im Unternehmenskontext" "erba" "u" "office_upstaris" 4 8 10 0
+"Lecture.sprach.abteil_4.zentr.altgri_6_1" "Altgriechisch: Intensivkurs Altgriechischer Sprachkurs, 2. Teil (Ferienkurs 28.08. - 08.09.2017)" "erba" "u" "office_upstaris" 1 10 13 0
+"Lecture.sprach.abteil_4.zentr.chines_0_1" "Chinesisch: Sprachpraxis A2: Chinesisch 4" "erba" "u" "seminar_tower" 3 8 10 0
+"Lecture.sprach.abteil_4.zentr.chines_0_3" "Chinesisch: Sprachpraxis A2: Chinesisch 4" "erba" "u" "office_upstaris" 5 8 10 0
+"Lecture.sprach.abteil_4.zentr.chines_6_1" "Chinesisch: Sprachpraxis A1: Chinesisch 1" "erba" "u" "seminar_tower" 4 14 16 0
+"Lecture.sprach.abteil_4.zentr.chines_6_3" "Chinesisch: Sprachpraxis A1: Chinesisch 1" "erba" "u" "seminar_tower" 5 8 10 0
+"Lecture.sprach.abteil_4.zentr.chines_63_1" "Chinesisch: Sprachpraxis A1: Chinesisch 2" "erba" "u" "office_upstaris" 2 8 10 0
+"Lecture.sprach.abteil_4.zentr.chines_63_3" "Chinesisch: Sprachpraxis A1: Chinesisch 2" "erba" "u" "office_upstaris" 4 14 16 0
+"Lecture.sprach.abteil_4.zentr.deutsc_11_1" "Deutsch als Fremdsprache: Sprachpraxis B2: Hörverständnis 3" "erba" "u" "seminar_tower" 3 10 12 0
+"Lecture.sprach.abteil_4.zentr.deutsc_12_1" "Deutsch als Fremdsprache: Sprachpraxis B2: Vortrag und Diskussion 3" "erba" "u" "seminar_tower" 2 16 18 0
+"Lecture.sprach.abteil_4.zentr.deutsc_15_1" "Deutsch als Fremdsprache: Sprachpraxis B1: Sprach- und Kulturvermittlung: Stereotype und Mentalität - ein Kurs über die Deutschen 1" "erba" "u" "office_upstaris" 2 16 18 0
+"Lecture.sprach.abteil_4.zentr.deutsc_16_1" "Deutsch als Fremdsprache: Sprachpraxis B2: Wortschatz und Landeskunde 3" "erba" "u" "seminar_tower" 1 14 16 0
+"Lecture.sprach.abteil_4.zentr.deutsc_28_1" "Deutsch als Fremdsprache: Sprachpraxis A2: Wortschatz und Landeskunde 1" "erba" "u" "seminar_tower" 4 10 12 0
+"Lecture.sprach.abteil_4.zentr.deutsc_3_1" "Deutsch als Fremdsprache: Sprachpraxis C1: Grammatik 4" "erba" "u" "seminar_tower" 2 8 10 0
+"Lecture.sprach.abteil_4.zentr.deutsc_356_1" "Deutsch als Fremdsprache: Sprachpraxis C1: Hörverständnis 4" "erba" "u" "seminar_tower" 2 12 14 0
+"Lecture.sprach.abteil_4.zentr.deutsc_53_1" "Deutsch als Fremdsprache: Sprachpraxis B2: Kreatives Schreiben und Freies Sprechen 3" "erba" "u" "lecture_small" 2 12 14 0
+"Lecture.sprach.abteil_4.zentr.deutsc_61_1" "Deutsch als Fremdsprache: Sprachpraxis C2: Hörverständnis 5" "erba" "u" "seminar_tower" 2 12 14 0
+"Lecture.sprach.abteil_4.zentr.deutsc_62_1" "Deutsch als Fremdsprache: Sprachpraxis C2: Vortrag und Diskussion 5" "erba" "u" "seminar_tower" 5 10 12 0
+"Lecture.sprach.abteil_4.zentr.deutsc_64_1" "Deutsch als Fremdsprache: Sprachpraxis C1: Sprach- und Kulturvermittlung: Stereotype und Mentalität - ein Kurs über die Deutschen 2" "erba" "u" "office_upstaris" 2 16 18 0
+"Lecture.sprach.abteil_4.zentr.deutsc_70_1" "Deutsch als Fremdsprache: Sprachpraxis B1: Vortrag und Diskussion 2" "erba" "u" "seminar_tower" 4 16 18 0
+"Lecture.sprach.abteil_4.zentr.deutsc_754_1" "Deutsch als Fremdsprache: Sprachpraxis C1: Vortrag und Diskussion 4" "erba" "u" "seminar_tower" 5 10 12 0
+"Lecture.sprach.abteil_4.zentr.deutsc_79_1" "Deutsch als Fremdsprache: Sprachpraxis B1: Wissenschaftliche Texte schreiben und verstehen 2" "erba" "u" "seminar_tower" 2 14 16 0
+"Lecture.sprach.abteil_4.zentr.deutsc_87_1" "Deutsch als Fremdsprache: Sprachpraxis A2: Phonetik 1" "erba" "u" "seminar_tower" 2 10 12 0
+"Lecture.sprach.abteil_4.zentr.deutsc_88_1" "Deutsch als Fremdsprache intensiv 2" "erba" "u" "office_upstaris" 3 8 10 0
+"Lecture.sprach.abteil_4.zentr.deutsc_88_3" "Deutsch als Fremdsprache intensiv 2" "erba" "u" "seminar_tower" 5 8 10 0
+"Lecture.sprach.abteil_4.zentr.deutsc_95_1" "Deutsch als Fremdsprache: Sprachpraxis C2 Grammatik 5" "erba" "u" "seminar_tower" 2 8 10 0
+"Lecture.sprach.abteil_4.zentr.hrver__1" "Deutsch als Fremdsprache: Sprachpraxis B1: Kreatives Schreiben und freies Sprechen 2" "erba" "u" "office_upstaris" 2 10 12 0
+"Lecture.sprach.abteil_4.zentr.japani_5_1" "Japanisch: Sprachpraxis A2: Japanisch 3" "erba" "u" "office_upstaris" 1 8 10 0
+"Lecture.sprach.abteil_4.zentr.japani_5_3" "Japanisch: Sprachpraxis A2: Japanisch 3" "erba" "u" "office_upstaris" 5 10 12 0
+"Lecture.sprach.abteil_4.zentr.japani_7_1" "Japanisch: Sprachpraxis A1: Japanisch 2" "erba" "u" "seminar_tower" 1 10 12 0
+"Lecture.sprach.abteil_4.zentr.japani_7_3" "Japanisch: Sprachpraxis A1: Japanisch 2" "erba" "u" "office_upstaris" 5 8 10 0
+"Lecture.sprach.abteil_4.zentr.landes_1_1" "Deutsch als Fremdsprache: Sprachpraxis B1: Wortschatz und Landeskunde 2" "erba" "u" "seminar_tower" 3 14 16 0
+"Lecture.sprach.abteil_4.zentr.schrif_3_1" "Deutsch als Fremdsprache: Sprachpraxis B2: Wissenschaftliche Texte schreiben und verstehen 3" "erba" "u" "seminar_tower" 2 14 16 0
+"Lecture.wiai.bereic.junior.4_1" "SME-PHY-B: Physical Computing" "erba" "v" "seminar_tower" 3 12 14 15
+"Lecture.wiai.bereic.junior.4_3" "SME-PHY-B: Physical Computing" "erba" "v" "seminar_tower" 2 16 18 15
+"Lecture.wiai.bereic.lehrst.0_1" "KInf-Seminar-B: Bachelorseminar" "erba" "v" "seminar_tower" 4 14 16 20
+"Lecture.wiai.bereic.lehrst.2_1" "KInf-IPKult-E: Informatik und Programmierkurs für die Kulturwissenschaften" "erba" "v" "seminar_tower" 1 10 12 20
+"Lecture.wiai.bereic.lehrst.5_1" "KInf-IPKult-E: Informatik und Programmierkurs für die Kulturwissenschaften" "erba" "v" "seminar_tower" 3 8 10 30
+"Lecture.wiai.bereic.lehrst.58_1" "Internet Computing für Geistes- und Sozialwissenschaften" "erba" "v" "seminar_tower" 2 14 16 0
+"Lecture.wiai.bereic.lehrst.8_1" "KInf-IPKult-E: Programmierkurs Informatik für die Kulturwissenschaften" "erba" "v" "seminar_tower" 1 14 16 30
+"Lecture.wiai.bereic.lehrst_1.0_1" "Algorithmen und Datenstrukturen (Übung), Gruppe 4" "erba" "v" "seminar_tower" 1 16 18 0
+"Lecture.wiai.bereic.lehrst_1.10_1" "Projekt zur Medieninformatik (MI-Proj-B)" "erba" "v" "office_upstaris" 2 18 19 30
+"Lecture.wiai.bereic.lehrst_1.2_1" "Algorithmen und Datenstrukturen (Übung), Gruppe 3" "erba" "v" "seminar_tower" 2 12 14 0
+"Lecture.wiai.bereic.lehrst_1.4_1" "Algorithmen und Datenstrukturen (Übung), Gruppe 2" "erba" "v" "seminar_tower" 3 16 18 0
+"Lecture.wiai.bereic.lehrst_1.42_1" "Projekt zur Medieninformatik (MI-Proj-M)" "erba" "v" "office_upstaris" 2 18 19 0
+"Lecture.wiai.bereic.lehrst_1.43_1" "Algorithmen und Datenstrukturen (Übung), Gruppe 6" "erba" "v" "seminar_tower" 5 8 10 0
+"Lecture.wiai.bereic.lehrst_1.6_1" "Web Technologien (Übung), Gruppe 3" "erba" "v" "seminar_tower" 4 10 12 30
+"Lecture.wiai.bereic.lehrst_1.66_1" "Web Technologien (Übung), Gruppe 4" "erba" "v" "seminar_tower" 3 10 12 30
+"Lecture.wiai.bereic.lehrst_1.75_1" "Web Technologien (Übung), Gruppe 1" "erba" "v" "seminar_tower" 2 14 16 30
+"Lecture.wiai.bereic.lehrst_1.8_1" "Algorithmen und Datenstrukturen (Übung), Gruppe 1" "erba" "v" "seminar_tower" 2 10 12 30
+"Lecture.wiai.bereic.lehrst_1.83_1" "Web Technologien (Übung), Gruppe 2" "erba" "v" "seminar_tower" 3 14 16 30
+"Lecture.wiai.bereic.lehrst_1.99_1" "Information Retrieval 2 (Übung)" "erba" "v" "office_upstaris" 2 10 12 0
+"Lecture.wiai.bereic.lehrst_2.3_1" "Kolloquium Mensch-Computer-Interaktion" "erba" "u" "office_upstaris" 3 18 20 0
+"Lecture.wiai.bereic.lehrst_2.5_1" "Forschungsprojektpraktikum 1 Mensch-Computer-Interaktion" "erba" "v" "office_upstaris" 1 14 18 0
+"Lecture.wiai.bereic.lehrst_2.8_1" "Master-Seminar Human-Centred Computing" "erba" "s" "office_upstaris" 2 16 18 0
+"Lecture.wiai.bereic.lehrst_2.9_1" "Bachelor-Seminar Mensch-Computer-Interaktion" "erba" "s" "office_upstaris" 2 14 16 0
+"Lecture.wiai.bereic.lehrst_2.92_1" "Projektpraktikum Mensch-Computer-Interaktion" "erba" "v" "office_upstaris" 3 14 18 0
+"Lecture.wiai.bereic.lehrst_2.mensch_1" "Mensch-Computer-Interaktion" "erba" "v" "seminar_tower" 2 12 14 0
+"Lecture.wiai.bereic.profes.einfhr_1" "Einführung in die Angewandte Informatik" "erba" "v" "lecture_big" 2 12 14 0
+"Lecture.wiai.bereic.profes.fnc_1" "FNC" "erba" "u" "seminar_tower" 2 16 17 15
+"Lecture.wiai.bereic.profes.kogsys_1" "KogSyS-IA-B: Intelligente Agenten (V)" "erba" "v" "seminar_tower" 1 10 12 50
+"Lecture.wiai.bereic.profes.kogsys_3_1" "KogSys-Proj-B: Bachelor/Master Projekt Kognitive Systeme" "erba" "s" "seminar_tower" 4 10 12 0
+"Lecture.wiai.bereic_1.lehrst.1_1" "DSG-EiRBS-B - Gruppe 4" "erba" "v" "seminar_tower" 2 12 14 50
+"Lecture.wiai.bereic_1.lehrst.15_1" "DSG-SOA-M: Service-Oriented Architecture and WebServices - Übung" "erba" "v" "seminar_tower" 3 12 14 0
+"Lecture.wiai.bereic_1.lehrst.17_1" "DSG-EiRBS-B - Gruppe 5" "erba" "v" "seminar_tower" 3 14 16 50
+"Lecture.wiai.bereic_1.lehrst.21_1" "DSG-EiRBS-B - Gruppe 3" "erba" "v" "seminar_tower" 1 16 18 50
+"Lecture.wiai.bereic_1.lehrst.3_1" "DSG-EiRBS-B - Gruppe 2" "erba" "v" "seminar_tower" 2 14 16 50
+"Lecture.wiai.bereic_1.lehrst.4_1" "DSG-EiRBS-B - Gruppe 6" "erba" "v" "office_upstaris" 5 10 12 50
+"Lecture.wiai.bereic_1.lehrst.40_1" "DSG-AJP-B: Fortgeschrittene Java-Programmierung" "erba" "v" "office_upstaris" 3 12 16 50
+"Lecture.wiai.bereic_1.lehrst.51_1" "DSG-SOA-M: Service-Oriented Architecture and WebServices" "erba" "v" "seminar_tower" 4 16 18 30
+"Lecture.wiai.bereic_1.lehrst.5_9_1" "DSG-AJP-B: Fortgeschrittene Java-Programmierung - Freies Üben" "erba" "v" "office_upstaris" 4 10 14 0
+"Lecture.wiai.bereic_1.lehrst.6_1" "DSG-EiRBS-B - Gruppe 7" "erba" "v" "seminar_tower" 4 12 14 50
+"Lecture.wiai.bereic_1.lehrst.7_1" "DSG-IDistrSys:Introduction to Distributed Systems - Gruppe 1" "erba" "v" "seminar_tower" 3 12 14 0
+"Lecture.wiai.bereic_1.lehrst.8_1" "DSG-IDistrSys:Introduction to Distributed Systems" "erba" "v" "seminar_tower" 1 10 12 40
+"Lecture.wiai.bereic_1.lehrst.84_1" "DSG-AJP-B: Fortgeschrittene Java-Programmierung - Tutorium" "erba" "u" "office_upstaris" 2 10 12 0
+"Lecture.wiai.bereic_1.lehrst.87_1" "DSG-EiRBS-B - Gruppe 1" "erba" "v" "seminar_tower" 1 12 14 50
+"Lecture.wiai.bereic_1.lehrst.9_1" "DSG-IDistrSys:Introduction to Distributed Systems - Gruppe 2" "erba" "v" "seminar_tower" 4 8 10 0
+"Lecture.wiai.bereic_1.lehrst_1.1_1" "SWT-ASV-M: Applied Software Verification (Vorlesung)" "erba" "v" "seminar_tower" 2 14 16 0
+"Lecture.wiai.bereic_1.lehrst_1.71_1" "SWT-SEM-B: Seminar Software Engineering and Programming Languages" "erba" "s" "office_upstaris" 2 12 14 0
+"Lecture.wiai.bereic_1.lehrst_1.75_1" "SWT-FSE-B: Foundations of Software Engineering (Vorlesung)" "erba" "v" "lecture_small" 1 16 18 0
+"Lecture.wiai.bereic_1.lehrst_1.75_3" "SWT-FSE-B: Foundations of Software Engineering (Vorlesung)" "erba" "v" "lecture_big" 3 16 18 0
+"Lecture.wiai.bereic_1.lehrst_1.9_1" "SWT-ASV-M: Applied Software Verification (Übung)" "erba" "v" "seminar_tower" 4 10 12 0
+"Lecture.wiai.bereic_1.lehrst_1.swtfse_1" "SWT-FSE-B: Foundations of Software Engineering (Übung / Plenum)" "erba" "v" "lecture_small" 1 16 18 0
+"Lecture.wiai.bereic_1.lehrst_1.swtfse_3" "SWT-FSE-B: Foundations of Software Engineering (Übung / Plenum)" "erba" "v" "office_upstaris" 3 16 18 0
+"Lecture.wiai.bereic_1.lehrst_1.swtfse_1_1" "SWT-FSE-B: Foundations of Software Engineering (Übung / Gruppe A)" "erba" "v" "seminar_tower" 2 10 12 0
+"Lecture.wiai.bereic_1.lehrst_1.swtfse_3_1" "SWT-FSE-B: Foundations of Software Engineering (Übung / Gruppe B)" "erba" "v" "seminar_tower" 5 8 10 0
+"Lecture.wiai.bereic_1.lehrst_1.swtfse_30_1" "SWT-FSE-B: Foundations of Software Engineering (Übung / Plenum)" "erba" "v" "lecture_small" 1 16 18 0
+"Lecture.wiai.bereic_1.lehrst_1.swtfse_30_3" "SWT-FSE-B: Foundations of Software Engineering (Übung / Plenum)" "erba" "v" "lecture_big" 3 16 18 0
+"Lecture.wiai.bereic_1.lehrst_2.0_1" "MOBI-PRS-B: Bachelor Project Mobile Software Systems (SoSySc/AI)" "erba" "v" "office_upstaris" 3 10 12 0
+"Lecture.wiai.bereic_1.lehrst_2.0_0_1" "MOBI-ADM-M: Advanced Data Management" "erba" "v" "seminar_tower" 4 8 10 0
+"Lecture.wiai.bereic_1.lehrst_2.0_0_3" "MOBI-ADM-M: Advanced Data Management" "erba" "v" "seminar_tower" 4 14 16 0
+"Lecture.wiai.bereic_1.lehrst_2.1_1" "Master Seminar Mobile Software Systems (MOBI-SEM-M)" "erba" "s" "seminar_tower" 1 16 18 0
+"Lecture.wiai.bereic_1.lehrst_2.34_1" "MOBI-PRAI-M: Master Project Mobile Software Systems (AI)" "erba" "v" "office_upstaris" 3 10 12 0
+"Lecture.wiai.bereic_1.lehrst_2.4_1" "MOBI-KOL: Kolloquium Mobile Software Systems/Mobility" "erba" "v" "office_upstaris" 2 16 18 0
+"Lecture.wiai.bereic_1.lehrst_2.5_1" "MOBI-PRS-M: Master Project Mobile Software Systems (SoSySc)" "erba" "v" "office_upstaris" 3 10 12 0
+"Lecture.wiai.bereic_1.profes.0_1" "GdI-GTI-B: Grundlagen der Theoretischen Informatik" "erba" "v" "lecture_small" 2 14 15 100
+"Lecture.wiai.bereic_1.profes.26_1" "GdI-GTI-B: Grundlagen der Theoretischen Informatik" "erba" "v" "seminar_tower" 3 10 11 50
+"Lecture.wiai.bereic_1.profes.3_1" "GdI-IaS-M: Informationssicherheit" "erba" "v" "seminar_tower" 2 8 9 40
+"Lecture.wiai.bereic_1.profes.3_3" "GdI-IaS-M: Informationssicherheit" "erba" "v" "seminar_tower" 3 10 11 40
+"Lecture.wiai.bereic_1.profes.5_1" "GdI-GTI-B: Grundlagen der Theoretischen Informatik" "erba" "v" "seminar_tower" 4 16 17 50
+"Lecture.wiai.bereic_1.profes.66_1" "GdI-CaS-M: Theorie verteilter Systeme" "erba" "v" "office_upstaris" 4 12 13 20
+"Lecture.wiai.bereic_1.profes.66_3" "GdI-CaS-M: Theorie verteilter Systeme" "erba" "v" "seminar_tower" 5 10 11 20
+"Lecture.wiai.bereic_1.profes.mfirep_1" "Mfi Repetitorium" "erba" "u" "office_upstaris" 1 14 16 0
+"Lecture.wiai.bereic_1.profes_1.7_1" "KTR-MMK-M: Multimedia-Kommunikation in Hochgeschwindigkeitsnetzen" "unknown" "v" "" 4 10 12 10
+"Lecture.wiai.bereic_1.profes_1.7_3" "KTR-MMK-M: Multimedia-Kommunikation in Hochgeschwindigkeitsnetzen" "erba" "v" "seminar_tower" 3 14 16 10
+"Lecture.wiai.bereic_2.junior.1_1" "SNA-IWM-B: Informations- und Wissensmanagement" "erba" "v" "seminar_tower" 4 10 12 50
+"Lecture.wiai.bereic_2.junior.47_1" "SNA-Sem-M: Kooperative Innovationsnetzwerke" "erba" "s" "office_upstaris" 1 12 14 20
+"Lecture.wiai.bereic_2.junior.57_1" "SNA-IWM-B: Informations- und Wissensmanagement" "erba" "v" "lecture_small" 2 10 12 100
+"Lecture.wiai.bereic_2.junior.59_1" "SNA-NET-M: Netzwerktheorie" "erba" "v" "lecture_small" 4 10 12 45
+"Lecture.wiai.bereic_2.junior.6_1" "Doktorandenseminar" "erba" "s" "office_upstaris" 5 8 10 0
+"Lecture.wiai.bereic_2.junior.8_1" "SNA-NET-M: Netzwerktheorie" "erba" "v" "seminar_tower" 2 8 10 40
+"Lecture.wiai.bereic_2.junior.8_3" "SNA-NET-M: Netzwerktheorie" "erba" "v" "seminar_tower" 1 18 20 40
+"Lecture.wiai.bereic_2.junior.9_1" "SNA-IWM-B: Informations- und Wissensmanagement" "erba" "v" "seminar_tower" 3 16 18 50
+"Lecture.wiai.bereic_2.junior.snasem_1" "SNA-Sem-B: Social Media & Online Social Networks" "erba" "s" "seminar_tower" 3 10 12 0
+"Lecture.wiai.bereic_2.lehrst.0_1" "ISDL-ITCHANGE-M: Management IT-bedingter Veränderungen" "erba" "v" "seminar_tower" 1 14 16 40
+"Lecture.wiai.bereic_2.lehrst.2_1" "ISDL-ISS3-M: IT-Wertschöpfung" "erba" "v" "seminar_tower" 3 14 18 50
+"Lecture.wiai.bereic_2.lehrst.41_1" "Doktorandenseminar" "erba" "s" "office_upstaris" 5 12 14 0
+"Lecture.wiai.bereic_2.lehrst.51_1" "ISDL-ITCHANGE-M: Management IT-bedingter Veränderungen" "erba" "v" "seminar_tower" 4 14 18 40
+"Lecture.wiai.bereic_2.lehrst.58_1" "Kolloquium für die Erstellung von Abschlussarbeiten" "erba" "u" "office_upstaris" 3 14 16 15
+"Lecture.wiai.bereic_2.lehrst.6_1" "ISDL-ISS2-M: Optimierung IT-lastiger Geschäftsprozesse" "erba" "v" "lecture_small" 5 8 10 50
+"Lecture.wiai.bereic_2.lehrst.79_1" "ISDL-ISS3-M: IT-Wertschöpfung" "erba" "v" "lecture_small" 4 18 20 50
+"Lecture.wiai.bereic_2.lehrst_1.1_1" "IIS-EAM-B: Enterprise Architecture Management" "erba" "v" "seminar_tower" 2 14 16 20
+"Lecture.wiai.bereic_2.lehrst_1.2_1" "IIS-EAM-B: Enterprise Architecture Management" "erba" "v" "seminar_tower" 4 12 14 20
+"Lecture.wiai.bereic_2.lehrst_1.22_1" "IIS-EBAS-B: Entwicklung und Betrieb von Anwendungssystemen" "erba" "v" "lecture_small" 4 14 16 100
+"Lecture.wiai.bereic_2.lehrst_1.7_1" "IIS-EBAS-B: Entwicklung und Betrieb von Anwendungssystemen" "erba" "v" "lecture_small" 3 16 18 100
+"Lecture.wiai.bereic_2.lehrst_1.8_1" "IIS-IBS-M: Innerbetriebliche Systeme" "erba" "v" "lecture_big" 3 8 10 50
+"Lecture.wiai.bereic_2.lehrst_2.3_1" "Repetitorium zu Anwendungspakete" "erba" "v" "office_upstaris" 1 16 18 30
+"Lecture.wiai.bereic_2.lehrst_2.30_1" "SEDA SQL-Tutorium für Einsteiger" "erba" "v" "office_upstaris" 2 12 14 30
+"Lecture.wiai.bereic_2.lehrst_2.6_1" "SEDA-DMS-B: Datenmanagementsysteme" "erba" "v" "lecture_small" 4 8 10 120
+"Lecture.wiai.bereic_2.lehrst_2.71_1" "Wirtschaftsinformatik-Projekt zur Systementwicklung" "erba" "v" "office_upstaris" 2 8 10 0
+"Lecture.wiai.bereic_2.lehrst_2.71_3" "Wirtschaftsinformatik-Projekt zur Systementwicklung" "erba" "v" "seminar_tower" 4 16 18 0
+"Lecture.wiai.bereic_2.lehrst_2.7_32_1" "SEDA-DMS-B: Datenmanagementsysteme" "erba" "v" "seminar_tower" 3 12 14 60
+"Lecture.wiai.bereic_2.lehrst_2.7_8_1" "SEDA-DMS-B: Datenmanagementsysteme" "erba" "v" "seminar_tower" 2 16 18 60
+"Lecture.wiai.bereic_2.lehrst_2.8_1" "Repetitorium zu Grundlagen betrieblicher Informationssysteme" "erba" "v" "seminar_tower" 4 12 14 60
+"Lecture.wiai.bereic_2.lehrst_2.98_1" "SEDA SQL-Tutorium für Fortgeschrittene" "erba" "v" "seminar_tower" 4 12 14 30
+"Lecture.wiai.bereic_2.lehrst_2.metamo_6_1" "Seminar Metamodellierung" "erba" "s" "office_upstaris" 3 16 18 0
+"Lecture.wiai.bereic_2.lehrst_3.4_1" "Energieeffiziente Systeme" "erba" "v" "seminar_tower" 2 16 18 0
+"Lecture.wiai.bereic_2.lehrst_3.4_7_1" "Decision Support and Expert Systems" "erba" "v" "office_upstaris" 3 12 14 0
+"Lecture.wiai.bereic_2.lehrst_3.6_1" "Projekt Smart Grid Data Analytics (Digitalization and Predicative Maintenance in the Heating Sector)" "erba" "v" "seminar_tower" 2 14 16 0
+"Lecture.wiai.bereic_2.lehrst_3.6_3" "Projekt Smart Grid Data Analytics (Digitalization and Predicative Maintenance in the Heating Sector)" "erba" "v" "seminar_tower" 5 10 12 0
+"Lecture.wiai.bereic_2.lehrst_3.7_1" "Internationales IT-Projektmanagement" "erba" "v" "lecture_small" 3 10 12 0
+"Lecture.wiai.bereic_2.lehrst_3.9_1" "Decision Support and Expert Systems" "erba" "v" "seminar_tower" 2 8 10 0
+"Lecture.wiai.bereic_2.lehrst_3.energi_1" "Energieeffiziente Systeme" "erba" "v" "lecture_small" 4 12 14 0
+"Lecture.wiai.bereic_2.lehrst_3.intern_1" "Internationales IT-Projektmanagement (Gruppe 2 - Deutsch)" "erba" "v" "seminar_tower" 5 10 12 25
+"Lecture.wiai.bereic_2.lehrst_3.intern_1_1" "Internationales IT-Projektmanagement (Gruppe 1 - English)" "erba" "v" "seminar_tower" 1 14 16 25
+"Lecture.wiai.zentr.tutori_1" "Tutorium" "erba" "v" "seminar_tower" 1 12 14 0
+"Lecture.wiai.zentr.tutori_3" "Tutorium" "erba" "v" "office_upstaris" 1 10 12 0
+"Lecture.wiai.zentr.tutori_7" "Tutorium" "erba" "v" "seminar_tower" 1 16 18 0
+"Lecture.wiai.zentr.tutori_9" "Tutorium" "erba" "v" "seminar_tower" 1 8 10 0
+"Lecture.wiai.zentr.tutori_0_1" "Tutorium" "erba" "u" "seminar_tower" 2 10 12 0
+"Lecture.wiai.zentr.tutori_0_3" "Tutorium" "erba" "u" "seminar_tower" 3 8 10 0
+"Lecture.wiai.zentr.tutori_0_7" "Tutorium" "erba" "u" "seminar_tower" 4 14 16 0

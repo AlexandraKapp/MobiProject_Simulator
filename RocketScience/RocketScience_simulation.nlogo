@@ -1,6 +1,10 @@
 globals [
   total-amount-of-students
-
+  total-amount-of-students_at_erba
+  
+  students_at_cafeteria
+  students_at_library
+  
   is_break
   timer_counter
 
@@ -25,6 +29,7 @@ globals [
   s_stud_phone_none
   
   weekday
+  time
   timerCount
   counter
   is-break
@@ -83,6 +88,10 @@ courses-own [
   course_location
   course_type
   course_room
+  course_day
+  course_startTime
+  course_endTime
+  course_participants
 ]
 
 timetables-own [
@@ -103,7 +112,12 @@ end
 
 
 to setup-variables
-  set total-amount-of-students 20
+  set total-amount-of-students students_at_erba
+  set total-amount-of-students_at_erba 0
+  
+  set students_at_cafeteria 0
+  set students_at_library 0
+  
   set s_room_type_entrance "entrance"
   set s_room_type_lecture "lecture"
   set s_room_type_sitting "sitting"
@@ -117,7 +131,7 @@ to setup-variables
 
   set s_file_rooms "rooms_rocket_science.txt"
   set s_file_timetables "timetables_rocket_science.txt"
-  set s_file_courses "courses_rocket_science.txt"
+  set s_file_courses "courses_rocket_science_new.txt"
   
   set s_stud_phone_iphone "iphone"
   set s_stud_phone_android "android"
@@ -143,6 +157,10 @@ to setup-courses
     let tmp_location file-read
     let tmp_type file-read
     let tmp_room file-read
+    let tmp_day file-read
+    let tmp_startTime file-read
+    let tmp_endTimfe file-read
+    let tmp_participants file-read
     if tmp_location = "erba" [
       create-courses 1 [
         set course_id tmp_id
@@ -150,6 +168,10 @@ to setup-courses
         set course_location tmp_location
         set course_type tmp_type
         set course_room tmp_room
+        set course_day tmp_day
+        set course_startTime tmp_startTime
+        set course_endTime tmp_startTime
+        set course_participants tmp_participants
         set size 0
       ]
     ]
@@ -246,9 +268,22 @@ to go
   if timerCount = 795 [ ;day is over -> start new day
     set timerCount 0 ;set time back to 7am
     set counter 75 ;initial starttime to get to the first time slot
+    set time 8
     ifelse (weekday < 5) [set weekday weekday + 1] ;increase weekday
     [set weekday 1]
   ]
+  
+  let stud_count 0
+  let stud_at_cafeteria_count 0
+  let stud_at_library_count 0
+  ask students [
+    if stud_current_location != stud_home_target [set stud_count stud_count + 1]
+    if (stud_current_location = one-of rooms with [room_name = "cafeteria"]) [set stud_at_cafeteria_count stud_at_cafeteria_count + 1]
+    if (stud_current_location = one-of rooms with [room_name = "library"]) [set stud_at_library_count stud_at_library_count + 1]
+  ]
+  set total-amount-of-students_at_erba stud_count
+  set students_at_cafeteria stud_at_cafeteria_count
+  set students_at_library stud_at_library_count
 
   if (timerCount = counter and is-break = true) [
     set counter counter + 90 ;90 min for one time-slot
@@ -261,6 +296,7 @@ to go
 
   if (timerCount = counter and is-break = false) [
     set is-break true ;after the time slot of 90 min is over it's break time
+    set time time + 2
     set counter counter + 30 ;30 min break
 
     ifelse (timerCount = 765) [
@@ -281,34 +317,90 @@ to go
 end
 
 to set-target
-  ask students [
-    let tmp_course_id item 0 stud_timetable
-    ifelse tmp_course_id = "0" [
-      set stud_target one-of rooms with [room_type = s_room_type_sitting]
-    ][
-      let tmp_target [course_room] of one-of courses with [course_id = tmp_course_id]
-      set stud_target one-of rooms with [room_name = tmp_target]
-    ]
-    set stud_timetable but-first stud_timetable
-    if ([room_area] of stud_current_location) != ([room_area] of stud_target) [
-      set stud_tmp_target stud_target
-      set stud_target one-of rooms with [room_type = s_room_type_entrance]
-    ]
-    ;setup phone
-    set stud_phone_is_scanning false
-    if stud_phone != s_stud_phone_none [
-      if stud_phone_can_detect_beacons [
-        ifelse stud_phone_bluetooth_always_active [
-          set stud_phone_is_scanning true
-        ][
-          let scanning_prob random 100
-          if scanning_prob <= bluetooth_probability_if_not_always_active [
-             set stud_phone_is_scanning true  
-          ]
-        ]  
-      ]
+  let actual_students_at_erba 0
+  let actual_course_rooms list "" ""
+  let actual_course_participants list 0 0
+  
+  ask courses with [course_day = weekday and course_startTime = time] [
+    if course_participants != 0 and course_room != "" [
+      set actual_students_at_erba actual_students_at_erba + course_participants
+      set actual_course_rooms fput course_room actual_course_rooms
+      set actual_course_participants fput course_participants actual_course_participants 
     ]
   ]
+  let aditional_students actual_students_at_erba * aditional_percentage_of_students_per_timeslot / 100
+  let aditional_students_count 1
+  let tmp_participants_count 1
+  let tmp_room item 0 actual_course_rooms
+  let tmp_participants item 0 actual_course_participants
+  set tmp_participants (tmp_participants * (100 - skip_lecture_probability) / 100)
+  
+  ask students [
+   ifelse stud_current_location = stud_home_target [
+     ;show tmp_room
+     ifelse tmp_room != "" [
+       ifelse tmp_participants_count <= tmp_participants [
+         set stud_target one-of rooms with [room_name = tmp_room]
+         set tmp_participants_count tmp_participants_count + 1
+       ] [
+         set tmp_participants_count 1
+         set actual_course_rooms but-first actual_course_rooms
+         set actual_course_participants but-first actual_course_participants
+         set tmp_room item 0 actual_course_rooms
+         set tmp_participants item 0 actual_course_participants
+       ]
+     ][
+       if aditional_students >= aditional_students_count [
+         set stud_target one-of rooms with [room_type = s_room_type_sitting]
+         set aditional_students_count aditional_students_count + 1
+       ]
+     ]
+   ][
+     let tmp_random random 100
+     ifelse tmp_random <= leave_or_sit_probability [
+       set stud_target one-of rooms with [room_type = s_room_type_sitting]
+     ][
+       set stud_target stud_home_target
+     ]
+   ]
+   if (stud_target != pause and stud_target != NOBODY) [
+     if ([room_area] of stud_current_location) != ([room_area] of stud_target) [
+       set stud_tmp_target stud_target
+       set stud_target one-of rooms with [room_type = s_room_type_entrance]
+     ]  
+   ]
+   ;setup phone
+   if stud_current_location != stud_home_target or stud_target != stud_home_target [
+     set stud_phone_is_scanning false
+     if stud_phone != s_stud_phone_none [
+       if stud_phone_can_detect_beacons [
+         ifelse stud_phone_bluetooth_always_active [
+           set stud_phone_is_scanning true
+         ][
+           let scanning_prob random 100
+           if scanning_prob <= bluetooth_probability_if_not_always_active [
+             set stud_phone_is_scanning true  
+           ]
+         ]  
+       ]
+     ]
+   ] 
+  ]
+
+  
+    
+  ;ask students [
+  ;  let tmp_course_id item 0 stud_timetable
+  ;  ifelse tmp_course_id = "0" [
+  ;    set stud_target one-of rooms with [room_type = s_room_type_sitting]
+  ;  ][
+  ;    let tmp_target [course_room] of one-of courses with [course_id = tmp_course_id]
+  ;    set stud_target one-of rooms with [room_name = tmp_target]
+  ;  ]
+  ;  set stud_timetable but-first stud_timetable
+    
+    
+  ;]
   ;ask students [
   ;  set stud_target one-of rooms
   ;]
@@ -317,7 +409,7 @@ end
 
 to move-to-target
   ask students [
-    if (stud_target != pause) [
+    if (stud_target != pause and stud_target != NOBODY) [
       face stud_target
       ifelse distance stud_target < 1 [
         move-to stud_target
@@ -454,10 +546,10 @@ NIL
 0
 
 TEXTBOX
-716
-71
-866
-155
+59
+342
+209
+426
 Color explanation:\n\nyellow -> arrival\nred -> entrance\nblue -> sitting\ngreen -> lecture
 11
 0.0
@@ -515,19 +607,19 @@ technical_detection_probability
 technical_detection_probability
 0
 100
-100
+0
 1
 1
 NIL
 HORIZONTAL
 
 MONITOR
-714
-15
-820
-60
+672
+10
+778
+55
 Students at Erba
-total-amount-of-students
+total-amount-of-students_at_erba
 17
 1
 11
@@ -772,6 +864,84 @@ sitting_interaction_probability
 1
 NIL
 HORIZONTAL
+
+INPUTBOX
+1244
+255
+1399
+315
+students_at_erba
+1400
+1
+0
+Number
+
+SLIDER
+1409
+255
+1756
+288
+aditional_percentage_of_students_per_timeslot
+aditional_percentage_of_students_per_timeslot
+0
+100
+25
+1
+1
+NIL
+HORIZONTAL
+
+SLIDER
+1410
+295
+1611
+328
+leave_or_sit_probability
+leave_or_sit_probability
+0
+100
+18
+1
+1
+NIL
+HORIZONTAL
+
+SLIDER
+1411
+339
+1613
+372
+skip_lecture_probability
+skip_lecture_probability
+0
+100
+30
+1
+1
+NIL
+HORIZONTAL
+
+MONITOR
+673
+67
+814
+112
+Students at Cafeteria
+students_at_cafeteria
+17
+1
+11
+
+MONITOR
+674
+121
+803
+166
+Students at Library
+students_at_library
+17
+1
+11
 
 @#$#@#$#@
 ## WHAT IS IT?
